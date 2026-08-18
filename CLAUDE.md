@@ -82,9 +82,12 @@ Approved and liked by the owner. **Improve it; do not restart it.**
    above all `<meta name="viewport" content="width=device-width, initial-scale=1">`,
    without which the site renders at desktop width on phones and the type is
    unreadable. This bit us once.
-2. **Deploy via the GitHub web UI** (`/upload/main`). There is no `gh` CLI on the
-   owner's machine, and `git push` stalls on a Windows credential dialog.
-   Committing locally is still worth doing for history.
+2. **`git push` works** now that the owner has signed in to GitHub through the
+   Windows credential dialog — it no longer stalls. There is still no `gh` CLI
+   on her machine. The GitHub web UI (`/upload/main`) remains a fallback.
+   Note that commits made through the web UI create a history unrelated to any
+   local one; if both have been used, `git rebase` will try to replay every
+   commit and conflict. Reset to `origin/main` and reapply the file instead.
 3. **The CDN lies for a few minutes.** After a commit, `raw.githubusercontent.com`
    and the live site keep serving the old file. Do not conclude the deploy
    failed. Verify against the API instead, which is never stale:
@@ -103,13 +106,24 @@ custom checkout.
 
 **Never put a Stripe secret key in this repository.**
 
-Three live links are wired into `index.html`:
+Four live links are wired into `index.html`, in two cards:
 
-| Button | Product | Price |
-| --- | --- | --- |
-| Join the mail club | Month-to-Month | $18.99 / month, recurring |
-| Give 6 months | 6-Month Bundle | $101.94 one-time ($16.99 a letter) |
-| Give 12 months | 12-Month Bundle | $191.88 one-time ($15.99 a letter) |
+| Card | Button | Product | Price |
+| --- | --- | --- | --- |
+| One at a time | Keep them coming | Month-to-Month | $18.99 / month, recurring |
+| One at a time | Try a single letter | Zuzu's Letter | $18.99 one-time |
+| All at once | Six months | 6-Month Bundle | $97.99 one-time ($16.33 a letter) |
+| All at once | Twelve months | 12-Month Bundle | $179.99 one-time ($15.00 a letter) |
+
+The cards split on **whether it renews**, not on who it is for. An earlier
+version split "for yourself" versus "a gift" and that was wrong — any of the
+four works as a gift, and the old labels turned gift-buyers away. A line under
+both cards now says so explicitly.
+
+**Stripe prices cannot be edited.** To change an amount you create a new price,
+build a new payment link on it, and deactivate the old link. The bundles were
+repriced this way on 18 August 2026; the superseded $101.94 and $191.88 links
+are deactivated, not deleted.
 
 All three collect the buyer's **name and shipping address** — these are physical
 goods sent by post, and Stripe defaults to billing address only, which does not
