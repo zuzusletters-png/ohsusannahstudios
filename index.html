@@ -194,6 +194,15 @@
   .plan .price{font-family:var(--humanist);font-size:var(--step-1);color:var(--plum);letter-spacing:.02em;}
   .plan p{color:var(--ink-soft);font-size:1.05rem;}
   .plan .btn{align-self:flex-start;margin-top:.4rem;}
+  .plan .gift-options{
+    display:flex;flex-direction:column;align-items:flex-start;
+    gap:.7rem;margin-top:.4rem;
+  }
+  .plan .gift-options .btn{margin-top:0;}
+  .plan .gift-note{
+    font-family:var(--humanist);font-size:var(--step--1);
+    color:var(--ink-faint);letter-spacing:.04em;
+  }
 
   /* ---- footer ---- */
   footer{border-top:1px solid var(--rule);padding:3rem 1.5rem;text-align:center;
@@ -370,18 +379,22 @@
     <div class="plans">
       <div class="plan">
         <h3>The mail club</h3>
-        <p class="price">$00 / month</p>
+        <p class="price">$18.99 / month</p>
         <p>One letter and one original watercolor print, every month, for as long as you like. Pause or stop whenever you wish.</p>
         <a class="btn btn-solid" href="#">Join the mail club</a>
       </div>
       <div class="plan">
         <h3>A gift of letters</h3>
-        <p class="price">$00 once</p>
+        <p class="price">from $101.94 once</p>
         <p>Letters and prints sent to someone you love, paid once. They&rsquo;ll think of you every time the envelope arrives.</p>
-        <a class="btn btn-ghost" href="#">Give letters</a>
+        <div class="gift-options">
+          <a class="btn btn-ghost" href="#">Give 6 months &mdash; $101.94</a>
+          <a class="btn btn-ghost" href="#">Give 12 months &mdash; $191.88</a>
+        </div>
+        <p class="gift-note">$16.99 a letter for six months &middot; $15.99 a letter for twelve.</p>
       </div>
     </div>
-    <p class="note">Prices and buttons are placeholders &mdash; these connect to your Stripe checkout once you create the links.</p>
+    <p class="note">The buttons are not connected yet &mdash; checkout is being set up.</p>
   </section>
 
   <footer>
