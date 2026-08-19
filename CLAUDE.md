@@ -1,11 +1,58 @@
 # Zuzu's Letters — project guide
 
-Context for anyone (human or Claude) picking up this site. Read this before
-editing `index.html`.
+**Start here, and read the whole file before editing anything.** This is the
+durable record for the project. Almost everything in it was either learned the
+hard way or corrected by the owner once already, so it is cheaper to read than
+to rediscover.
 
-Public repository. Do not commit personal details, account identifiers,
-credentials, or private document links here. Owner-specific context lives in
-`CLAUDE.local.md`, which is deliberately not committed.
+## The five things that matter most
+
+1. **The owner is Susannah — she goes by "Zuzu."** She is not a developer and
+   has said plainly that she will not do technical steps. Do the technical work
+   yourself wherever a tool allows it; when something genuinely needs her, say
+   so honestly and give numbered steps that describe what she will see on
+   screen, never what a thing is called.
+2. **Ask her one question at a time.** She asked for this directly. A list of
+   questions stalls her; a single question gets answered well.
+3. **This repository is public.** Never commit personal details, account
+   identifiers, credentials, customer data, or private document links.
+4. **Three product facts are not negotiable:** the letters are never
+   "handwritten," the prints are "made from" her photographs, and a letter
+   arrives once a month. The full set is in *Accuracy rules* below.
+5. **The site is live and taking real money.** `index.html` is the shop. A
+   careless commit closes it.
+
+## If you are running in the cloud
+
+A cloud session can see this repository and nothing else. It **cannot**:
+
+- read the working copy on the owner’s own computer, where
+  `CLAUDE.local.md` sits beside these files holding account details and open
+  questions;
+- reach her Stripe, Namecheap, GitHub or Google accounts, or drive her browser;
+- see the private working folder kept outside this repo — mailing list,
+  production schedule.
+
+So a cloud session can edit files, write copy, fix markup and prepare changes.
+Anything that touches her accounts has to wait for a session on her own machine,
+or be handed to her as on-screen steps. Say which of the two it is rather than
+implying the work is done.
+
+## Where things live
+
+| Path | What it is |
+| --- | --- |
+| `index.html` | The entire website — one self-contained file, no build step |
+| `images/` | Photographs used by the page |
+| `CNAME` | The custom domain, exactly `ohsusannahstudios.com` |
+| `CLAUDE.md` | This file: the durable, public-safe project record |
+| `CLAUDE.local.md` | Owner context, accounts, open questions — gitignored, local only, never pushed |
+| `HANDOFF-PROMPT.md` | Superseded and gitignored. Historical only; its product wording contradicts this file |
+| A private folder outside the repo | Internal documents — mailing list, production schedule. Named in `CLAUDE.local.md`. Never belongs here |
+
+**Keep this file true.** When something here turns out to be wrong or goes
+stale, correct it in the same commit as the work. The *State of play* section at
+the bottom goes stale fastest.
 
 ---
 
@@ -160,12 +207,29 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 
 ---
 
-## Open items
+## State of play — 19 August 2026
 
-- A photograph of a real print is the single highest-value missing asset. The
-  page currently shows an empty placeholder box where it belongs, and another
-  for a photo of the owner with her horses.
-- Whether the studio ships outside the United States.
-- The script font used on her original Google Site, which she wants carried
-  over. Recommended for headings and the signature only, never body text.
-- Merging the About Zuzu section with a letter she intends to supply.
+**Working.** The site is live at `https://ohsusannahstudios.com`; HTTPS is
+issued and plain `http://` redirects to it. All four payment links are live. A
+real purchase went through with the shipping address captured correctly, and was
+refunded in full.
+
+**Outstanding**
+
+1. **The monthly subscription has never been tested end to end.** It is built
+   differently from the three one-time links, and it bills again next month.
+2. **The Namecheap shared hosting is still being paid for** and is no longer
+   needed now that HTTPS is confirmed. Settle the domain-email question in
+   `CLAUDE.local.md` first — her mail was historically tied to that hosting.
+3. **A photograph of the owner with her horses** is still an empty placeholder
+   box in the *About Zuzu* section. The print photograph is done.
+
+**Unanswered — ask at most one per turn, and only when it blocks the next step**
+
+- The script font from her old Google Site, which she wants carried over.
+  Recommended for headings and the signature only, never body text.
+- Whether she paints the watercolours herself. Until she confirms, the prints
+  are "made from" her photographs.
+- Whether the studio ships outside the United States. Currently US-only.
+- Merging the *About Zuzu* section with a letter she intends to supply.
+- Whether the single letter should be promoted as a "try one first" option.
