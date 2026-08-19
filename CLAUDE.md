@@ -214,13 +214,17 @@ issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
 
+The contact address in the footer, `hello@ohsusannahstudios.com`, is confirmed
+to reach the owner — she tested it. Leave it as it is.
+
 **Outstanding**
 
 1. **The monthly subscription has never been tested end to end.** It is built
    differently from the three one-time links, and it bills again next month.
 2. **The Namecheap shared hosting is still being paid for** and is no longer
-   needed now that HTTPS is confirmed. Settle the domain-email question in
-   `CLAUDE.local.md` first — her mail was historically tied to that hosting.
+   needed. Both blocks are now clear: HTTPS works, and the domain email is on
+   its own provider rather than tied to that hosting. Cancelling needs the
+   owner's account, so it has to be raised with her.
 3. **A photograph of the owner with her horses** is still an empty placeholder
    box in the *About Zuzu* section. The print photograph is done.
 
