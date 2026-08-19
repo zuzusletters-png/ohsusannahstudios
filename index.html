@@ -267,6 +267,9 @@
     max-width:56rem;margin-inline:auto;padding-inline:1.5rem;
     display:grid;gap:3rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));align-items:center;}
   .print-photo{margin:0;}
+  .print-pair{display:grid;gap:1.2rem;}
+  .print-pair .print-photo:nth-of-type(2){transform:rotate(-1.2deg);}
+  .pair-caption{margin:.4rem 0 0;font-family:var(--humanist);font-size:var(--step--1);color:var(--ink-faint);letter-spacing:.05em;line-height:1.6;text-align:center;}
   .print-photo img{
     display:block;width:100%;height:auto;border-radius:1px;
     box-shadow:0 18px 46px -20px var(--shadow-lift),0 1px 2px var(--shadow);
@@ -412,11 +415,17 @@
       <h2>A small piece of art, in its own right.</h2>
     </div>
     <div class="print-inner">
-      <figure class="print-photo">
-        <img src="images/print-draft-horses.jpg" width="1500" height="1114" loading="lazy"
-             alt="A gicl&eacute;e print of two draft horses in harness pulling a yellow wagon along a dirt road, wooded hills behind, printed on textured 100&percnt; cotton fiber paper.">
-        <figcaption>An actual print &mdash; 5&Prime; &times; 7&Prime; on 100&percnt; cotton fiber paper from the ARCHES&reg; traditional molds.</figcaption>
-      </figure>
+      <div class="print-pair">
+        <figure class="print-photo">
+          <img src="images/print-draft-horses.jpg" width="1500" height="1114" loading="lazy"
+               alt="A gicl&eacute;e print of two draft horses in harness pulling a yellow wagon along a dirt road, wooded hills behind, printed on textured 100&percnt; cotton fiber paper.">
+        </figure>
+        <figure class="print-photo">
+          <img src="images/print-mountain-road.jpg" width="1300" height="952" loading="lazy"
+               alt="A gicl&eacute;e print of a mountain road at sunrise, mist in the valley and sunlight through the trees, printed on textured 100&percnt; cotton fiber paper.">
+        </figure>
+        <p class="pair-caption">Two actual prints &mdash; each 5&Prime; &times; 7&Prime; on 100&percnt; cotton fiber paper from the ARCHES&reg; traditional molds.</p>
+      </div>
       <div>
         <p>Every letter arrives with an original gicl&eacute;e print, made from one of my own photographs &mdash; a place I&rsquo;ve been, something I saw that morning, a moment worth keeping.</p>
         <p style="margin-top:1.1rem;">Each one is printed on 100&percnt; cotton fiber paper produced from the ARCHES&reg; traditional molds that create beautiful texture, made to last for generations, and sized to fit a frame you already own.</p>
