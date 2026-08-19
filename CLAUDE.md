@@ -103,6 +103,7 @@ misrepresents her product.
 | **One letter per month.** | Not twice monthly. |
 | Business is Oh Susannah Studios; product is Zuzu's Letters. | They are not interchangeable. |
 | **In the sign-off, "Peace and Love" takes a capital L.** | Deliberate, not a typo. Do not correct it, and do not let a tidy-up pass change it. |
+| **Only genuine prints may be shown or captioned as prints.** | As of 19 August 2026 the real ones photographed are the **draft horses**, the **creek reflection** (autumn trees in water) and **Lovely Rita's eye**. The mountain road, donkey, grazing horse and troll pictures are **test prints on photo paper** — usable as artwork, never captioned as the 5x7 on ARCHES stock. A caption claiming otherwise went live once and had to be corrected. |
 
 ---
 
