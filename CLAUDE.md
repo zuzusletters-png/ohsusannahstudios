@@ -75,9 +75,16 @@ the bottom goes stale fastest.
   paper itself, use the required wording in the accuracy table below. The two
   are consistent: Aquarelle Rag is the product name; the required sentence
   describes how it is made.
-- An inspirational quote on a card that doubles as a bookmark
-- Two postcards — one to keep, one pre-stamped to pass on to a friend
-- A few surprises
+- **A bookmark for the month** — a detail lifted from the same photograph as the
+  print, dated on the back. She prints these herself on cardstock; the giclée is
+  the only piece from the art printer, at $4.80 each. **Never call the bookmark
+  a giclée or mention ARCHES paper in the same breath** — that wording belongs
+  to the 5x7 only.
+- Two postcards — **the month's quote is printed on them**; one to keep, one
+  pre-stamped to pass on to a friend. The quote moved here from a separate card
+  on 19 August 2026, so it should not appear twice in one envelope.
+- A few surprises — deliberately unnamed. Stickers and pressed flowers go here
+  rather than in the list, so nothing becomes a promise she must keep monthly.
 - A Spotify playlist QR code
 - Access to a private Facebook group
 
@@ -95,6 +102,7 @@ misrepresents her product.
 | **Describe the paper in exactly these words:** *"printed on 100% cotton fiber paper produced from the ARCHES® traditional molds that create beautiful texture."* | The owner supplied this phrasing verbatim and asked for it exactly. Treat it as required brand wording — do not paraphrase, shorten, or "improve" it. Keep the ® symbol. Earlier copy said "ARCHES 100% cotton fine art paper," which was wrong. |
 | **One letter per month.** | Not twice monthly. |
 | Business is Oh Susannah Studios; product is Zuzu's Letters. | They are not interchangeable. |
+| **In the sign-off, "Peace and Love" takes a capital L.** | Deliberate, not a typo. Do not correct it, and do not let a tidy-up pass change it. |
 
 ---
 
@@ -111,9 +119,13 @@ Approved and liked by the owner. **Improve it; do not restart it.**
 - **Body text is deliberately large.** The readership is mature women and
   comfortable reading was a stated priority. The owner confirmed the sizing is
   right. **Do not shrink it.**
-- **Structure:** the page opens as a letter — her real salutation "Hello Dearest
-  Friend," in her own words, signed. Then the enclosure list, the print section,
-  About Zuzu, and the plans.
+- **Structure:** the page opens as a letter — the standing salutation *"Hello
+  Dear Friend,"* in her own words, signed. Then the enclosure list, a full
+  **sample letter** anyone can read before buying, the print section, About
+  Zuzu with her photograph, and the plans.
+- **The first-person voice is deliberate.** The whole page is written as Zuzu
+  speaking directly to the reader. Keep it. Never add explanations about who is
+  writing or how the letters are made — the owner has ruled on this.
 
 ---
 
@@ -233,12 +245,9 @@ to reach the owner — she tested it. Leave it as it is.
 
 1. **The monthly subscription has never been tested end to end.** It is built
    differently from the three one-time links, and it bills again next month.
-2. **The Namecheap shared hosting is still being paid for** and is no longer
-   needed. Both blocks are now clear: HTTPS works, and the domain email is on
-   its own provider rather than tied to that hosting. Cancelling needs the
-   owner's account, so it has to be raised with her.
-3. **A photograph of the owner with her horses** is still an empty placeholder
-   box in the *About Zuzu* section. The print photograph is done.
+   This is the only untested part of the shop.
+2. **The zuzusletters.com forwarding is unfinished** — she owns the name and it
+   renews itself, but it still leads nowhere. Deferred by her on 19 August.
 
 **Unanswered — ask at most one per turn, and only when it blocks the next step**
 
