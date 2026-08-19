@@ -4,3 +4,5 @@ CLAUDE.local.md
 # Never commit customer data - the repo is public
 *.csv
 mailing-list*
+schedule.html
+# Internal working documents belong in C:\Users\ukule\zuzu-private, not here
