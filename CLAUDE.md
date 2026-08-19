@@ -141,11 +141,23 @@ Approved and liked by the owner. **Improve it; do not restart it.**
    Note that commits made through the web UI create a history unrelated to any
    local one; if both have been used, `git rebase` will try to replay every
    commit and conflict. Reset to `origin/main` and reapply the file instead.
-3. **The CDN lies for a few minutes.** After a commit, `raw.githubusercontent.com`
-   and the live site keep serving the old file. Do not conclude the deploy
-   failed. Verify against the API instead, which is never stale:
-   `curl -s "https://api.github.com/repos/zuzusletters-png/ohsusannahstudios/contents/index.html?ref=main" | grep '"size"'`
-   and compare with `wc -c index.html`.
+3. **Everything downstream of a push lags for a few minutes.** The live site,
+   `raw.githubusercontent.com` **and the `contents` API** all keep serving the
+   old file. Do not conclude the push failed — on 19 August 2026 the `contents`
+   API still reported the previous file size several minutes after a push that
+   had definitely landed. An earlier version of this note called that API
+   authoritative; it is not.
+
+   Check the ref and the object instead, both of which are exact:
+
+   ```
+   git ls-remote origin main            # remote branch tip
+   git rev-parse HEAD:index.html        # local object id for the file
+   ```
+
+   If the remote tip equals your local `HEAD`, the push landed. To confirm a
+   specific file, compare the object id above with the `sha` for that path in
+   `https://api.github.com/repos/zuzusletters-png/ohsusannahstudios/git/trees/main`.
 4. **Changing nameservers can move email.** Before touching DNS on any domain,
    check for MX records first. See `CLAUDE.local.md`.
 
