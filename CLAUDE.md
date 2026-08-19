@@ -131,7 +131,25 @@ build a new payment link on it, and deactivate the old link. The bundles were
 repriced this way on 18 August 2026; the superseded $101.94 and $191.88 links
 are deactivated, not deleted.
 
-All three collect the buyer's **name and shipping address** — these are physical
+### Statement descriptors — the gotcha that bit us
+
+All four read **`Zuzus Letters`** on card statements. No apostrophe: Stripe
+rejects `< > \ ' " *` and caps descriptors at 22 characters.
+
+Setting `statement_descriptor` on the **Product** only works for
+**subscriptions and invoices**. One-time payments ignore it completely — a live
+test purchase came through reading `O.S. STUDIOS`, the account default, despite
+the product being set correctly. For one-time payments the value must go on the
+**payment link** as `payment_intent_data.statement_descriptor`.
+
+So: the monthly is covered by the product setting; the single letter and both
+bundles are covered on their payment links. If you ever rebuild a one-time link,
+set it again — it does not inherit.
+
+Do **not** fix this by changing the account-level descriptor. The account also
+sells mugs and totes, and those buyers should not see "Zuzus Letters."
+
+All four collect the buyer's **name and shipping address** — these are physical
 goods sent by post, and Stripe defaults to billing address only, which does not
 give the owner somewhere to mail to. If you ever recreate a link, set
 **"Billing and shipping addresses,"** not the default.
