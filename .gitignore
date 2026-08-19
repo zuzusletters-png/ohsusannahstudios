@@ -1,2 +1,6 @@
 HANDOFF-PROMPT.md
 CLAUDE.local.md
+
+# Never commit customer data - the repo is public
+*.csv
+mailing-list*
