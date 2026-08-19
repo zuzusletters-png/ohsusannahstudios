@@ -21,10 +21,12 @@ credentials, or private document links here. Owner-specific context lives in
 ### What arrives in each envelope
 
 - The letter — her own stories, travels, reflections
-- An original **giclée print** made from one of her own photographs, acid-free,
-  archival, 5" x 7", ready to frame. Call it a giclée print, never a
-  "watercolour" — the owner asked for this explicitly. For the paper itself,
-  use the required wording in the accuracy table below.
+- An original **giclée print** made from one of her own photographs, 5" x 7",
+  ready to frame, on **Aquarelle Rag Paper**, 0.61 mm thick. Call it a giclée
+  print, never a "watercolour" — the owner asked for this explicitly. For the
+  paper itself, use the required wording in the accuracy table below. The two
+  are consistent: Aquarelle Rag is the product name; the required sentence
+  describes how it is made.
 - An inspirational quote on a card that doubles as a bookmark
 - Two postcards — one to keep, one pre-stamped to pass on to a friend
 - A few surprises
