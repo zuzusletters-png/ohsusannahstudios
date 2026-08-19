@@ -208,6 +208,18 @@
     text-align:center;font-style:italic;color:var(--ink-soft);
     font-size:1.05rem;line-height:1.6;
   }
+  .timing{
+    max-width:34rem;margin:3rem auto 0;
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:2px;
+    padding:1.8rem 1.9rem;display:flex;flex-direction:column;gap:.7rem;
+    box-shadow:0 8px 28px -20px var(--shadow-lift);
+  }
+  .timing-head{
+    font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.15em;
+    text-transform:uppercase;color:var(--ink-faint);
+  }
+  .timing p:not(.timing-head){color:var(--ink-soft);font-size:1.08rem;line-height:1.65;}
+  .timing .by{color:var(--plum);font-style:italic;}
 
   /* ---- footer ---- */
   footer{border-top:1px solid var(--rule);padding:3rem 1.5rem;text-align:center;
@@ -405,6 +417,12 @@
       </div>
     </div>
     <p class="gift-line">Any of these can be a gift &mdash; just enter their address at checkout and it goes straight to them.</p>
+
+    <div class="timing">
+      <p class="timing-head">When your first letter arrives</p>
+      <p>Letters are posted to reach you before the end of each month.</p>
+      <p><span class="by">Order by the 15th</span> and this month&rsquo;s letter is yours. Order after the 15th and you&rsquo;ll begin with next month&rsquo;s &mdash; no letter goes missing either way.</p>
+    </div>
   </section>
 
   <footer>
