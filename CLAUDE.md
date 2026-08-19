@@ -22,7 +22,8 @@ credentials, or private document links here. Owner-specific context lives in
 
 - The letter — her own stories, travels, reflections
 - An original **giclée print** made from one of her own photographs, 5" x 7",
-  ready to frame, on **Aquarelle Rag Paper**, 0.61 mm thick. Call it a giclée
+  ready to frame, on **ARCHES® Aquarelle Rag Paper**, 0.61 mm thick, acid-free
+  and pH-neutral. Call it a giclée
   print, never a "watercolour" — the owner asked for this explicitly. For the
   paper itself, use the required wording in the accuracy table below. The two
   are consistent: Aquarelle Rag is the product name; the required sentence
