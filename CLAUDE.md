@@ -40,6 +40,7 @@ misrepresents her product.
 | --- | --- |
 | **Never write "handwritten" or "written by hand."** | The letters are composed by hand but **computer-printed in a script font**. |
 | **Prints are "made from" her photographs.** | Do **not** claim she paints each one by hand — that is unconfirmed. |
+| **Describe the paper in exactly these words:** *"printed on 100% cotton fiber paper produced from the ARCHES® traditional molds that create beautiful texture."* | The owner supplied this phrasing verbatim and asked for it exactly. Treat it as required brand wording — do not paraphrase, shorten, or "improve" it. Keep the ® symbol. Earlier copy said "ARCHES 100% cotton fine art paper," which was wrong. |
 | **One letter per month.** | Not twice monthly. |
 | Business is Oh Susannah Studios; product is Zuzu's Letters. | They are not interchangeable. |
 
