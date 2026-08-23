@@ -103,7 +103,7 @@ misrepresents her product.
 | **One letter per month.** | Not twice monthly. |
 | Business is Oh Susannah Studios; product is Zuzu's Letters. | They are not interchangeable. |
 | **In the sign-off, "Peace and Love" takes a capital L.** | Deliberate, not a typo. Do not correct it, and do not let a tidy-up pass change it. |
-| **Only genuine prints may be shown or captioned as prints.** | As of 19 August 2026 the real ones photographed are the **draft horses**, the **creek reflection** (autumn trees in water) and **Lovely Rita's eye**. The mountain road, donkey, grazing horse and troll pictures are **test prints on photo paper** — usable as artwork, never captioned as the 5x7 on ARCHES stock. A caption claiming otherwise went live once and had to be corrected. |
+| **Only genuine prints may be shown or captioned as prints.** | As of 23 August 2026 the real ones photographed are **Bob &amp; Too Big** (the draft horses and yellow wagon), **The Garden Shed** (rust-red roof, flags), **House in Walland** (soft golden light), the **creek reflection** (autumn trees in water) and **Lovely Rita's eye**. The prints have titles and the owner gave these three herself — use them exactly. **Bob and Too Big are not her horses** — corrected by her on 23 August after a session assumed they were. Her own horses are **Hairy Harry** and **Lovely Rita**. Do not assume an animal in a photograph belongs to her. The Garden Shed and House in Walland came from her by email on 23 August, both on ARCHES stock. The mountain road, donkey, grazing horse and troll pictures are **test prints on photo paper** — usable as artwork, never captioned as the 5x7 on ARCHES stock. A caption claiming otherwise went live once and had to be corrected. |
 
 ---
 
@@ -238,6 +238,26 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
+
+**The desk photograph now holds the owner's real letter (23 August 2026).**
+The picture at the top of *What arrives* was a generated scene whose letter and
+print were invented; its fake letter had a warped fold, a blurred print and a
+smear of leftover blur beside it, and each repair only went so far. She
+photographed the real thing — her letter, the envelope, the quote card, the
+postcard, the O.S. Studios sticker — on black cloth, and those items were cut
+out and placed on the same cottage desk, lit and shadowed to match the room.
+The Garden Shed print was warped into the photograph in place of the archway
+print she had to hand, because the real Garden Shed is 8x12 and too big to sit
+in the arrangement. **Nothing invented remains in that photograph except the
+room itself.** Her originals and every intermediate step are in the working
+folder named in `CLAUDE.local.md`.
+
+**The print section shows three prints (23 August 2026).** The creek reflection
+was taken off the page at the owner's request and replaced by two new
+photographs of prints on ARCHES stock — The Garden Shed and House in Walland. Each print is now titled on the page.
+All three on the page are now landscape, which settles the old mismatch between
+a landscape and a portrait stacked together. The creek reflection image file is
+still in `images/` but nothing references it.
 
 **The playlist entry now explains the Spotify account (23 August 2026).** A
 reader without an account tried the QR code and hit a login wall, so *A playlist*

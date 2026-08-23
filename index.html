@@ -161,10 +161,17 @@
   }
   @media (min-width:38rem){
     .encl li{grid-template-columns:13rem 1fr;align-items:baseline;}
+    /* a row whose description is a picture has no first line to sit level with */
+    .encl li.with-picture{align-items:start;}
   }
   .encl li:last-child{border-bottom:1px solid var(--rule);}
   .encl .item{font-size:var(--step-1);font-style:italic;color:var(--pen);line-height:1.35;}
   .encl .desc{color:var(--ink-soft);font-size:1.05rem;}
+  .encl .card-shot{
+    display:block;width:100%;max-width:19rem;height:auto;margin-top:.2rem;
+    border:1px solid var(--rule);border-radius:2px;
+    box-shadow:0 10px 26px -16px var(--shadow-lift),0 1px 2px var(--shadow);
+  }
   .encl-head{
     font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.15em;
     text-transform:uppercase;color:var(--ink-faint);margin:3.5rem 0 .8rem;
@@ -278,6 +285,30 @@
     margin-top:1rem;font-family:var(--humanist);font-size:var(--step--1);
     color:var(--ink-faint);letter-spacing:.05em;line-height:1.6;text-align:center;
   }
+  /* ---- studio sign-off : logo beside Otter ---- */
+  .studio-mark{padding:4rem 0 3.5rem;}
+  .studio-inner{
+    max-width:56rem;margin-inline:auto;padding-inline:1.5rem;
+    display:grid;gap:2.5rem;grid-template-columns:1fr;
+    align-items:center;justify-items:center;
+  }
+  /* side by side and matched in height; stacked and full width on a phone */
+  @media (min-width:44rem){
+    .studio-inner{grid-template-columns:auto auto;justify-content:center;}
+    .studio-logo{width:auto;height:16rem;max-width:100%;}
+    .otter-photo{max-width:none;}
+    .otter-photo img{width:auto;height:16rem;}
+  }
+  .studio-logo{display:block;width:100%;max-width:22rem;height:auto;}
+  .otter-photo{margin:0;max-width:20rem;}
+  .otter-photo img{
+    display:block;width:100%;height:auto;border-radius:2px;
+    box-shadow:0 14px 34px -18px var(--shadow-lift),0 1px 2px var(--shadow);
+  }
+  .otter-photo figcaption{
+    margin-top:.9rem;font-family:var(--humanist);font-size:var(--step--1);
+    color:var(--ink-faint);letter-spacing:.05em;text-align:center;
+  }
   .desk-photo{margin:0 auto 3rem;max-width:44rem;padding-inline:1.5rem;}
   .desk-photo img{display:block;width:100%;height:auto;border-radius:2px;box-shadow:0 18px 46px -20px var(--shadow-lift),0 1px 2px var(--shadow);}
   .desk-photo figcaption{margin-top:1rem;font-family:var(--humanist);font-size:var(--step--1);color:var(--ink-faint);letter-spacing:.05em;text-align:center;}
@@ -335,9 +366,9 @@
       <h2>One envelope holding rather a lot.</h2>
     </div>
     <figure class="desk-photo">
-      <img src="images/letter-on-desk.jpg" width="1400" height="1400" loading="lazy"
-           alt="A letter and an original print laid out on a wooden writing desk beside a fountain pen and sprigs of lavender.">
-      <figcaption>A sneak peek at some of what is inside &mdash; the letter, and the month&rsquo;s print.</figcaption>
+      <img src="images/letter-on-desk.jpg" width="1400" height="930" loading="lazy"
+           alt="A letter and an original print of a garden shed laid out on a wooden writing desk beside a fountain pen and sprigs of lavender.">
+      <figcaption>A sneak peek at some of what is inside.</figcaption>
     </figure>
     <div class="encl">
       <p class="encl-head">In the envelope</p>
@@ -361,6 +392,13 @@
         <li>
           <span class="item">A few surprises</span>
           <span class="desc">I won&rsquo;t spoil them.</span>
+        </li>
+        <li class="with-picture">
+          <span class="item">A QR code card</span>
+          <span class="desc">
+            <img class="card-shot" src="images/playlist-card.png" width="1100" height="1666" loading="lazy"
+                 alt="A small card reading &ldquo;Scan to listen &mdash; Zuzu&rsquo;s Letters in New York&rdquo;, with the O.S. Studios logo sitting over the code, and three directions for opening the playlist.">
+          </span>
         </li>
       </ul>
 
@@ -416,14 +454,21 @@
     <div class="print-inner">
       <div class="print-pair">
         <figure class="print-photo">
-          <img src="images/print-draft-horses.jpg" width="1500" height="1114" loading="lazy"
-               alt="A gicl&eacute;e print of two draft horses in harness pulling a yellow wagon along a dirt road, wooded hills behind, printed on textured 100&percnt; cotton fiber paper.">
+          <img src="images/print-garden-shed.jpg" width="1500" height="1067" loading="lazy"
+               alt="A gicl&eacute;e print of an old garden shed with a rust-red tin roof, ivy climbing the boards and small flags among the pots, printed on textured 100&percnt; cotton fiber paper.">
+          <figcaption>The Garden Shed</figcaption>
         </figure>
         <figure class="print-photo">
-          <img src="images/print-creek-reflection-upright.jpg" width="938" height="1300" loading="lazy"
-               alt="A gicl&eacute;e print of autumn trees reflected in a creek, orange and gold against blue water, printed on textured 100&percnt; cotton fiber paper.">
+          <img src="images/print-house-in-walland.jpg" width="1500" height="1098" loading="lazy"
+               alt="A gicl&eacute;e print of a house half hidden among trees, its roof rising through the branches in soft golden light, printed on textured 100&percnt; cotton fiber paper.">
+          <figcaption>House in Walland</figcaption>
         </figure>
-        <p class="pair-caption">Two actual prints &mdash; each 5&Prime; &times; 7&Prime; on 100&percnt; cotton fiber paper produced from the ARCHES&reg; traditional molds.</p>
+        <figure class="print-photo">
+          <img src="images/print-draft-horses.jpg" width="1500" height="1114" loading="lazy"
+               alt="A gicl&eacute;e print of two draft horses in harness pulling a yellow wagon along a dirt road, wooded hills behind, printed on textured 100&percnt; cotton fiber paper.">
+          <figcaption>Bob &amp; Too Big</figcaption>
+        </figure>
+        <p class="pair-caption">Three actual prints &mdash; each 5&Prime; &times; 7&Prime; on 100&percnt; cotton fiber paper produced from the ARCHES&reg; traditional molds.</p>
       </div>
       <div>
         <p>Every letter arrives with an original gicl&eacute;e print, made from one of my own photographs &mdash; a place I&rsquo;ve been, something I saw that morning, a moment worth keeping.</p>
@@ -494,6 +539,18 @@
       <p>Letters are posted to reach you before the end of each month.</p>
       <p><span class="by">Order by the 15th</span> and this month&rsquo;s letter is yours. Order after the 15th and you&rsquo;ll begin with next month&rsquo;s &mdash; no letter goes missing either way.</p>
       <p class="timing-dec"><span class="by">December is the exception.</span> Order through the 20th and the December letter still goes out to you &mdash; though with the Christmas post being what it is, I can&rsquo;t promise it lands before the day itself.</p>
+    </div>
+  </section>
+
+  <section class="studio-mark" id="studio">
+    <div class="studio-inner">
+      <img class="studio-logo" src="images/os-studios-logo.png" width="900" height="695" loading="lazy"
+           alt="The O.S. Studios mark &mdash; a curly-haired dog in spectacles sitting at a typewriter, an envelope to one side and a steaming cup to the other, its tag reading &ldquo;weird is good&rdquo;.">
+      <figure class="otter-photo">
+        <img src="images/otter-and-his-otter.jpg" width="1160" height="960" loading="lazy"
+             alt="Otter, a black and white curly-coated dog, dozing with his chin resting on a small plush otter.">
+        <figcaption>Otter, with his otter.</figcaption>
+      </figure>
     </div>
   </section>
 
