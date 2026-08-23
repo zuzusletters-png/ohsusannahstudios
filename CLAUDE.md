@@ -232,12 +232,20 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 
 ---
 
-## State of play — 19 August 2026
+## State of play — 23 August 2026
 
 **Working.** The site is live at `https://ohsusannahstudios.com`; HTTPS is
 issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
+
+**The playlist entry now explains the Spotify account (23 August 2026).** A
+reader without an account tried the QR code and hit a login wall, so *A playlist*
+in **And beyond the envelope** now says the free account is enough, that the
+code leads to Spotify's sign-up page when you don't have one, and that scanning
+again afterwards opens the playlist. The behaviour is as the owner's tester
+reported it, not something verified here. The printed cards that carry the code
+say the same thing; they are produced outside this repository.
 
 The contact address in the footer, `hello@ohsusannahstudios.com`, is confirmed
 to reach the owner — she tested it. Leave it as it is.
