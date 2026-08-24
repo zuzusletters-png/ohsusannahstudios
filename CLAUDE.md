@@ -243,8 +243,8 @@ refunded in full.
 a cottage scene of her own choosing — table, teacup, daisies, stove — and asked
 for it as-is. It supersedes everything described in the paragraph below. Note it
 is a generated scene, not a photograph of her actual enclosures, so **do not
-caption it as a photograph of what arrives**; the present caption, "A sneak peek
-at some of what is inside," is deliberately loose. Her genuine photographs of the
+caption it as a photograph of what arrives**; the present caption, "A sneak peek of what
+might arrive in your letter," is deliberately loose. Her genuine photographs of the
 real enclosures are kept in the working folder named in `CLAUDE.local.md` and can
 be swapped back in at any time.
 
