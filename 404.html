@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found &middot; Zuzu's Letters</title>
+<meta name="description" content="That page could not be found. Return to Zuzu's Letters, a letter experience sent by post once a month.">
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --paper:#EFEDE4;
+    --paper-raised:#F7F5EE;
+    --ink:#2C3446;
+    --ink-soft:#5B6478;
+    --ink-faint:#8A9182;
+    --pen:#3E5177;
+    --rule:#D3D0C2;
+    --shadow-lift:rgba(44,52,70,.16);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --humanist:Optima,Candara,"Gill Sans MT","Gill Sans","Trebuchet MS",sans-serif;
+    --step--1:.86rem;
+    --step-1:1.42rem;
+    --step-3:2.3rem;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#1B1F28;
+      --paper-raised:#242935;
+      --ink:#E7E4DA;
+      --ink-soft:#A9B0C0;
+      --ink-faint:#7E8878;
+      --pen:#9BB0D8;
+      --rule:#39404F;
+      --shadow-lift:rgba(0,0,0,.55);
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--serif);font-size:1.19rem;line-height:1.7;
+    -webkit-text-size-adjust:100%;
+    display:flex;align-items:center;justify-content:center;min-height:100vh;
+  }
+  .wrap{max-width:34rem;padding:2rem 1.5rem 4rem;text-align:center;}
+  .mark{font-style:italic;font-size:var(--step-1);}
+  .mark a{color:inherit;text-decoration:none;}
+  .mark a:hover{text-decoration:underline;}
+  .sub{font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.06em;
+       text-transform:uppercase;color:var(--ink-faint);margin:2.5rem 0 0;}
+  h1{font-size:var(--step-3);font-style:italic;font-weight:400;margin:.6rem 0 1.2rem;line-height:1.2;}
+  p{margin:0 0 1.1rem;color:var(--ink-soft);}
+  a{color:var(--pen);}
+  .back{display:inline-block;margin-top:1.6rem;font-family:var(--humanist);
+        font-size:var(--step--1);letter-spacing:.06em;text-transform:uppercase;}
+  footer{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--rule);
+         font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.05em;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mark"><a href="/">Zuzu&rsquo;s Letters</a></div>
+
+  <p class="sub">Page not found</p>
+  <h1>This one went astray in the post.</h1>
+
+  <p>The page you were looking for isn&rsquo;t here &mdash; it may have moved, or the
+  address may have picked up a typo along the way.</p>
+
+  <p>Everything is one step away.</p>
+
+  <a class="back" href="/">&larr; Back to the letters</a>
+
+  <footer>
+    <p>Zuzu&rsquo;s Letters &middot; A small venture of Oh Susannah Studios</p>
+  </footer>
+
+</div>
+</body>
+</html>
