@@ -239,7 +239,16 @@ issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
 
-**The desk photograph now holds the owner's real letter (23 August 2026).**
+**The desk photograph was replaced again on 24 August 2026.** The owner supplied
+a cottage scene of her own choosing — table, teacup, daisies, stove — and asked
+for it as-is. It supersedes everything described in the paragraph below. Note it
+is a generated scene, not a photograph of her actual enclosures, so **do not
+caption it as a photograph of what arrives**; the present caption, "A sneak peek
+at some of what is inside," is deliberately loose. Her genuine photographs of the
+real enclosures are kept in the working folder named in `CLAUDE.local.md` and can
+be swapped back in at any time.
+
+**The desk photograph held the owner's real letter (23 August 2026, superseded).**
 The picture at the top of *What arrives* was a generated scene whose letter and
 print were invented; its fake letter had a warped fold, a blurred print and a
 smear of leftover blur beside it, and each repair only went so far. She
