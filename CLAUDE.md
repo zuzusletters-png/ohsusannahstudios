@@ -246,13 +246,19 @@ issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
 
-**The quote credit and the closing background, 24 August 2026.** The excerpt now
+**The quote credit and the background wash, 24 August 2026.** The excerpt now
 reads *From letter #1 · September 2026* — her wording, replacing a specific date
-that would have gone stale. The closing block (the O.S. Studios mark, Otter's
-photograph and the footer) no longer paints a paper veil over the fixed painting,
-so on a wide screen the background sits at the same strength there as it does
-behind the masthead at the top, which is what she asked for. The plans section
-keeps its backing deliberately — that is the shop.
+that would have gone stale.
+
+On the wash: the fixed painting is always at full strength; what varies is how
+much paper each section lays over it. She asked first for the closing block (the
+O.S. Studios mark, Otter's photograph, the footer) to match the uncovered top of
+the page, saw it live and **did not like it** — the small faint footer lines sat
+on the fence and leaves. That was reverted the same day. What she wanted instead
+was **more of the painting showing behind the plans**, so `#subscribe` dropped
+from 82% paper to 64%, the same as the sample letter. It is safe there because
+the plan cards and the timing panel carry their own solid backing; only the
+ground behind them thins. **Do not strip the paper off the footer again.**
 
 **Dark mode was removed everywhere on 24 August 2026.** The owner reported the
 site turning dark at night on her phone but never on her computer — her phone

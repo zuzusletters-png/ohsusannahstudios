@@ -132,14 +132,13 @@
   @media (min-width:64rem){
     body::before{opacity:1;}
     .band{background:color-mix(in srgb, var(--paper-deep) 88%, transparent);}
-    section:not(.band):not(.print-band):not(.studio-mark){background:color-mix(in srgb, var(--paper) 82%, transparent);}
-    /* the sample letter lets more of the painting through */
-    #sample{background:color-mix(in srgb, var(--paper) 64%, transparent);}
+    section:not(.band):not(.print-band){background:color-mix(in srgb, var(--paper) 82%, transparent);}
+    /* the sample letter and the plans let more of the painting through — their
+       cards and panels are solid, so only the ground behind them thins out */
+    #sample, #subscribe{background:color-mix(in srgb, var(--paper) 64%, transparent);}
     /* the prints get a nearly solid ground so nothing competes with them */
     .print-band{background:color-mix(in srgb, var(--paper) 97%, transparent);}
-    /* the closing pages carry no paper backing, so the painting comes through
-       there exactly as strongly as it does behind the masthead at the top */
-    .studio-mark, footer{background:transparent;}
+    footer{background:color-mix(in srgb, var(--paper) 88%, transparent);}
   }
   @media (prefers-reduced-motion:reduce){ body::before{background-attachment:scroll;} }
 
