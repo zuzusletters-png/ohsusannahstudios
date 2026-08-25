@@ -114,7 +114,14 @@ Approved and liked by the owner. **Improve it; do not restart it.**
 - **Single self-contained HTML file.** No frameworks, no build step, no external
   requests, no CDN links. Everything inline.
 - **Palette:** oat paper `#EFEDE4`, ink navy `#2C3446`, pen blue `#3E5177`,
-  moss `#6E7F63`, dusty plum `#8B6478`. A full dark-theme token set is defined.
+  moss `#6E7F63`, dusty plum `#8B6478`. **There is no dark theme, deliberately.**
+  Every page used to carry a `prefers-color-scheme:dark` palette, so the site
+  turned dark by itself on any phone set to switch appearance at sunset. The owner
+  did not want that and it was removed on 24 August 2026, together with the unused
+  `[data-theme="dark"]` block that nothing ever set. Each page now declares
+  `<meta name="color-scheme" content="light only">`, which also stops Chrome on
+  Android force-darkening the page. **Do not reintroduce a dark palette** unless
+  she asks for one.
 - **Type:** Iowan Old Style / Palatino serif for reading; Optima / Candara
   humanist for small labels.
 - **Body text is deliberately large.** The readership is mature women and
@@ -232,12 +239,18 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 
 ---
 
-## State of play — 23 August 2026
+## State of play — 24 August 2026
 
 **Working.** The site is live at `https://ohsusannahstudios.com`; HTTPS is
 issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
+
+**Dark mode was removed everywhere on 24 August 2026.** The owner reported the
+site turning dark at night on her phone but never on her computer — her phone
+switches appearance at sunset and her computer is set to stay light. The cause was
+the site's own dark palette, not the phone force-darkening it. All three pages now
+show the light design to every visitor, always. See *Design* above.
 
 **The desk photograph was replaced again on 24 August 2026.** The owner supplied
 a cottage scene of her own choosing — table, teacup, daisies, stove — and asked
