@@ -246,6 +246,14 @@ issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
 
+**The quote credit and the closing background, 24 August 2026.** The excerpt now
+reads *From letter #1 · September 2026* — her wording, replacing a specific date
+that would have gone stale. The closing block (the O.S. Studios mark, Otter's
+photograph and the footer) no longer paints a paper veil over the fixed painting,
+so on a wide screen the background sits at the same strength there as it does
+behind the masthead at the top, which is what she asked for. The plans section
+keeps its backing deliberately — that is the shop.
+
 **Dark mode was removed everywhere on 24 August 2026.** The owner reported the
 site turning dark at night on her phone but never on her computer — her phone
 switches appearance at sunset and her computer is set to stay light. The cause was

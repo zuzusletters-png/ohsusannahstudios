@@ -132,12 +132,14 @@
   @media (min-width:64rem){
     body::before{opacity:1;}
     .band{background:color-mix(in srgb, var(--paper-deep) 88%, transparent);}
-    section:not(.band):not(.print-band){background:color-mix(in srgb, var(--paper) 82%, transparent);}
+    section:not(.band):not(.print-band):not(.studio-mark){background:color-mix(in srgb, var(--paper) 82%, transparent);}
     /* the sample letter lets more of the painting through */
     #sample{background:color-mix(in srgb, var(--paper) 64%, transparent);}
     /* the prints get a nearly solid ground so nothing competes with them */
     .print-band{background:color-mix(in srgb, var(--paper) 97%, transparent);}
-    footer{background:color-mix(in srgb, var(--paper) 88%, transparent);}
+    /* the closing pages carry no paper backing, so the painting comes through
+       there exactly as strongly as it does behind the masthead at the top */
+    .studio-mark, footer{background:transparent;}
   }
   @media (prefers-reduced-motion:reduce){ body::before{background-attachment:scroll;} }
 
@@ -435,7 +437,7 @@
   <section>
     <figure class="excerpt">
       <blockquote>I knew we were not going to make it home without getting soaked, so I just laughed and strolled the rest of the way home. All the while thinking what a picture we must have been &mdash; a woman and her dog strolling through the rain.</blockquote>
-      <figcaption>From Letter No. 1 &middot; Monday, 30 August</figcaption>
+      <figcaption>From letter #1 &middot; September 2026</figcaption>
     </figure>
   </section>
 
