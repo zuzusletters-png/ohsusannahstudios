@@ -277,6 +277,15 @@ issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
 
+**The masthead nav stopped running off the side of a phone, 25 August 2026.**
+`.masthead nav` was a flex row with no `flex-wrap`, so the five links could not
+wrap and pushed about 5px past the right edge at 375px, letting the whole page
+slide sideways. It now wraps (`flex-wrap:wrap;gap:.7rem 1.6rem`) and the links
+carry `white-space:nowrap` so a label never breaks in the middle of its own
+name. Checked at 320, 360, 375 and 414px: `scrollWidth` equals `clientWidth` at
+all four, and the nav settles into two tidy rows (three at 320px). Predates the
+wash work; it was only noticed while checking that.
+
 **The painting now sits behind every page, on every screen, 25 August 2026.**
 It used to be on the front page only, and only on screens wider than 64rem, so
 phones never saw it at all. She asked for it everywhere. Two changes:

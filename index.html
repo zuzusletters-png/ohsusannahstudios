@@ -71,8 +71,10 @@
   .masthead .mark{display:block;line-height:1.2;}
   .masthead .mark .presents{display:block;font-size:var(--step--1);letter-spacing:.03em;color:var(--ink-soft);}
   .masthead .mark .title{display:block;font-size:var(--step-3);letter-spacing:.01em;}
-  .masthead nav{display:flex;gap:1.6rem;font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.06em;text-transform:uppercase;}
-  .masthead nav a{color:var(--ink-soft);text-decoration:none;}
+  /* the nav wraps onto a second line rather than running off the side of a
+     phone, and each label stays whole rather than breaking mid-name */
+  .masthead nav{display:flex;flex-wrap:wrap;gap:.7rem 1.6rem;font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.06em;text-transform:uppercase;}
+  .masthead nav a{color:var(--ink-soft);text-decoration:none;white-space:nowrap;}
   .masthead nav a:hover{color:var(--pen);text-decoration:underline;}
 
   /* ---- the letter (hero) ---- */
