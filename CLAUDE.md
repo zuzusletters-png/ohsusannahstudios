@@ -263,7 +263,8 @@ ground behind them thins. **Do not strip the paper off the footer again.**
 **About Zuzu was rewritten from the third paragraph on, 25 August 2026.** She
 supplied the replacement wording herself and it is now three paragraphs where
 there were two. The "It is loss that sent me..." paragraph gained the herd
-lines and a heart emoji (written as `&#10084;&#65039;`, the file is otherwise
+lines and a purple heart emoji (written as `&#128156;`, chosen to match the dusty
+plum in the palette; the file is otherwise
 ASCII with named entities). A new paragraph after it tells the real origin
 story — three years of the idea, fear and excuses, spinal fusion surgery two
 months ago, and the decision to use the recovery time. The closing paragraph
