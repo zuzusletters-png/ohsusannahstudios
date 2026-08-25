@@ -260,6 +260,11 @@ from 82% paper to 64%, the same as the sample letter. It is safe there because
 the plan cards and the timing panel carry their own solid backing; only the
 ground behind them thins. **Do not strip the paper off the footer again.**
 
+**A line came out of About Zuzu, 24 August 2026.** "When people ask if I miss
+performing, I can honestly say no." was removed at her request. The paragraph now
+ends on her real purpose. The love-and-kindness paragraph after it is untouched
+and she checked that specifically — leave it alone.
+
 **Search wording added, 24 August 2026.** She asked for **snail mail**, **letter
 club** and **letter subscription service** to appear on the site for search. They
 now sit in the page title, the description search engines show, and one line in
