@@ -260,6 +260,16 @@ from 82% paper to 64%, the same as the sample letter. It is safe there because
 the plan cards and the timing panel carry their own solid backing; only the
 ground behind them thins. **Do not strip the paper off the footer again.**
 
+**Search wording added, 24 August 2026.** She asked for **snail mail**, **letter
+club** and **letter subscription service** to appear on the site for search. They
+now sit in the page title, the description search engines show, and one line in
+her own voice under *One envelope holding rather a lot*: "Some people call it
+snail mail. Some call it a letter club, or a letter subscription service. I call
+it writing to a friend." `details.html` carries the service phrase in its
+description too. **This does not reopen the masthead line she removed** — the
+objection there was defining the product against someone else's, not the words
+themselves. Keep all three phrasings positive.
+
 **Dark mode was removed everywhere on 24 August 2026.** The owner reported the
 site turning dark at night on her phone but never on her computer — her phone
 switches appearance at sunset and her computer is set to stay light. The cause was
