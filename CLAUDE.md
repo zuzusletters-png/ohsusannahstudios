@@ -260,10 +260,22 @@ from 82% paper to 64%, the same as the sample letter. It is safe there because
 the plan cards and the timing panel carry their own solid backing; only the
 ground behind them thins. **Do not strip the paper off the footer again.**
 
-**A line came out of About Zuzu, 24 August 2026.** "When people ask if I miss
-performing, I can honestly say no." was removed at her request. The paragraph now
-ends on her real purpose. The love-and-kindness paragraph after it is untouched
-and she checked that specifically — leave it alone.
+**About Zuzu was rewritten from the third paragraph on, 25 August 2026.** She
+supplied the replacement wording herself and it is now three paragraphs where
+there were two. The "It is loss that sent me..." paragraph gained the herd
+lines and a smiling-face emoji (written as `&#128522;`, the file is otherwise
+ASCII with named entities). A new paragraph after it tells the real origin
+story — three years of the idea, fear and excuses, spinal fusion surgery two
+months ago, and the decision to use the recovery time. The closing paragraph
+now reads "connection, positivity, love and kindness." **This is her own text,
+sent verbatim — do not tighten, shorten or "improve" it.** Only the punctuation
+was normalised to match the rest of the file (curly apostrophes, an ellipsis, an
+em dash for the hyphen after "ring true"). Supersedes the note below.
+
+**A line came out of About Zuzu, 24 August 2026 (partly superseded).** "When
+people ask if I miss performing, I can honestly say no." was removed at her
+request. The love-and-kindness paragraph it left standing has since been
+replaced by her own rewrite above.
 
 **Search wording added, 24 August 2026.** She asked for **snail mail**, **letter
 club** and **letter subscription service** to appear on the site for search. They
