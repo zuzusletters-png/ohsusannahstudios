@@ -277,6 +277,31 @@ issued and plain `http://` redirects to it. All four payment links are live. A
 real purchase went through with the shipping address captured correctly, and was
 refunded in full.
 
+**The painting now sits behind every page, on every screen, 25 August 2026.**
+It used to be on the front page only, and only on screens wider than 64rem, so
+phones never saw it at all. She asked for it everywhere. Two changes:
+
+- `index.html` — the `@media (min-width:64rem)` gate around the wash was
+  removed. The paper strengths that lie over it are unchanged (82% for ordinary
+  sections, 64% for the sample letter and the plans, 97% behind the prints, 88%
+  for the footer), so **the computer view looks exactly as she approved it**;
+  what is new is that a phone now sees the same thing. The masthead and the
+  opening letter are still uncovered, so the painting is at full strength there.
+- `blog.html`, `details.html`, `404.html` — the wash was added to all three.
+  These pages have no sections, just one centred `.wrap`, so the wrap itself
+  now carries the paper at 88% (90% on `404.html`) with a soft shadow. It reads
+  as a sheet of paper laid on the painting: on a computer the painting shows at
+  full strength either side of the column, and on a phone the sheet fills the
+  width and the painting tints it. `404.html` uses **`/images/wash.jpg`, an
+  absolute path, on purpose** — that page is served for any address that does
+  not exist, including deep ones like `/a/b/c`, where a relative path would look
+  for the image in a folder that is not there.
+
+Note while you are in that CSS: the `.band` rule inside the old media query was
+dead. `.band{background:var(--paper-deep);}` sits later in the file at the same
+specificity and has always won, so bands have always been solid. That is what
+she has seen and approved, so it was left alone; the dead rule was dropped.
+
 **The quote credit and the background wash, 24 August 2026.** The excerpt now
 reads *From letter #1 · September 2026* — her wording, replacing a specific date
 that would have gone stale.

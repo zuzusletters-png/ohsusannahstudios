@@ -120,26 +120,24 @@
 
   /* ---- generic section ---- */
   section{padding:4.5rem 0;}
-  /* ---- watercolour wash in the wide margins ----
-     A softened painting sits behind the page. The reading columns keep an
-     almost-solid paper backing so the text never has to compete with it, and
-     it only appears once the screen is wide enough to have space going spare. */
+  /* ---- watercolour wash behind the page ----
+     A softened painting sits behind everything, at full strength, on every
+     screen size — phone as well as computer. The reading sections lay paper
+     over it at the strengths below, so the text never has to compete with it;
+     the masthead and the opening letter are left uncovered. It used to be
+     hidden below 64rem, so phones never saw it; the owner asked for it on
+     every version of the site on 25 August 2026. */
   body::before{
     content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
     background:url("images/wash.jpg") center/cover no-repeat;
-    opacity:0;
   }
-  @media (min-width:64rem){
-    body::before{opacity:1;}
-    .band{background:color-mix(in srgb, var(--paper-deep) 88%, transparent);}
-    section:not(.band):not(.print-band){background:color-mix(in srgb, var(--paper) 82%, transparent);}
-    /* the sample letter and the plans let more of the painting through — their
-       cards and panels are solid, so only the ground behind them thins out */
-    #sample, #subscribe{background:color-mix(in srgb, var(--paper) 64%, transparent);}
-    /* the prints get a nearly solid ground so nothing competes with them */
-    .print-band{background:color-mix(in srgb, var(--paper) 97%, transparent);}
-    footer{background:color-mix(in srgb, var(--paper) 88%, transparent);}
-  }
+  section:not(.band):not(.print-band){background:color-mix(in srgb, var(--paper) 82%, transparent);}
+  /* the sample letter and the plans let more of the painting through — their
+     cards and panels are solid, so only the ground behind them thins out */
+  #sample, #subscribe{background:color-mix(in srgb, var(--paper) 64%, transparent);}
+  /* the prints get a nearly solid ground so nothing competes with them */
+  .print-band{background:color-mix(in srgb, var(--paper) 97%, transparent);}
+  footer{background:color-mix(in srgb, var(--paper) 88%, transparent);}
   @media (prefers-reduced-motion:reduce){ body::before{background-attachment:scroll;} }
 
   .band{background:var(--paper-deep);}
