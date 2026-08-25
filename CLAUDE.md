@@ -261,6 +261,15 @@ settled on **"Hello Dear Friend,"** as the standing salutation, replacing the
 "Dearest Friend," of her earlier letters. Note this applies to *her* prose — the
 site's own furniture copy, written for her, still uses `&mdash;` throughout.
 
+**Name the product, do not talk around it (25 August 2026).** A draft social
+caption read "these are the sorts of stories I am putting in the post now" and
+she corrected it to "**these are the sorts of stories I am sending in Zuzu's
+Letters.**" In captions and anywhere she is speaking about what she sends, use
+the name. The coy phrasing was a writing tic, not her preference. This belongs
+in the `my-writing-style` skill, but that skill could not be re-saved from the
+session where the correction happened, so it is recorded here instead — fold it
+in if a future session has the tool for it.
+
 
 
 **Working.** The site is live at `https://ohsusannahstudios.com`; HTTPS is
