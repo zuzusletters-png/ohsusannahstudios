@@ -42,7 +42,8 @@ implying the work is done.
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The entire website — one self-contained file, no build step |
+| `index.html` | The shop — one self-contained file, no build step |
+| `blog.html` | The blog, *Notes between letters*. One page, newest post at the top. Self-contained, modelled on `details.html`, no custom fonts |
 | `images/` | Photographs used by the page |
 | `CNAME` | The custom domain, exactly `ohsusannahstudios.com` |
 | `CLAUDE.md` | This file: the durable, public-safe project record |
@@ -239,7 +240,28 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 
 ---
 
-## State of play — 24 August 2026
+## State of play — 25 August 2026
+
+**The blog was added on 25 August 2026.** `blog.html` — *Notes between letters* —
+is a single page with the newest post at the top, reached from the masthead nav
+("The Blog") and from the footer. It is modelled on `details.html`: the same
+tokens and type, self-contained, and deliberately **without** the two base64
+fonts that make `index.html` 166 KB. To add a post, copy the
+`<article class="post">` block and paste it directly under the HTML comment that
+says so; the newest post goes first. The first post is *Hard days do not have to
+be harder*, her own writing.
+
+**Her writing voice is now captured in a `my-writing-style` skill.** Built from
+her own letters and personal essays. The findings that matter when drafting
+anything in her voice: **she does not use em-dashes** — a plain hyphen does that
+work (`ready- ready to talk`); she **rarely uses contractions** ("I am", "it is",
+"do not"), which is what makes her prose sound like a letter; and her
+**exclamation points are deliberate** and should not be trimmed. She has also
+settled on **"Hello Dear Friend,"** as the standing salutation, replacing the
+"Dearest Friend," of her earlier letters. Note this applies to *her* prose — the
+site's own furniture copy, written for her, still uses `&mdash;` throughout.
+
+
 
 **Working.** The site is live at `https://ohsusannahstudios.com`; HTTPS is
 issued and plain `http://` redirects to it. All four payment links are live. A
