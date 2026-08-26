@@ -87,7 +87,11 @@ the bottom goes stale fastest.
 - A few surprises — deliberately unnamed. Stickers and pressed flowers go here
   rather than in the list, so nothing becomes a promise she must keep monthly.
 - A Spotify playlist QR code
-- Access to a private Facebook group
+- Access to a private Facebook group, **The Porch at Zuzu's Letters**, created
+  26 August 2026. Private, subscribers only, and named on the page as *The Porch*.
+  The page does not link to it and does not say how a new subscriber gets in, because
+  that has not been settled with her. Do not invent a mechanism. Account details are
+  in `CLAUDE.local.md`; the group's address does not belong in this public file.
 
 ---
 
