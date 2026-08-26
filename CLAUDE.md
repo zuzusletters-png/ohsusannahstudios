@@ -253,13 +253,27 @@ be harder*, her own writing.
 
 **Her writing voice is now captured in a `my-writing-style` skill.** Built from
 her own letters and personal essays. The findings that matter when drafting
-anything in her voice: **she does not use em-dashes** — a plain hyphen does that
-work (`ready- ready to talk`); she **rarely uses contractions** ("I am", "it is",
+anything in her voice: **she does not use em-dashes** — see the ellipsis rule
+below for what does that work; she **rarely uses contractions** ("I am", "it is",
 "do not"), which is what makes her prose sound like a letter; and her
 **exclamation points are deliberate** and should not be trimmed. She has also
 settled on **"Hello Dear Friend,"** as the standing salutation, replacing the
 "Dearest Friend," of her earlier letters. Note this applies to *her* prose — the
 site's own furniture copy, written for her, still uses `&mdash;` throughout.
+
+**The ellipsis is her dash. Use `&hellip;`, never a hyphen and never an em dash
+(26 August 2026).** She asked directly whether she uses `...` where a dash would go,
+and her own writing bears her out: three ellipses do that job — `wins the
+race&hellip;just like snail mail`, `turn on some music&hellip; Enjoy this moment`,
+and `I will never do it&hellip;What is the saying` — against a single hyphen-as-dash,
+`ready- ready to talk`, in the blog post. **She asked for that hyphen to be changed
+and for `...` to be the rule from now on**, and it was, the same day. Note the
+spacing habit: **no space before it**, and usually none after either. This applies to
+her prose only; the em dashes in the site's furniture copy were left alone and are a
+separate question she has not been asked. **The `my-writing-style` skill still
+records the hyphen as the habit and does not know about this preference** — it could
+not be re-saved from the session where she said it, so fold this in if a future
+session has the tool.
 
 **Name the product, do not talk around it (25 August 2026).** A draft social
 caption read "these are the sorts of stories I am putting in the post now" and
