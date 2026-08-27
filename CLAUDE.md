@@ -244,7 +244,72 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 
 ---
 
-## State of play — 25 August 2026
+## State of play — 27 August 2026
+
+**A new section, *The stories*, was added on 27 August 2026.** It sits between the
+excerpt quote and the print band, as `<section class="band" id="stories">`, and its
+job is to make the *content* of the letters interesting rather than to describe the
+product again. The owner supplied the raw material as a list of things she has done,
+and asked for something composed from it.
+
+It is **four paragraphs of her own prose, deliberately not a bulleted list of
+credits.** Her voice profile records that she never uses bullets in prose, and a
+résumé would have sold her rather than the letters. The paragraphs group the material
+into stages, horses, and backstage, and the fourth turns it toward the envelope: *"A
+rainy walk home with my dog Otter is every bit as likely to turn up in your mailbox as
+a Lipizzaner stallion."* That last paragraph is the one doing the selling; keep it if
+the section is ever edited.
+
+Voice rules were applied throughout: **no em dashes, `&hellip;` where a dash would go,
+full forms rather than contractions, and her exclamation points left in.** The section
+is `.stories`, 40rem, matching the excerpt above it. It is **not** in the masthead nav
+— neither is the sample letter, and the nav already wraps to two rows on a phone.
+
+**"The stage," never "a stage" (27 August 2026).** She corrected this twice and asked
+that it be learned as a general rule rather than patched in one line: people who
+perform say *the* stage. Back to the stage, time spent off the stage, a life on the
+stage. "A stage" is right only for one physical platform among several. The same holds
+for the rest of the vocabulary she uses from inside the business — *the wings*, *the
+talent* — so **when she corrects a term from her own trade, apply it everywhere, not
+only where she pointed.**
+
+**Three judgement calls in that copy were put to her on 27 August 2026, and she
+settled all three:**
+
+- **Queen Guinevere and King Arthur&rsquo;s Tournament are two different things.** A
+  first draft merged them, assuming Guinevere was a role in that show. It is not.
+  They are now two separate sentences, and **the Guinevere line carries no venue**
+  because she has not said where it was. Do not attach one.
+- **The Little Mermaid line reads "at Walt Disney World when it was Disney-MGM
+  Studios,"** which is her own wording, chosen after the anachronism was pointed out
+  to her (the park was not called Hollywood Studios when the original show opened).
+  Leave it as she wrote it.
+- Her phrasing doubled back on itself: *"one of the largest ... that was once one of
+  the largest programs in the country."* A draft cut it to a single claim and she
+  approved that, then **put the past tense back herself** on 27 August: *"Years later
+  I built, what was once, one of the largest equine assisted activities and therapies
+  programs for veterans and first responders in the country."* **The "what was once"
+  is deliberate and it is a matter of accuracy** — she has confirmed the program is no
+  longer that large. Do not tidy it away as redundancy, and leave her commas around it;
+  they are the rhythm of the sentence spoken aloud.
+
+**The lede under the heading is hers, word for word (27 August 2026):** *"People ask
+what I could possibly find to write about every month. Well, you see, that has never
+been a problem&hellip;"* **It ends on the ellipsis, with nothing after it.** That is
+not an unfinished sentence; it is the trailing beat her voice profile describes, and
+it is doing the work the cut phrase used to do. Do not close it with a full stop or
+finish the thought for her.
+
+Two steers from how she got there, both useful when drafting for her. She reached for
+the **plainer, more ordinary word** over the more writerly one, changing "my trouble"
+to "a problem". And she **trimmed a phrase she had written herself** a few minutes
+earlier ("I can talk about anything!"), so do not treat her own wording as fixed once
+she has said it once. She edits herself hard, and usually by removing.
+
+**She gave notes across roughly a dozen small edits before approving it**, and the copy
+on the page is the result. **Every sentence in that section has now been through her
+hands** &mdash; treat it the way *About Zuzu* is treated and do not tighten, shorten or
+"improve" it.
 
 **The blog was added on 25 August 2026.** `blog.html` — *Notes between letters* —
 is a single page with the newest post at the top, reached from the masthead nav
