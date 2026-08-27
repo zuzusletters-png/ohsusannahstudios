@@ -499,3 +499,13 @@ to reach the owner — she tested it. Leave it as it is.
 - Whether the studio ships outside the United States. Currently US-only.
 - Merging the *About Zuzu* section with a letter she intends to supply.
 - Whether the single letter should be promoted as a "try one first" option.
+
+**"The last full time Queen Guinevere," corrected 27 August 2026.** The first version
+read *"the last Queen Guinevere&hellip;the very last one."* She came back and said there
+is a chance she was the last **full time** one but not the very last ever, and asked for
+the qualifier so the line is certainly true. **"The very last one" is gone and must not
+come back.** She weighed "one of the last" as a safer alternative and rejected it: the
+hook depends on the word *last*, and "full time" turns out to strengthen the line rather
+than hedge it, because a payroll word next to *Queen Guinevere* is both funnier and more
+convincing than the bare claim. **This is the second time in one day she has chosen the
+true sentence over the tidier one** — see the "true is better" note in `CLAUDE.local.md`.
