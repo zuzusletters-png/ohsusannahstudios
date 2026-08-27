@@ -515,5 +515,6 @@ for veterans, **first responders and their family members**, not the first two o
 The line now reads *"one of the largest equine assisted activities and therapies
 programs in the country for veterans, first responders and their families."* Note
 **"in the country" moved back in front of the list**: with three items after it, ending
-on "in the country" reads as though it modifies *families*. The program was called
-**Hooves for Heroes**.
+on "in the country" reads as though it modifies *families*. The program is called **Equest Hooves for Heroes**, shortened to **H4H** on the hat
+she wears in the last carousel photograph. She also changed "I built" to **"I began"**
+in that sentence, on the site and in every version of the post.
