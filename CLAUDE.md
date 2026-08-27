@@ -509,3 +509,11 @@ hook depends on the word *last*, and "full time" turns out to strengthen the lin
 than hedge it, because a payroll word next to *Queen Guinevere* is both funnier and more
 convincing than the bare claim. **This is the second time in one day she has chosen the
 true sentence over the tidier one** — see the "true is better" note in `CLAUDE.local.md`.
+
+**The equine program served families too, corrected 27 August 2026.** She said it was
+for veterans, **first responders and their family members**, not the first two only.
+The line now reads *"one of the largest equine assisted activities and therapies
+programs in the country for veterans, first responders and their families."* Note
+**"in the country" moved back in front of the list**: with three items after it, ending
+on "in the country" reads as though it modifies *families*. The program was called
+**Hooves for Heroes**.
