@@ -117,7 +117,11 @@ misrepresents her product.
 Approved and liked by the owner. **Improve it; do not restart it.**
 
 - **Single self-contained HTML file.** No frameworks, no build step, no external
-  requests, no CDN links. Everything inline.
+  requests, no CDN links. Everything inline. **One deliberate exception, added 3
+  September 2026:** the email signup posts to Kit, and `index.html` carries a
+  small inline script for it. It is not a mistake and it is not a dependency
+  &mdash; see *State of play* for why, and note the form still works with the
+  script removed.
 - **Palette:** oat paper `#EFEDE4`, ink navy `#2C3446`, pen blue `#3E5177`,
   moss `#6E7F63`, dusty plum `#8B6478`. **There is no dark theme, deliberately.**
   Every page used to carry a `prefers-color-scheme:dark` palette, so the site
@@ -241,6 +245,52 @@ give the owner somewhere to mail to. If you ever recreate a link, set
 Shipping is currently restricted to **United States addresses only**. This was a
 default chosen in the absence of an answer, on the grounds that a blocked
 overseas order is recoverable and an unfulfillable one is not. Revisit it.
+
+---
+
+## State of play — 3 September 2026
+
+**A mailing list was added on 3 September 2026, and it is the first thing on this
+site that talks to the outside world.** The reasoning: someone arriving from a
+Pinterest pin had exactly one thing they could do, which was pay $18.99 today.
+Anyone not ready left and was gone. There is now a way to keep them.
+
+- **The list lives at Kit** (formerly ConvertKit), account `oh-susannah-studios`,
+  signed in as `hello@ohsusannahstudios.com`. Free plan: 10,000 subscribers,
+  unlimited sending. Kit puts new accounts on a 14 day look at the paid plan and
+  nags about upgrading; **no card was ever given, so the account simply drops to
+  the free plan on its own.** Do not let anyone "fix" that by subscribing.
+- **The form is `Zuzus Letters site signup`, form id `9880277`, uid `2d644bef69`.**
+  Double opt in is on, so a new address gets a confirmation email and only counts
+  once they click it. After confirming, Kit sends them back to
+  `https://ohsusannahstudios.com` rather than to a Kit page.
+- **On the page it is `<section class="band" id="keep-in-touch">`**, sitting
+  **after `#subscribe` and before `#studio`**. That position is deliberate and
+  should not be moved earlier: the free option must come *after* the reader has
+  seen the plans, or it takes sales that would otherwise have happened.
+- **The visible form is ours, not Kit's.** A hand built HTML form in the site
+  palette and type, posting to `https://app.kit.com/forms/9880277/subscriptions`.
+  Kit's own JavaScript embed was deliberately not used: it arrives in Kit's
+  styling and would have been the site's first CDN dependency. **This does mean
+  `index.html` now carries its first `<script>` and its first request to another
+  domain** &mdash; a deliberate exception to the no-external-requests rule in
+  *Design*, and the only one. The script only submits the form in the background
+  so nobody is thrown off the page; **if it fails or never runs, the form is a
+  plain HTML form and still posts to Kit**, so the signup cannot be broken by it.
+- **The words are hers.** She wrote "or when something new is on its way,"
+  replacing a stiffer "and word when something new is on its way" &mdash; the
+  same instinct recorded on 27 August for the plainer, more ordinary phrasing.
+  Voice rules were applied: no contractions, `&hellip;` where a dash would go,
+  and the button reads **"Write to me"** rather than "Subscribe," which sounds
+  like a store. **The name Zuzu's Letters is deliberately kept out of this
+  section** &mdash; the free emails are not the product, and blurring the two
+  would break the accuracy rules above.
+
+**zuzusletters.com now forwards, checked 3 September 2026.** The old note calling
+this unfinished was stale. Both `zuzusletters.com` and `www`, over http and https,
+return a 301 to `https://ohsusannahstudios.com`. This matters more than it looks:
+**every Pinterest pin prints zuzusletters.com in its footer**, so all of that
+traffic lands correctly. See `CLAUDE.local.md` for which account controls it.
 
 ---
 
@@ -487,8 +537,9 @@ to reach the owner — she tested it. Leave it as it is.
 1. **The monthly subscription has never been tested end to end.** It is built
    differently from the three one-time links, and it bills again next month.
    This is the only untested part of the shop.
-2. **The zuzusletters.com forwarding is unfinished** — she owns the name and it
-   renews itself, but it still leads nowhere. Deferred by her on 19 August.
+2. **The monthly emails have not been written yet.** The list exists and the
+   signup box is live, but nobody has been written to. A list that never hears
+   from her is worse than no list at all.
 
 **Unanswered — ask at most one per turn, and only when it blocks the next step**
 

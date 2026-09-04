@@ -247,6 +247,36 @@
     border-top:1px solid var(--rule);padding-top:1rem;margin-top:.3rem;
   }
 
+  /* ---- the email signup ----
+     The one place on the site that talks to anything outside it: the form posts
+     to Kit, which holds the mailing list. Everything visible here is ours, so it
+     matches the page rather than arriving in a mailing-list company's styling. */
+  .signup{
+    max-width:var(--measure);margin-inline:auto;padding-inline:1.5rem;
+    display:flex;flex-direction:column;gap:.8rem;
+  }
+  .signup-label{
+    font-family:var(--humanist);font-size:1rem;letter-spacing:.03em;color:var(--ink-soft);
+  }
+  .signup-row{display:flex;flex-wrap:wrap;gap:.8rem;}
+  /* the row is hidden once someone has signed up, and the flex above would
+     otherwise win against the browser's own rule for [hidden] */
+  .signup-row[hidden]{display:none;}
+  .signup input[type="email"]{
+    flex:1 1 15rem;min-width:0;
+    font-family:var(--serif);font-size:var(--step-0);color:var(--ink);
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:2px;
+    padding:.8rem 1rem;
+  }
+  .signup input[type="email"]:focus-visible{outline:2.5px solid var(--pen);outline-offset:2px;}
+  .signup .btn{flex:0 0 auto;}
+  .signup .btn[disabled]{opacity:.55;cursor:default;}
+  .signup-note{
+    margin:0;color:var(--ink-soft);font-size:1.08rem;line-height:1.65;
+  }
+  .signup-note:empty{display:none;}
+  .signup-note.is-error{color:var(--plum);}
+
   /* ---- footer ---- */
   footer{border-top:1px solid var(--rule);padding:3rem 1.5rem;text-align:center;
     display:flex;flex-direction:column;gap:.7rem;}
@@ -562,6 +592,23 @@
     </div>
   </section>
 
+  <section class="band" id="keep-in-touch">
+    <div class="measure section-head">
+      <p class="eyebrow">By email</p>
+      <h2>Let me write to you first.</h2>
+      <p class="section-lede">Put your email address here and I will write to you now and then&hellip; a story I am working on, a photograph I cannot stop looking at, or when something new is on its way. It is free, and you may leave whenever you like.</p>
+    </div>
+    <form class="signup" id="signup-form" method="post"
+          action="https://app.kit.com/forms/9880277/subscriptions">
+      <label class="signup-label" for="signup-email">Your email address</label>
+      <div class="signup-row">
+        <input id="signup-email" type="email" name="email_address" required autocomplete="email">
+        <button class="btn btn-solid" type="submit">Write to me</button>
+      </div>
+      <p class="signup-note" role="status"></p>
+    </form>
+  </section>
+
   <section class="studio-mark" id="studio">
     <div class="studio-inner">
       <img class="studio-logo" src="images/os-studios-logo.png" width="900" height="695" loading="lazy"
@@ -585,5 +632,37 @@
   </footer>
 
 </div>
+
+<script>
+  /* The signup posts to Kit in the background so that nobody is thrown off the
+     page mid-visit. If this script never runs, or the request fails, the form is
+     an ordinary HTML form and still posts to Kit the plain way. */
+  (function(){
+    var form = document.getElementById('signup-form');
+    if(!form || !window.fetch){ return; }
+    var row = form.querySelector('.signup-row');
+    var note = form.querySelector('.signup-note');
+    var button = form.querySelector('button');
+    form.addEventListener('submit', function(event){
+      event.preventDefault();
+      button.disabled = true;
+      note.className = 'signup-note';
+      note.textContent = 'One moment\u2026';
+      fetch(form.action, {
+        method:'POST',
+        body:new FormData(form),
+        headers:{'Accept':'application/json'}
+      }).then(function(response){
+        if(!response.ok){ throw new Error(response.status); }
+        row.hidden = true;
+        note.textContent = 'Thank you! Now please look in your inbox for a note from me asking you to confirm. Click the link inside and you are on the list.';
+      }).catch(function(){
+        button.disabled = false;
+        note.className = 'signup-note is-error';
+        note.textContent = 'Something went wrong at my end. Please try again in a moment, or write to me at hello@ohsusannahstudios.com and I will add you myself.';
+      });
+    });
+  })();
+</script>
 </body>
 </html>
