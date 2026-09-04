@@ -641,6 +641,7 @@
     var form = document.getElementById('signup-form');
     if(!form || !window.fetch){ return; }
     var row = form.querySelector('.signup-row');
+    var label = form.querySelector('.signup-label');
     var note = form.querySelector('.signup-note');
     var button = form.querySelector('button');
     form.addEventListener('submit', function(event){
@@ -655,6 +656,7 @@
       }).then(function(response){
         if(!response.ok){ throw new Error(response.status); }
         row.hidden = true;
+        label.hidden = true;   /* the label would otherwise stand over the thank you */
         note.textContent = 'Thank you! Now please look in your inbox for a note from me asking you to confirm. Click the link inside and you are on the list.';
       }).catch(function(){
         button.disabled = false;
