@@ -281,7 +281,8 @@ Anyone not ready left and was gone. There is now a way to keep them.
   replacing a stiffer "and word when something new is on its way" &mdash; the
   same instinct recorded on 27 August for the plainer, more ordinary phrasing.
   Voice rules were applied: no contractions, `&hellip;` where a dash would go,
-  and the button reads **"Write to me"** rather than "Subscribe," which sounds
+  and the heading is hers ("Let&rsquo;s stay in touch", 3 September, replacing my "Let me
+  write to you first") and the button reads **"Write to me"** rather than "Subscribe," which sounds
   like a store. **The name Zuzu's Letters is deliberately kept out of this
   section** &mdash; the free emails are not the product, and blurring the two
   would break the accuracy rules above.
