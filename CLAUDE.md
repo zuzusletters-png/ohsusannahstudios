@@ -541,6 +541,10 @@ to reach the owner — she tested it. Leave it as it is.
 2. **The monthly emails have not been written yet.** The list exists and the
    signup box is live, but nobody has been written to. A list that never hears
    from her is worse than no list at all.
+3. **There is no return address yet, and the first letter posts at the end of
+   September 2026.** She is getting a PO box. It is needed on the envelopes, and
+   it also replaces the borrowed address at the foot of every Kit email. Details
+   and what she was told are in `CLAUDE.local.md`.
 
 **Unanswered — ask at most one per turn, and only when it blocks the next step**
 
