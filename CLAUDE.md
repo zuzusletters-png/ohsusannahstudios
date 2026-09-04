@@ -255,8 +255,8 @@ site that talks to the outside world.** The reasoning: someone arriving from a
 Pinterest pin had exactly one thing they could do, which was pay $18.99 today.
 Anyone not ready left and was gone. There is now a way to keep them.
 
-- **The list lives at Kit** (formerly ConvertKit), account `oh-susannah-studios`,
-  signed in as `hello@ohsusannahstudios.com`. Free plan: 10,000 subscribers,
+- **The list lives at Kit** (formerly ConvertKit). Account details are in
+  `CLAUDE.local.md`. Free plan: 10,000 subscribers,
   unlimited sending. Kit puts new accounts on a 14 day look at the paid plan and
   nags about upgrading; **no card was ever given, so the account simply drops to
   the free plan on its own.** Do not let anyone "fix" that by subscribing.

@@ -657,7 +657,7 @@
         if(!response.ok){ throw new Error(response.status); }
         row.hidden = true;
         label.hidden = true;   /* the label would otherwise stand over the thank you */
-        note.textContent = 'Thank you! Now please look in your inbox for a note from me asking you to confirm. Click the link inside and you are on the list.';
+        note.textContent = 'Yay, we are connected! Now please check your inbox for a note from me asking you to confirm. Click the link inside and you are on the list.';
       }).catch(function(){
         button.disabled = false;
         note.className = 'signup-note is-error';
