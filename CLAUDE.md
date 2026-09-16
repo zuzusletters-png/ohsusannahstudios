@@ -546,11 +546,11 @@ to reach the owner — she tested it. Leave it as it is.
 2. **The monthly emails have not been written yet.** The list exists and the
    signup box is live, but nobody has been written to. A list that never hears
    from her is worse than no list at all.
-3. **There is no return address yet, and the first letter posts at the end of
-   September 2026.** She is getting a PO box. It has **three** homes waiting for
-   it: the envelopes, the mailing address at the foot of every Kit email, and the
-   customer-facing **support address in Stripe**, which currently shows on
-   receipts. Details, and which Stripe field is which, are in `CLAUDE.local.md`.
+3. **The return address now exists (16 September 2026).** She has a mailbox, and
+   it is already in the mailing address at the foot of every Kit email and in the
+   customer-facing **support address in Stripe**, replacing what was there. The
+   one place left is the envelopes, which is hers. The address itself and which
+   Stripe field is which are in `CLAUDE.local.md`.
 
 **Unanswered — ask at most one per turn, and only when it blocks the next step**
 
