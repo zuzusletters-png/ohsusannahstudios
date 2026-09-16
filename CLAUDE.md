@@ -121,7 +121,12 @@ Approved and liked by the owner. **Improve it; do not restart it.**
   September 2026:** the email signup posts to Kit, and `index.html` carries a
   small inline script for it. It is not a mistake and it is not a dependency
   &mdash; see *State of play* for why, and note the form still works with the
-  script removed.
+  script removed. **A second `<script>` was added 16 September 2026, with her
+  approval:** a `type="application/ld+json"` block in the `<head>` of
+  `index.html`. It runs nothing and requests nothing; it is a label telling
+  search engines the site belongs to **Oh Susannah Studios** (also O.S. Studios)
+  and that Zuzu's Letters is its brand, because searching the studio name found
+  nothing. Keep it valid JSON, and do not add her home address to it.
 - **Palette:** oat paper `#EFEDE4`, ink navy `#2C3446`, pen blue `#3E5177`,
   moss `#6E7F63`, dusty plum `#8B6478`. **There is no dark theme, deliberately.**
   Every page used to carry a `prefers-color-scheme:dark` palette, so the site
