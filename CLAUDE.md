@@ -386,7 +386,10 @@ fonts that make `index.html` 166 KB. **Since 16 September 2026 `blog.html` and
 links to `/#letters`, `/#print`, `/#zuzu`, `blog.html`, `/#subscribe`). It was
 added because searching "Oh Susannah Studios" lands people on the details page,
 and its only ways back were the unassuming title and a link at the very bottom.
-Keep the menus in step if the home page nav changes. To add a post, copy the
+Keep the menus in step if the home page nav changes. The home page `<title>` was
+changed the same day, with her approval, to **"Zuzu's Letters by Oh Susannah
+Studios &middot; A monthly letter subscription service"** so Google favors the
+home page over the details page for the studio name. To add a post, copy the
 `<article class="post">` block and paste it directly under the HTML comment that
 says so; the newest post goes first. The first post is *Hard days do not have to
 be harder*, her own writing.
