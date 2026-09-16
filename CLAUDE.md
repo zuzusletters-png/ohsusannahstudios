@@ -242,15 +242,15 @@ set it again — it does not inherit.
 Do **not** fix this by changing the account-level descriptor. The account also
 sells mugs and totes, and those buyers should not see "Zuzus Letters."
 
-**The public business name is a different setting, and it was changed on
-purpose.** On 16 September 2026 the owner chose **"Zuzu's Letters at Oh Susannah
-Studios"** as the Stripe public business name, so receipts read "Receipt from
-Zuzu's Letters at Oh Susannah Studios" and checkout shows the same. She was told
-it is account-wide and that mug and tote buyers would see it too, and chose it
-anyway. It follows the accuracy rule: the product is named *at* the business,
-not in place of it. The statement descriptors above are unaffected (the account
-default is still `O.S. STUDIOS`). Receipts have no slot for the website, and the
-support address is stored but not printed; the support email and phone are.
+**The public business name must stay "Oh Susannah Studios."** Stripe labels it
+"Business name (Doing Business As)", and the owner can legally trade only as
+**Oh Susannah Studios** or **O.S. Studios** (her registered Florida fictitious
+names). On 16 September 2026 it was briefly set to "Zuzu's Letters at Oh Susannah
+Studios" and switched back the same day for exactly that reason. Do not put an
+unregistered name in it; Zuzu's Letters belongs in a receipt logo, not the business
+name, unless she registers it as a third fictitious name. Receipts have no slot for
+the website, and the support address is stored but not printed; the support email
+and phone are.
 
 All four collect the buyer's **name and shipping address** — these are physical
 goods sent by post, and Stripe defaults to billing address only, which does not
