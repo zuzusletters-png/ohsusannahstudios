@@ -381,7 +381,12 @@ hands** &mdash; treat it the way *About Zuzu* is treated and do not tighten, sho
 is a single page with the newest post at the top, reached from the masthead nav
 ("The Blog") and from the footer. It is modelled on `details.html`: the same
 tokens and type, self-contained, and deliberately **without** the two base64
-fonts that make `index.html` 166 KB. To add a post, copy the
+fonts that make `index.html` 166 KB. **Since 16 September 2026 `blog.html` and
+`details.html` carry the same five-link menu as the home page** (`nav.sitenav`,
+links to `/#letters`, `/#print`, `/#zuzu`, `blog.html`, `/#subscribe`). It was
+added because searching "Oh Susannah Studios" lands people on the details page,
+and its only ways back were the unassuming title and a link at the very bottom.
+Keep the menus in step if the home page nav changes. To add a post, copy the
 `<article class="post">` block and paste it directly under the HTML comment that
 says so; the newest post goes first. The first post is *Hard days do not have to
 be harder*, her own writing.
