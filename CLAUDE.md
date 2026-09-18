@@ -302,6 +302,12 @@ lessons learned, simple moments that make an ordinary day special. The second
 paragraph now points to the playlist: "(perhaps even the Spotify playlist included
 in your letter)". Her text; do not tighten it.
 
+**The Oxford comma, everywhere (18 September 2026, her request).** Every list of
+three or more takes a comma before the final "and" or "or": "music, horses,
+performing, and people." Applied across all four pages, image descriptions
+included, and it applies to her own protected sections too. Write new copy the
+same way.
+
 **About Zuzu now says surgery "three months ago"** (18 September 2026). She asked
 for it. It is a relative date, so it will drift again; offer to update it rather
 than letting it go stale.
