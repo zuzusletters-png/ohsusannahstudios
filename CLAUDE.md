@@ -286,7 +286,8 @@ furniture copy had drifted British. Now: **mail, not post** ("mailed," "in the
 mail," "sent by mail," "holiday mail" for "the Christmas post"), **canceling /
 canceled** with one l, "fill out" a form, "mailing address," "a one-time
 purchase" for "a one-off," "easier on the wallet" for "gentler on the purse,"
-"quite a lot" for "rather a lot," and the blog date as **August 25, 2026**. Write
+"quite a lot" for "rather a lot." **Dates are the exception: she wants day month
+year, always**, e.g. 25 August 2026, and said so the same day. Write
 new copy the same way. "That is rather the point of it" in *The stories* was left
 alone, because every sentence there has been through her hands.
 
