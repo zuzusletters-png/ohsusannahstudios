@@ -281,6 +281,19 @@ tagline. Nothing else in her wording changed. Her deliberate phrasings ("what
 was once," the fragment "Most of them not.", "Peace and Love") were left alone
 on purpose.
 
+**American wording across the site, 18 September 2026, at her request.** The
+furniture copy had drifted British. Now: **mail, not post** ("mailed," "in the
+mail," "sent by mail," "holiday mail" for "the Christmas post"), **canceling /
+canceled** with one l, "fill out" a form, "mailing address," "a one-time
+purchase" for "a one-off," "easier on the wallet" for "gentler on the purse,"
+"quite a lot" for "rather a lot," and the blog date as **August 25, 2026**. Write
+new copy the same way. "That is rather the point of it" in *The stories* was left
+alone, because every sentence there has been through her hands.
+
+**About Zuzu now says surgery "three months ago"** (18 September 2026). She asked
+for it. It is a relative date, so it will drift again; offer to update it rather
+than letting it go stale.
+
 ## State of play — 3 September 2026
 
 **A mailing list was added on 3 September 2026, and it is the first thing on this
