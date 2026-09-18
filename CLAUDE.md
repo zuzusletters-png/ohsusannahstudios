@@ -292,8 +292,9 @@ new copy the same way. "That is rather the point of it" in *The stories* was lef
 alone, because every sentence there has been through her hands.
 
 **The opening letter at the top of the page was rewritten by her, 18 September
-2026, word for word.** The first paragraph now opens "I am so happy you have found
-your way to Zuzu&rsquo;s Letters!" and says what the letters hold: wild adventures,
+2026, word for word.** The first paragraph now opens "Welcome in&hellip; into the world of Zuzu&rsquo;s
+Letters!" (settled after several passes the same day; the repeated "in" is a host
+at the door, because she wants the letters to feel immersive) and says what the letters hold: wild adventures,
 lessons learned, simple moments that make an ordinary day special. The second
 paragraph now points to the playlist: "(perhaps even the Spotify playlist included
 in your letter)". Her text; do not tighten it.
