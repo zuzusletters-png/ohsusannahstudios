@@ -86,6 +86,9 @@ the bottom goes stale fastest.
   on 19 August 2026, so it should not appear twice in one envelope.
 - A few surprises — deliberately unnamed. Stickers and pressed flowers go here
   rather than in the list, so nothing becomes a promise she must keep monthly.
+  **So does scent:** from 18 September 2026 she plans to spray fragrance on the
+  letter pages (sight, touch, sound and smell in one envelope). Keep it off the
+  site, and keep it off the giclée, since perfume can mark cotton paper.
 - A Spotify playlist QR code
 - Access to a private Facebook group, **The Porch at Zuzu's Letters**, created
   26 August 2026. Private, subscribers only, and named on the page as *The Porch*.
