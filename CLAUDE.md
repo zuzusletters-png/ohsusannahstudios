@@ -306,6 +306,13 @@ open: the pre-stamped friend postcard carries a US stamp, so it cannot be used
 abroad. **Announce nothing until checkout accepts overseas addresses**; every payment
 link is still US-only.
 
+**Her $2 matches what other letter clubs charge (checked 18 September 2026).**
+AnnMarie Henderson (a 5x7 print in each envelope) and artxnikki both add $2 a
+month for outside the US, "to cover international stamps and customs forms."
+Amanda Oleander ships worldwide free. They mail with stamps, without tracking, and
+say to allow 1 to 4 weeks, up to 6 for some countries. So the "arrives before the
+end of the month" promise will need its own wording for overseas subscribers.
+
 ## State of play — 3 September 2026
 
 **A mailing list was added on 3 September 2026, and it is the first thing on this
