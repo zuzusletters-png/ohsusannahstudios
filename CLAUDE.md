@@ -291,6 +291,13 @@ year, always**, e.g. 25 August 2026, and said so the same day. Write
 new copy the same way. "That is rather the point of it" in *The stories* was left
 alone, because every sentence there has been through her hands.
 
+**The opening letter at the top of the page was rewritten by her, 18 September
+2026, word for word.** The first paragraph now opens "I am so happy you have found
+your way to Zuzu&rsquo;s Letters!" and says what the letters hold: wild adventures,
+lessons learned, simple moments that make an ordinary day special. The second
+paragraph now points to the playlist: "(perhaps even the Spotify playlist included
+in your letter)". Her text; do not tighten it.
+
 **About Zuzu now says surgery "three months ago"** (18 September 2026). She asked
 for it. It is a relative date, so it will drift again; offer to update it rather
 than letting it go stale.
