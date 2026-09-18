@@ -278,8 +278,11 @@ little darker complected," "singing thing" without a hyphen, and "Thank You for
 the Music" capitalized. **She kept the complexion detail knowingly** (it was raised
 with her) and **all of these are letters she has written herself**. The same day,
 the Zuzu Bailey paragraph came out of *About Zuzu*, which now opens "I entered
-this world programmed…"; that line also appears in the sample letter, and she
-knows.
+this world programmed…"; that line also appears in the sample letter, so she
+chose (from two rendered options) to **set it as a quote**: `.about-quote`,
+italic, pen blue, a thin plum rule at its left, in curly quotation marks. "My
+mother told me I sang before I talked" came out of About Zuzu, since the letter
+tells it in full. The list of roles follows as ordinary text.
 
 **Grammar fixes she asked for, 18 September 2026.** On the home page: "It&rsquo;s
 **a** Wonderful Life" (lowercase a), and "George Bailey&rsquo;s youngest
