@@ -313,6 +313,11 @@ Amanda Oleander ships worldwide free. They mail with stamps, without tracking, a
 say to allow 1 to 4 weeks, up to 6 for some countries. So the "arrives before the
 end of the month" promise will need its own wording for overseas subscribers.
 
+**Her decisions, 18 September 2026:** international is **on hold until she has
+talked to her post office**. When it goes ahead, overseas subscribers get a note
+that **their postcards are not pre-stamped**. Word it by what they do get, per her
+standing steer to say what a thing is open to rather than what it leaves out.
+
 ## State of play — 3 September 2026
 
 **A mailing list was added on 3 September 2026, and it is the first thing on this
