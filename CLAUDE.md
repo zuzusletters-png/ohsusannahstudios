@@ -263,6 +263,24 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 
 ---
 
+## State of play — 18 September 2026
+
+**The sample letter stays as it is.** She wrote a longer version of her intro
+letter in her own words and asked to compare it with the one on the page. Much of
+it repeats *About Zuzu* almost word for word, and it brings back "when people ask
+if I miss performing, I can honestly say no," which she removed on 24 August.
+She decided to **leave the sample letter alone**. Do not swap it without asking.
+
+**Grammar fixes she asked for, 18 September 2026.** On the home page: "It&rsquo;s
+**a** Wonderful Life" (lowercase a), and "George Bailey&rsquo;s youngest
+daughter, who believed," because in the film **Zuzu** says the bell line, not
+George. Also "and **are** interdependent in the herd"; "I **had** spinal fusion
+surgery two months ago" (it said "have had"); her two excuses put in quotation
+marks; "**the** sound of the surf"; and the stray comma taken out of the footer
+tagline. Nothing else in her wording changed. Her deliberate phrasings ("what
+was once," the fragment "Most of them not.", "Peace and Love") were left alone
+on purpose.
+
 ## State of play — 3 September 2026
 
 **A mailing list was added on 3 September 2026, and it is the first thing on this
