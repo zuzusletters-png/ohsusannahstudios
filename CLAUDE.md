@@ -295,6 +295,17 @@ alone, because every sentence there has been through her hands.
 for it. It is a relative date, so it will drift again; offer to update it rather
 than letting it go stale.
 
+**Going international from October 2026: decided, not built (18 September 2026).**
+She wants to make a big deal of it. Her plan is **$2 more for addresses outside the
+US**. Two things were raised and are open: USPS says international letters and
+large envelopes may carry documents only, and goods go as First-Class Package
+International with a customs form, which costs far more. She points out that many
+letter services send prints in their letters, and **she is asking her post office**
+what one packed envelope costs to send abroad. The price waits on that answer. Also
+open: the pre-stamped friend postcard carries a US stamp, so it cannot be used
+abroad. **Announce nothing until checkout accepts overseas addresses**; every payment
+link is still US-only.
+
 ## State of play — 3 September 2026
 
 **A mailing list was added on 3 September 2026, and it is the first thing on this
