@@ -268,11 +268,18 @@ overseas order is recoverable and an unfulfillable one is not. Revisit it.
 
 ## State of play — 18 September 2026
 
-**The sample letter stays as it is.** She wrote a longer version of her intro
-letter in her own words and asked to compare it with the one on the page. Much of
-it repeats *About Zuzu* almost word for word, and it brings back "when people ask
-if I miss performing, I can honestly say no," which she removed on 24 August.
-She decided to **leave the sample letter alone**. Do not swap it without asking.
+**The sample letter was replaced with her own full version, later on 18 September
+2026.** Earlier that day she had decided to keep the old one; she then sent a
+revised letter of her own (the divorce and "miss performing" lines left out) and
+asked for it. It is her text word for word, with only these touches: the film
+title fixed and italicized, American comma placement inside the quote, the Oxford
+comma, her "…" in place of hyphens used as dashes, a comma before "who was a
+little darker complected," "singing thing" without a hyphen, and "Thank You for
+the Music" capitalized. **She kept the complexion detail knowingly** (it was raised
+with her) and **all of these are letters she has written herself**. The same day,
+the Zuzu Bailey paragraph came out of *About Zuzu*, which now opens "I entered
+this world programmed…"; that line also appears in the sample letter, and she
+knows.
 
 **Grammar fixes she asked for, 18 September 2026.** On the home page: "It&rsquo;s
 **a** Wonderful Life" (lowercase a), and "George Bailey&rsquo;s youngest
