@@ -82,9 +82,12 @@
   a{color:var(--pen);text-underline-offset:.22em;text-decoration-thickness:1px;}
   a:focus-visible,button:focus-visible{outline:2.5px solid var(--pen);outline-offset:3px;border-radius:2px;}
 
+  /* Section labels take the darker --ink-soft, not --ink-faint. She could not read
+     them at the pale value; --ink-faint is now reserved for photograph captions and
+     the footer, which are meant to stay quiet. */
   .eyebrow{
     font-family:var(--humanist);font-size:var(--step--1);
-    letter-spacing:.15em;text-transform:uppercase;color:var(--ink-faint);
+    letter-spacing:.15em;text-transform:uppercase;color:var(--ink-soft);
   }
 
   /* ---- masthead ---- */
@@ -199,7 +202,7 @@
   }
   .encl-head{
     font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.15em;
-    text-transform:uppercase;color:var(--ink-faint);margin:3.5rem 0 .8rem;
+    text-transform:uppercase;color:var(--ink-soft);margin:3.5rem 0 .8rem;
   }
   .encl-head:first-of-type{margin-top:0;}
 
@@ -258,9 +261,6 @@
     text-align:center;font-style:italic;color:var(--ink-soft);
     font-size:1.05rem;line-height:1.6;
   }
-  /* these two sit on the thinner paper ground of the plans, so they are darkened
-     a step to hold their own against the painting behind them */
-  #subscribe .eyebrow{color:var(--ink-soft);}
 
   /* ---- within the US / outside the US ----
      Both sets of prices sit in the markup side by side and the switch shows one
@@ -302,7 +302,7 @@
   }
   .timing-head{
     font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.15em;
-    text-transform:uppercase;color:var(--ink-faint);
+    text-transform:uppercase;color:var(--ink-soft);
   }
   .timing p:not(.timing-head){color:var(--ink-soft);font-size:1.08rem;line-height:1.65;}
   .timing .by{color:var(--plum);font-style:italic;}
@@ -415,7 +415,7 @@
     font-family:var(--humanist);font-size:1rem;
   }
   .specs li:last-child{border-bottom:1px solid var(--rule);}
-  .specs dt,.specs .k{color:var(--ink-faint);letter-spacing:.06em;text-transform:uppercase;font-size:var(--step--1);}
+  .specs dt,.specs .k{color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase;font-size:var(--step--1);}
   .specs .v{color:var(--ink);text-align:right;}
 
   .note{
