@@ -352,6 +352,43 @@ statements — see the statement-descriptor section above for why, and why it wa
 left. Nothing has been announced anywhere yet; the social and mailing-list posts
 are hers to decide on now that checkout accepts overseas addresses.
 
+### The readability pass, later the same day
+
+**She could not read her own site, and she was right.** She asked for the pale
+text to be darkened, naming "Oh Susannah Studios presents:". Measured rather than
+argued about: `--ink-faint` was **2.77:1** against the paper, which fails WCAG AA
+for normal text (4.5:1) and even the large-text bar (3:1). Treat 4.5:1 as a floor
+for anything new. Compute it — `python` on her machine is the Microsoft Store stub,
+but Perl works.
+
+Two moves, in this order, because she asked for them in this order:
+
+1. Both tokens darkened, **lightness only**. She asked to stay in the same colour
+   family, so hue and saturation were held exactly: `--ink-faint` `#8A9182` →
+   `#646B5B` (60° sage, still), `--ink-soft` `#5B6478` → `#4F5768` (221° slate).
+   2.77 → 4.72 and 5.06 → 6.18.
+2. That was not enough: the section labels were still the palest thing on the page.
+   Every **header and label** rule moved from `--ink-faint` to `--ink-soft`.
+   `--ink-faint` is now reserved for what should stay quiet — photograph captions
+   and the footer — and still clears AA at 4.72:1. Keep that split.
+
+**Bold is not a general fix here, by her decision.** Offered bold for the headers
+after the darkening, she chose "leave it, darker is enough". She then asked for
+bold on **one** line: `.presents`, which sits over the watercolour where the
+painting shows through the paper and has trees behind it. So bold is her tool for
+text competing with imagery, not for readability. Worth knowing before reaching for
+it: her humanist stack has only **two real weights**, 400 and 700 — `font-weight:500`
+renders identically to 400 and 600 identically to 700, verified by measuring rendered
+width. There is no "slightly bolder".
+
+**The worldwide line at the top of the letter** (`.worldwide-banner`) is hers: she
+asked for it centred, in black, above the eyebrow, then for the font to match the
+body of the letter rather than the header, then for an exclamation point. Its rule
+now declares **nothing but centring**, so it inherits the serif and ink from `body`
+and its size from `.letter p` — which is the only way it matches exactly, since
+`.letter p` is the more specific selector and silently overrides any `font-size`
+set on the class. Do not give it a font.
+
 ---
 
 ## State of play — 18 September 2026
