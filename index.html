@@ -256,7 +256,39 @@
   /* these two sit on the thinner paper ground of the plans, so they are darkened
      a step to hold their own against the painting behind them */
   #subscribe .eyebrow{color:var(--ink-soft);}
-  .ship-line{margin-top:.9rem;font-size:1rem;color:var(--ink-soft);}
+
+  /* ---- within the US / outside the US ----
+     Both sets of prices sit in the markup side by side and the switch shows one
+     of them. The wording of each card is therefore written once, not twice, and
+     cannot drift apart. With no JavaScript the US set is what shows, which is
+     the right thing to fail to. */
+  .worldwide-line{
+    max-width:38rem;margin:0 auto 1.3rem;padding-inline:1.5rem;
+    text-align:center;font-style:italic;color:var(--ink-soft);
+    font-size:1.05rem;line-height:1.6;
+  }
+  .region-switch{
+    display:grid;grid-template-columns:1fr 1fr;
+    max-width:28rem;margin:0 auto 1.9rem;padding-inline:1.5rem;
+  }
+  .region-btn{
+    font-family:var(--humanist);font-size:.95rem;letter-spacing:.06em;
+    padding:.8rem .6rem;text-align:center;cursor:pointer;
+    background:transparent;color:var(--pen);border:1px solid var(--pen);
+    transition:background .18s,color .18s;
+  }
+  .region-btn:first-child{border-radius:2px 0 0 2px;}
+  .region-btn:last-child{border-radius:0 2px 2px 0;border-left:0;}
+  .region-btn:hover{background:var(--paper-deep);}
+  .region-btn.is-on,.region-btn.is-on:hover{background:var(--pen);color:var(--paper-raised);}
+  .plan .plan-options.for-intl{display:none;}
+  .plan span.for-intl,.timing p.for-intl{display:none;}
+  #subscribe.show-intl .plan-options.for-us{display:none;}
+  #subscribe.show-intl .plan-options.for-intl{display:flex;}
+  #subscribe.show-intl .plan span.for-us{display:none;}
+  #subscribe.show-intl .plan span.for-intl{display:inline;}
+  #subscribe.show-intl .timing p.for-us{display:none;}
+  #subscribe.show-intl .timing p.for-intl{display:block;}
   .timing{
     max-width:34rem;margin:3rem auto 0;
     background:var(--paper-raised);border:1px solid var(--rule);border-radius:2px;
@@ -448,7 +480,7 @@
         </li>
         <li>
           <span class="item">Two postcards</span>
-          <span class="desc">A quote on the front of each, chosen for the month. One to keep, propped up where you&rsquo;ll pass it. One stamped and ready, so a friend finds your handwriting in her mailbox instead of a bill.</span>
+          <span class="desc">A quote on the front of each, chosen for the month. One to keep, propped up where you&rsquo;ll pass it. One stamped and ready, so a friend finds your handwriting in her mailbox instead of a bill. The stamp is a US one, so outside the States yours comes ready for a stamp of your own.</span>
         </li>
         <li>
           <span class="item">A few surprises</span>
@@ -583,36 +615,50 @@
       <p class="eyebrow">Subscribe</p>
       <h2>Let&rsquo;s begin.</h2>
     </div>
+    <p class="worldwide-line">Letters now travel worldwide.</p>
+    <div class="region-switch" role="group" aria-label="Where your letters are going">
+      <button type="button" class="region-btn is-on" data-region="us" aria-pressed="true">Within the US</button>
+      <button type="button" class="region-btn" data-region="intl" aria-pressed="false">Outside the US</button>
+    </div>
     <div class="plans">
       <div class="plan">
         <h3>One at a time</h3>
-        <p class="price">$18.99 either way</p>
+        <p class="price"><span class="for-us">$18.99 either way</span><span class="for-intl">$19.99 either way</span></p>
         <p>One letter and one original gicl&eacute;e print, in your mailbox each month. Begin properly, or try a single letter first and see how it feels to get one.</p>
-        <div class="plan-options">
+        <div class="plan-options for-us">
           <a class="btn btn-solid" href="https://buy.stripe.com/dRm28saYPd4J9ZqbiQcEw00">Keep them coming &mdash; $18.99 a month, cancel any time</a>
           <a class="btn btn-ghost" href="https://buy.stripe.com/cNi6oI2sjc0F3B2dqYcEw03">Try a single letter &mdash; $18.99 once</a>
+        </div>
+        <div class="plan-options for-intl">
+          <a class="btn btn-solid" href="https://buy.stripe.com/9B65kE9UL7Kpc7ybiQcEw06">Keep them coming &mdash; $19.99 a month, cancel any time</a>
+          <a class="btn btn-ghost" href="https://buy.stripe.com/00w9AU8QH1m1b3ufz6cEw07">Try a single letter &mdash; $19.99 once</a>
         </div>
         <p class="plan-note">The single letter is a one-time purchase &mdash; nothing recurring, nothing to remember.</p>
       </div>
       <div class="plan">
         <h3>All at once</h3>
-        <p class="price">from $97.99</p>
+        <p class="price"><span class="for-us">from $97.99</span><span class="for-intl">from $103.99</span></p>
         <p>Six months or a year of letters, paid once and then done. Easier on the wallet than paying month by month.</p>
-        <div class="plan-options">
+        <div class="plan-options for-us">
           <a class="btn btn-ghost" href="https://buy.stripe.com/cNi5kEd6XggVefG1IgcEw04">Six months &mdash; $97.99</a>
           <a class="btn btn-ghost" href="https://buy.stripe.com/fZufZi8QH4yd6Ne5YwcEw05">Twelve months &mdash; $179.99</a>
         </div>
-        <p class="plan-note">$16.33 a letter for six months &middot; $15.00 a letter for twelve.</p>
+        <div class="plan-options for-intl">
+          <a class="btn btn-ghost" href="https://buy.stripe.com/5kQ00k7MD1m18Vmfz6cEw08">Six months &mdash; $103.99</a>
+          <a class="btn btn-ghost" href="https://buy.stripe.com/aFafZi1offcR0oQfz6cEw09">Twelve months &mdash; $191.99</a>
+        </div>
+        <p class="plan-note"><span class="for-us">$16.33 a letter for six months &middot; $15.00 a letter for twelve.</span><span class="for-intl">$17.33 a letter for six months &middot; $16.00 a letter for twelve.</span></p>
       </div>
     </div>
     <p class="gift-line">Any of these can be a gift &mdash; just enter their address at checkout and it goes straight to them.</p>
-    <p class="gift-line ship-line">For now, letters are mailed within the United States only &mdash; I hope to open this up further before long.</p>
 
     <div class="timing">
       <p class="timing-head">When your first letter arrives</p>
-      <p>Letters are mailed to reach you before the end of each month.</p>
+      <p class="for-us">Letters are mailed to reach you before the end of each month.</p>
+      <p class="for-intl">Your letter goes into the mail with every other, in time to reach a US mailbox before the end of the month. From there it has an ocean to cross, so allow one to four weeks for it to reach you, and up to six for some countries.</p>
       <p><span class="by">Order by the 15th</span> and this month&rsquo;s letter is yours. Order after the 15th and you&rsquo;ll begin with next month&rsquo;s &mdash; no letter goes missing either way.</p>
-      <p class="timing-dec"><span class="by">December is the exception.</span> Order through the 20th and the December letter still goes out to you &mdash; though with holiday mail being what it is, I can&rsquo;t promise it arrives before Christmas Day.</p>
+      <p class="timing-dec for-us"><span class="by">December is the exception.</span> Order through the 20th and the December letter still goes out to you &mdash; though with holiday mail being what it is, I can&rsquo;t promise it arrives before Christmas Day.</p>
+      <p class="timing-dec for-intl"><span class="by">December is the exception.</span> Order through the 20th and the December letter still goes out to you &mdash; though traveling abroad in holiday mail, it will most likely reach you in the new year.</p>
     </div>
   </section>
 
@@ -658,6 +704,35 @@
 </div>
 
 <script>
+  /* The Within the US / Outside the US switch. Both sets of prices are already in
+     the page; this only decides which one is shown, so if the script never runs
+     the visitor still sees a working US set of buttons. The choice is remembered
+     so that someone who wandered off to read the sample letter does not come back
+     to US prices they have already dismissed. */
+  (function(){
+    var section = document.getElementById('subscribe');
+    if(!section){ return; }
+    var buttons = section.querySelectorAll('.region-btn');
+    if(!buttons.length){ return; }
+    function show(region){
+      section.classList.toggle('show-intl', region === 'intl');
+      for(var i = 0; i < buttons.length; i++){
+        var on = buttons[i].getAttribute('data-region') === region;
+        buttons[i].classList.toggle('is-on', on);
+        buttons[i].setAttribute('aria-pressed', on ? 'true' : 'false');
+      }
+      try{ localStorage.setItem('zl-region', region); }catch(e){}
+    }
+    for(var i = 0; i < buttons.length; i++){
+      buttons[i].addEventListener('click', function(){
+        show(this.getAttribute('data-region'));
+      });
+    }
+    try{
+      if(localStorage.getItem('zl-region') === 'intl'){ show('intl'); }
+    }catch(e){}
+  })();
+
   /* The signup posts to Kit in the background so that nobody is thrown off the
      page mid-visit. If this script never runs, or the request fails, the form is
      an ordinary HTML form and still posts to Kit the plain way. */

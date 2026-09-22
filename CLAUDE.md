@@ -208,19 +208,43 @@ custom checkout.
 
 **Never put a Stripe secret key in this repository.**
 
-Four live links are wired into `index.html`, in two cards:
+**Eight** live links are wired into `index.html`, in two cards — four for US
+addresses and four for everywhere else:
 
-| Card | Button | Product | Price |
-| --- | --- | --- | --- |
-| One at a time | Keep them coming | Month-to-Month | $18.99 / month, recurring |
-| One at a time | Try a single letter | Zuzu's Letter | $18.99 one-time |
-| All at once | Six months | 6-Month Bundle | $97.99 one-time ($16.33 a letter) |
-| All at once | Twelve months | 12-Month Bundle | $179.99 one-time ($15.00 a letter) |
+| Card | Button | Product | US price | Outside the US |
+| --- | --- | --- | --- | --- |
+| One at a time | Keep them coming | Month-to-Month | $18.99 / month, recurring | $19.99 / month, recurring |
+| One at a time | Try a single letter | Zuzu's Letter | $18.99 one-time | $19.99 one-time |
+| All at once | Six months | 6-Month Bundle | $97.99 ($16.33 a letter) | $103.99 ($17.33 a letter) |
+| All at once | Twelve months | 12-Month Bundle | $179.99 ($15.00 a letter) | $191.99 ($16.00 a letter) |
 
 The cards split on **whether it renews**, not on who it is for. An earlier
 version split "for yourself" versus "a gift" and that was wrong — any of the
 four works as a gift, and the old labels turned gift-buyers away. A line under
 both cards now says so explicitly.
+
+### The Within the US / Outside the US switch
+
+Both sets of prices sit in the markup at once, in `.for-us` and `.for-intl`
+elements, and CSS shows one set at a time according to a `show-intl` class on
+`#subscribe`. The wording of each card is therefore written **once**, not twice,
+and the two cannot drift apart. Only the price, the two buttons, the per-letter
+note and two of the timing paragraphs are doubled.
+
+Three things this buys, and they are the reason not to "simplify" it:
+
+- With no JavaScript, the US set is what shows. That is the right thing to fail to.
+- `localStorage` remembers the choice, wrapped in `try`/`catch` because it throws
+  in a `file://` preview and in private windows. It failed exactly that way while
+  this was being tested, and the switch still worked.
+- The switch is `<button>` elements with `aria-pressed`, not links, so a keyboard
+  and a screen reader both get it.
+
+The US links are set to `allowed_countries: ["US"]`; the overseas links carry the
+other **231** countries Stripe offers, with the US deliberately taken out so US
+buyers cannot pay $1 more by accident. Note this means **Puerto Rico, Guam and the
+other US territories are on the overseas links**, since Stripe treats them as
+separate countries — they pay the higher price and cost domestic postage.
 
 **Stripe prices cannot be edited.** To change an amount you create a new price,
 build a new payment link on it, and deactivate the old link. The bundles were
@@ -229,8 +253,8 @@ are deactivated, not deleted.
 
 ### Statement descriptors — the gotcha that bit us
 
-All four read **`Zuzus Letters`** on card statements. No apostrophe: Stripe
-rejects `< > \ ' " *` and caps descriptors at 22 characters.
+The four **US** links read **`Zuzus Letters`** on card statements. No apostrophe:
+Stripe rejects `< > \ ' " *` and caps descriptors at 22 characters.
 
 Setting `statement_descriptor` on the **Product** only works for
 **subscriptions and invoices**. One-time payments ignore it completely — a live
@@ -245,6 +269,18 @@ set it again — it does not inherit.
 Do **not** fix this by changing the account-level descriptor. The account also
 sells mugs and totes, and those buyers should not see "Zuzus Letters."
 
+**The three one-time overseas links do NOT have it, and currently cannot (22
+September 2026).** The overseas monthly is fine — it inherits `Zuzus Letters`
+from its product, which is what products are for. But `payment_intent_data` is
+reachable only through the API, and the dashboard's **Workbench shell is
+read-only in live mode**, so there is no way to set it without a secret key. The
+three overseas one-time links therefore read `O.S. STUDIOS`, the account default,
+which is at least her real registered name. Stripe's **Duplicate** does not carry
+the field across — this was checked by duplicating a link and retrieving the copy,
+which came back `"payment_intent_data": null`. Her decision was to leave it rather
+than change the account-wide descriptor and put "Zuzus Letters" on mug buyers'
+statements. If a secret key is ever available, this is the first thing to fix.
+
 **The public business name must stay "Oh Susannah Studios."** Stripe labels it
 "Business name (Doing Business As)", and the owner can legally trade only as
 **Oh Susannah Studios** or **O.S. Studios** (her registered Florida fictitious
@@ -255,14 +291,66 @@ name, unless she registers it as a third fictitious name. Receipts have no slot 
 the website, and the support address is stored but not printed; the support email
 and phone are.
 
-All four collect the buyer's **name and shipping address** — these are physical
+All eight collect the buyer's **name and shipping address** — these are physical
 goods sent by post, and Stripe defaults to billing address only, which does not
 give the owner somewhere to mail to. If you ever recreate a link, set
 **"Billing and shipping addresses,"** not the default.
 
-Shipping is currently restricted to **United States addresses only**. This was a
-default chosen in the absence of an answer, on the grounds that a blocked
-overseas order is recoverable and an unfulfillable one is not. Revisit it.
+**Adaptive Pricing is on**, so an overseas buyer sees and pays in their own
+currency. Nothing was done to switch it on; it was already enabled.
+
+The overseas links were built by **duplicating** each US link from its own page
+(the `…` menu → Duplicate), which carries every setting across except the price,
+the countries and the one-time statement descriptor. Stripe says plainly on that
+screen that the copies do not affect the originals, and the US links were verified
+untouched afterwards. Duplicating creates a **new product** each time, named
+`(Copy) …`; rename it before creating the link, or archive it if you abandon the
+attempt.
+
+---
+
+## State of play — 22 September 2026
+
+**Letters now go worldwide, and it is built, not just decided.** Her postmaster
+gave her the numbers that had been holding this up since 18 September: **$2.19 to
+mail one of her envelopes abroad against $1.56 domestic**, and no trouble about
+sending a print. That is a difference of **63 cents**, not the ~$3 the old
+estimate in `CLAUDE.local.md` assumed, and she was told so before choosing. She
+had planned $2 a month extra; knowing the real figure she chose **$1**.
+
+So the four overseas prices are $19.99 monthly, $19.99 for a single letter,
+$103.99 for six months, and $191.99 for twelve. Four new Stripe links, four new
+products, 231 countries each, the US taken out. The four US links are untouched.
+
+**The page now carries a Within the US / Outside the US switch**, sitting under a
+new line reading *"Letters now travel worldwide."* — deliberately above the
+switch, so the news and the control that acts on it are read together. She chose
+this shape from three rendered options and **improved it**: the first draft
+labelled the second tab as an afterthought, and she asked for equal width and the
+wording "Outside the US", saying equal space is more inviting. Take that as a
+further reading of her standing steer about saying what a thing is open to — it
+applies to layout, not only to sentences.
+
+**The postcard wording changed, because she caught what the build had missed.**
+The second postcard is pre-stamped with a US stamp and cannot be used abroad. All
+four overseas Stripe product descriptions now read *"and two postcards - one to
+keep and one to share with a friend"* — her wording, arrived at over three passes
+("one for a friend", then "one to pass on to a friend", then this). The US
+products still say "pre-stamped", which is true of them. The envelope list on the
+home page and `details.html` both now say the stamp is a US one and that overseas
+envelopes come ready for a stamp of their own.
+
+**Delivery promises were split.** "Before the end of each month" is a promise she
+can only keep to US addresses. Overseas now reads that the letter goes into the
+same mailing and then needs one to four weeks, up to six for some countries; the
+December paragraph says overseas holiday mail will most likely arrive in the new
+year; and `details.html` now says to give overseas mail six weeks before calling
+it lost, against two weeks domestically.
+
+**Still open:** the three one-time overseas links read `O.S. STUDIOS` on card
+statements — see the statement-descriptor section above for why, and why it was
+left. Nothing has been announced anywhere yet; the social and mailing-list posts
+are hers to decide on now that checkout accepts overseas addresses.
 
 ---
 
