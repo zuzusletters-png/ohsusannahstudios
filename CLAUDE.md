@@ -111,6 +111,7 @@ misrepresents her product.
 | **One letter per month.** | Not twice monthly. |
 | Business is Oh Susannah Studios; product is Zuzu's Letters. | They are not interchangeable. |
 | **In the sign-off, "Peace and Love" takes a capital L.** | Deliberate, not a typo. Do not correct it, and do not let a tidy-up pass change it. |
+| **The photograph named "Slide 6 - the letter" is not the actual letter. Do not use it again, anywhere.** | Added to the site 30 September 2026 as `snap-the-letter.jpg` and captioned *"September's letter, before it went in the mail."* It was not September's letter, and it sat in the same section as the real letter photograph, so the page showed a picture of the letter on top of a picture of the letter. She asked for it removed and for that photograph never to be used again. Deleted the same day. **The same caution as the prints rule applies to the letter: only the real thing may be shown as the product.** |
 | **Only genuine prints may be shown or captioned as prints.** | As of 23 August 2026 the real ones photographed are **Bob &amp; Too Big** (the draft horses and yellow wagon), **The Garden Shed** (rust-red roof, flags), **House in Walland** (soft golden light), the **creek reflection** (autumn trees in water) and **Lovely Rita's eye**. The prints have titles and the owner gave these three herself — use them exactly. **Bob and Too Big are not her horses** — corrected by her on 23 August after a session assumed they were. Her own horses are **Hairy Harry** and **Lovely Rita**. Do not assume an animal in a photograph belongs to her. The Garden Shed and House in Walland came from her by email on 23 August, both on ARCHES stock. The mountain road, donkey, grazing horse and troll pictures are **test prints on photo paper** — usable as artwork, never captioned as the 5x7 on ARCHES stock. A caption claiming otherwise went live once and had to be corrected. |
 
 ---
@@ -311,7 +312,14 @@ attempt.
 
 ## State of play — 30 September 2026
 
-**Twelve snapshots now run down the page, and a gift block sits under the prices.**
+**Eleven snapshots now run down the page, and a gift block sits under the prices.**
+A twelfth went up and came straight back down: see the letter-photograph row in
+*Accuracy rules* above. It was captioned as September's letter and was not September's
+letter, and it duplicated the genuine letter photograph already in that section. **Two
+errors in one figure, and neither was caught by checking the markup — only she could see
+it.** The lesson is the same one the captions taught: ask her what a photograph is before
+putting it on the page.
+
 Both came out of a push to get subscribers for the October letter, whose real deadline
 is **15 October** — the 15th is when orders close, not the 26th when letters post.
 
