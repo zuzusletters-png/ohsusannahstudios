@@ -264,6 +264,15 @@
     text-align:center;font-style:italic;color:var(--ink-soft);
     font-size:1.05rem;line-height:1.6;
   }
+  .gift{
+    max-width:38rem;margin:3rem auto 0;
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:2px;
+    padding:2.2rem 1.8rem;text-align:center;
+    box-shadow:0 8px 28px -18px var(--shadow-lift);
+  }
+  .gift h3{font-size:var(--step-2);font-style:italic;margin:.5rem 0 1.1rem;}
+  .gift p{margin:0 auto .95rem;max-width:30rem;line-height:1.65;}
+  .gift p:last-child{margin-bottom:0;}
 
   /* ---- within the US / outside the US ----
      Both sets of prices sit in the markup side by side and the switch shows one
@@ -426,6 +435,34 @@
     font-family:var(--humanist);font-size:var(--step--1);color:var(--ink-faint);
     letter-spacing:.04em;text-align:center;
   }
+
+  /* ---- snapshots ----
+     Narrow screens: they sit in the flow, centred, one after another.
+     Wide screens (1300px up): they move out into the margins beside the text.
+     Each figure sets its own --snap-top, which only takes effect out there. */
+  .snap{
+    margin:2.75rem auto;max-width:14rem;background:#fff;
+    padding:.6rem .6rem .75rem;border-radius:2px;
+    box-shadow:0 14px 34px -18px var(--shadow-lift),0 1px 2px var(--shadow);
+  }
+  .snap img{display:block;width:100%;height:auto;}
+  .snap figcaption{
+    margin-top:.7rem;font-family:var(--humanist);font-size:.82rem;line-height:1.35;
+    color:var(--ink-soft);letter-spacing:.04em;text-align:center;
+  }
+  .snap-l{transform:rotate(-2deg);}
+  .snap-r{transform:rotate(1.75deg);}
+  @media (prefers-reduced-motion:no-preference){
+    .snap{transition:transform .35s ease;}
+    .snap:hover{transform:rotate(0deg);}
+  }
+
+  @media (min-width:1300px){
+    .snap-host{position:relative;}
+    .snap{position:absolute;top:var(--snap-top,4rem);width:13.5rem;max-width:none;margin:0;}
+    .snap-l{left:calc(50% - 36rem);}
+    .snap-r{right:calc(50% - 36rem);}
+  }
 </style>
 </head>
 <body>
@@ -461,7 +498,12 @@
     </article>
   </div>
 
-  <section class="band" id="letters">
+  <section class="band snap-host" id="letters">
+    <figure class="snap snap-r" style="--snap-top:8rem">
+      <img src="images/snap-the-letter.jpg" width="496" height="620" loading="lazy"
+           alt="September's letter, its envelope and cards laid out on a table beside a cup of tea.">
+      <figcaption>September&rsquo;s letter, before it went in the mail.</figcaption>
+    </figure>
     <div class="measure section-head">
       <p class="eyebrow">What arrives</p>
       <h2>Everything I could fit in one envelope.</h2>
@@ -518,7 +560,12 @@
     </div>
   </section>
 
-  <section id="sample">
+  <section class="snap-host" id="sample">
+    <figure class="snap snap-l" style="--snap-top:6rem">
+      <img src="images/snap-love-visitor.jpg" width="398" height="620" loading="lazy"
+           alt="Susannah standing with Tom Hanks backstage, both smiling at the camera.">
+      <figcaption>Also backstage at <em>The Beatles Love</em>.</figcaption>
+    </figure>
     <div class="measure section-head">
       <p class="eyebrow">A sample letter</p>
       <h2>A letter I wrote to say hello.</h2>
@@ -539,14 +586,39 @@
     </div>
   </section>
 
-  <section>
+  <section class="snap-host">
+    <figure class="snap snap-r" style="--snap-top:3rem">
+      <img src="images/snap-red-nose.jpg" width="620" height="465" loading="lazy"
+           alt="Susannah cheek to cheek with Gidget, her small white rescue dog, who is wearing a red clown nose.">
+      <figcaption>Gidget, on Red Nose Day.</figcaption>
+    </figure>
     <figure class="excerpt">
       <blockquote>I knew we were not going to make it home without getting soaked, so I just laughed and strolled the rest of the way home. All the while thinking what a picture we must have been &mdash; a woman and her dog strolling through the rain.</blockquote>
       <figcaption>From letter #1 &middot; September 2026</figcaption>
     </figure>
   </section>
 
-  <section class="band" id="stories">
+  <section class="band snap-host" id="stories">
+    <figure class="snap snap-l" style="--snap-top:5rem">
+      <img src="images/snap-guinevere.jpg" width="496" height="620" loading="lazy"
+           alt="Susannah in a gold and ivory gown beside a king in a red cloak, a castle behind them.">
+      <figcaption>The last full time Queen Guinevere.</figcaption>
+    </figure>
+    <figure class="snap snap-r" style="--snap-top:26rem">
+      <img src="images/snap-love-backstage.jpg" width="604" height="401" loading="lazy"
+           alt="Susannah backstage with Bette Midler, both smiling at the camera.">
+      <figcaption>Backstage at <em>The Beatles Love</em>.</figcaption>
+    </figure>
+    <figure class="snap snap-l" style="--snap-top:48rem">
+      <img src="images/snap-maestoso.jpg" width="462" height="463" loading="lazy"
+           alt="Susannah leaning in to kiss the nose of Precious Pony, a white Lipizzaner, in his stall.">
+      <figcaption>Precious Pony &mdash; formally Maestoso Elvira III.</figcaption>
+    </figure>
+    <figure class="snap snap-r" style="--snap-top:64rem">
+      <img src="images/snap-red-carpet.jpg" width="374" height="620" loading="lazy"
+           alt="Anne Hathaway in a long black gown on the red carpet at the SAG Awards, with Susannah in the background at the back right.">
+      <figcaption>Photo bombing Anne Hathaway at the SAG Awards.</figcaption>
+    </figure>
     <div class="measure section-head">
       <p class="eyebrow">The stories</p>
       <h2>I have been collecting stories my whole life.</h2>
@@ -560,7 +632,12 @@
     </div>
   </section>
 
-  <section class="print-band" id="print">
+  <section class="print-band snap-host" id="print">
+    <figure class="snap snap-r" style="--snap-top:10rem">
+      <img src="images/snap-saunder.jpg" width="620" height="465" loading="lazy"
+           alt="Susannah cheek to cheek with Saunder, a Fjord horse, in front of a painted backdrop.">
+      <figcaption>Saunder, at the therapeutic riding center in Dallas.</figcaption>
+    </figure>
     <div class="measure section-head">
       <p class="eyebrow">The print</p>
       <h2>A small piece of art, in its own right.</h2>
@@ -598,7 +675,17 @@
     </div>
   </section>
 
-  <section class="band" id="zuzu">
+  <section class="band snap-host" id="zuzu">
+    <figure class="snap snap-l" style="--snap-top:6rem">
+      <img src="images/snap-donkey-rainbow.jpg" width="620" height="465" loading="lazy"
+           alt="Susannah kneeling in a wet field beside a soaked donkey, a rainbow arching behind them after heavy rain.">
+      <figcaption>The rainbow came after. We were already soaked.</figcaption>
+    </figure>
+    <figure class="snap snap-r" style="--snap-top:28rem">
+      <img src="images/snap-snorkel.jpg" width="619" height="620" loading="lazy"
+           alt="Susannah close to the camera in a snorkel mask and snorkel, in bright sun.">
+      <figcaption>Aruba, St. Croix, Maui, the Florida Keys, or my living room, visiting with a friend&rsquo;s child.</figcaption>
+    </figure>
     <div class="measure section-head">
       <p class="eyebrow">About Zuzu</p>
       <h2>I believe there is still magic in the world.</h2>
@@ -619,7 +706,12 @@
     </div>
   </section>
 
-  <section id="subscribe">
+  <section class="snap-host" id="subscribe">
+    <figure class="snap snap-l" style="--snap-top:8rem">
+      <img src="images/snap-flamingo-hat.jpg" width="281" height="488" loading="lazy"
+           alt="Susannah in a tall pink flamingo hat and an embroidered vest, standing in front of a rack of costumes.">
+      <figcaption>A flamingo hat at the MGM Grand, for no particular reason.</figcaption>
+    </figure>
     <div class="measure section-head">
       <p class="eyebrow">Subscribe</p>
       <h2>Let&rsquo;s begin.</h2>
@@ -659,7 +751,13 @@
         <p class="plan-note"><span class="for-us">$16.33 a letter for six months &middot; $15.00 a letter for twelve.</span><span class="for-intl">$17.33 a letter for six months &middot; $16.00 a letter for twelve.</span></p>
       </div>
     </div>
-    <p class="gift-line">Any of these can be a gift &mdash; just enter their address at checkout and it goes straight to them.</p>
+    <div class="gift">
+      <p class="eyebrow">A gift</p>
+      <h3>Something to open more than once.</h3>
+      <p>Most gifts are opened once and then they are over. This one turns up again next month, and the month after that.</p>
+      <p>Any of these can be sent to someone else. Choose whichever suits, enter their address at checkout, and the letters go straight to them.</p>
+      <p>Six months or twelve is the easiest way to give it &mdash; a whole run of small arrivals, paid once and then done.</p>
+    </div>
 
     <div class="timing">
       <p class="timing-head">When your first letter arrives</p>
@@ -671,7 +769,12 @@
     </div>
   </section>
 
-  <section class="band" id="keep-in-touch">
+  <section class="band snap-host" id="keep-in-touch">
+    <figure class="snap snap-r" style="--snap-top:5rem">
+      <img src="images/snap-stable-visitors.jpg" width="620" height="442" loading="lazy"
+           alt="Two stormtroopers and Darth Vader standing with Lovely Rita, a dark horse, in her stable.">
+      <figcaption>Lovely Rita. They asked to see her.</figcaption>
+    </figure>
     <div class="measure section-head">
       <p class="eyebrow">By email</p>
       <h2>Let&rsquo;s stay in touch.</h2>

@@ -309,6 +309,57 @@ attempt.
 
 ---
 
+## State of play — 30 September 2026
+
+**Twelve snapshots now run down the page, and a gift block sits under the prices.**
+Both came out of a push to get subscribers for the October letter, whose real deadline
+is **15 October** — the 15th is when orders close, not the 26th when letters post.
+
+**The snapshots.** Photographs from her own life, framed like prints from a drugstore
+envelope: white border with a deeper chin, a slight tilt, soft shadow, straightening on
+hover. Markup is `figure.snap` with `.snap-l` / `.snap-r`, inside any section carrying
+`.snap-host`. **Below 1300px they sit in the normal flow, centred**; at 1300px and up
+they move out into the margins with `position:absolute`, each figure setting its own
+`--snap-top` inline. That custom property does nothing until the media query, which is
+why it is safe to leave on the element. **Do not delete the inline `--snap-top` values**
+— they are hand-tuned per photograph, and without them everything stacks at 4rem.
+
+Verified before it went up, at 1440px and at 375px: no figure overflows its section, no
+two collide, no horizontal scroll on a phone, every `src` resolves, and the caption colour
+(`--ink-soft` on white) measures **7.25:1**, which clears AAA. The Anne Hathaway figure
+needed its top moved from 70rem to 64rem or it hung 9px past the section.
+
+**The captions are hers, and six of the first draft were wrong.** Worth recording how
+wrong, because it is the general lesson: *a photograph does not explain itself.*
+The "jester hat" is a **flamingo** hat, MGM Grand, Las Vegas. The "palomino" is a **Fjord
+named Saunder**, from a therapeutic riding centre in Dallas — files renamed
+`snap-saunder.jpg` and `snap-flamingo-hat.jpg` to match. The red carpet photograph is not
+her in a gown at all: it is **Anne Hathaway, with Susannah photobombing from the back
+right**. The white horse is **Precious Pony**, formally Maestoso Elvira III. The dog in the
+red nose is **Gidget**, her rescue, on Red Nose Day. The horse meeting Darth Vader and two
+stormtroopers is **Lovely Rita** — "they asked to see her," which is her line and better
+than anything written for her. **Ask her what is in a picture before captioning it.**
+
+Two she settled herself: the snorkel is *"Aruba, St. Croix, Maui, the Florida Keys, or my
+living room, visiting with a friend's child"*, and the two backstage photographs are captioned
+**"Backstage at *The Beatles Love*"** — her spelling: title case, **no apostrophe**. She asked
+for the apostrophe first and then took it out again, so *The Beatles Love* is settled; do not
+add one back. **Still open:** the stories paragraph says *"The Beatles LOVE"* in capitals, so
+the page carries two casings of the same title. She was asked and has not ruled on it.
+
+**Bette Midler and Tom Hanks.** Both were visitors to the show while she worked on it, met
+backstage. The concern raised was that a recognisable face on a page selling a subscription
+can read as an endorsement; the resolution was to caption by **the show, not the names**, so
+it reads as her workplace rather than a badge. The alt text does name them, because that is
+honestly what is in the photograph. Bette Midler is the artist she has most admired her whole
+life — she owns a ukulele signed by her, which is where `ukulelezu` comes from.
+
+**The gift block** replaced a single italic line under the plans that nobody was ever going
+to read. It is a `div.gift` styled to match `.plan`, with its own heading. The mechanism was
+already true and unchanged: any plan can be a gift, the buyer enters the recipient's address
+at checkout. **Not done, and hers to decide:** putting a note in the first envelope telling
+the recipient who it is from. At present a gift arrives from a stranger.
+
 ## State of play — 22 September 2026
 
 **Letters now go worldwide, and it is built, not just decided.** Her postmaster
