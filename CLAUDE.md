@@ -402,9 +402,11 @@ the plan description and the spec list.
 
 **Captions must not depend on where a photograph falls.** Tom Hanks was captioned *"Also
 backstage…"* but appears **before** Bette Midler on the page, so the "also" pointed at
-nothing. Fixed by making each caption stand alone: *"A visitor backstage at The Beatles
-Love"* and *"Backstage at The Beatles Love"*. Avoid "also", "again", "the same day" and
-anything else that assumes reading order.
+nothing. **She rewrote both herself on 1 October 2026:** Tom Hanks is now *"Backstage at The
+Beatles Love"* (it was *"A visitor backstage at…"*) and Bette Midler is *"Fangirling backstage
+at The Beatles Love"*. Each still stands alone — avoid "also", "again", "the same day" and
+anything else that assumes reading order. She typed the title lowercase as "the Beatles Love";
+the markup keeps the settled title case in `<em>`, which she has not objected to.
 
 **Bette Midler and Tom Hanks.** Both were visitors to the show while she worked on it, met
 backstage. The concern raised was that a recognisable face on a page selling a subscription
