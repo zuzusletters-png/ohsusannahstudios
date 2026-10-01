@@ -346,17 +346,21 @@ fine and cannot collide. The absolute rule is scoped to `.snap-host > .snap` pre
 a stray figure elsewhere cannot escape its section. **Check a section's widest child
 before adding `snap-host` to it.**
 
-**Hairy Harry joined the page on 1 October 2026, and he is not a photograph.** She asked for
-him **in the "Let's stay in touch" section**, on the **left of the text**, with **Lovely Rita
-kept on the right** — so `#keep-in-touch` now carries two snapshots, `snap-l` and `snap-r`,
-both at `--snap-top:5rem`. The file is `images/snap-hairy-harry.jpg` (620x413), made from her
-own `Hairy Harry watercolor.png`: a **watercolor** of her horse at a dark wooden fence with a
-red barn behind. Captioned *"Hairy Harry, in watercolor."* and the alt text says watercolor
-too, because **the snapshots are otherwise all real photographs and this one is artwork** —
-never let it read as a photograph, and never caption it as a print. Hairy Harry and Lovely
-Rita are **her own two horses**; everything else with a horse in it is not hers.
-The collision test was run at 1300, 1440, 1920 and 375px: no overlap, no overflow, no
-horizontal scroll.
+**Hairy Harry joined the page on 1 October 2026**, in the **"Let's stay in touch" section**
+(`#keep-in-touch`), on the **left of the text**, with **Lovely Rita kept on the right** —
+`snap-l` and `snap-r`, both at `--snap-top:5rem`, which is what she asked for in those words.
+**The watercolor went up first and came down within the hour.** It was offered as
+*"Hairy Harry, in watercolor."*, honestly labeled because every other snapshot is a real
+photograph; she looked at it and said maybe it should not be a watercolor, and named the
+photograph she wanted instead. The live snapshot is now `images/snap-harry-feed-bucket.jpg`
+(465x620, portrait), from her own *"Hairy Harry with his hoof in his feed bucket.jpg"*:
+Harry in a purple cactus-print blanket in his stall, one front hoof planted in a blue feed
+bucket. Captioned **"Hairy Harry, with his hoof in his feed bucket."** — her own description
+of it, used as written. The watercolor file `images/snap-hairy-harry.jpg` stays in `images/`,
+unused; if it ever goes back up it must say watercolor, and it is never a print.
+Hairy Harry and Lovely Rita are **her own two horses**; no other animal on the page is hers.
+The collision test was run at 1300, 1440, 1920 and 375px with the portrait photograph in
+place: no overlap, no overflow past the section, no horizontal scroll.
 
 **The check that missed it, and the one that catches it.** The first pass tested photo
 against photo and photo against section box, and reported "no problems" while three
