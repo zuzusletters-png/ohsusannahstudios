@@ -390,11 +390,15 @@ backstage..." caption below.
 
 **Two real photographs of September's letter went up as snapshots**, from her iCloud album:
 the print **framed in black beside a mug** with the letter spread in front of it, captioned
-*"It fits a frame you already own"* and placed in `#print`, where the page makes exactly that
-promise; and the **sealed sage envelope** with its stamps and stickers, captioned *"What
-lands in the mailbox"*, which she asked to sit **near the sample letter** rather than in
-"What arrives". **The letter text is legible in the framed photograph and she decided that
-is fine** — do not blur it, and do not raise it again.
+*"September's letter with the 5" x 7" print framed"* — her wording, 1 October 2026, replacing
+*"It fits a frame you already own"* — and placed in `#print`; and the **sealed sage envelope**
+with its stamps and stickers, captioned *"What lands in the mailbox"*, which she asked to sit
+**near the sample letter** rather than in "What arrives". **The letter text is legible in the
+framed photograph and she decided that is fine** — do not blur it, and do not raise it again.
+**Inch marks are written the page's way** — `5&Prime; &times; 7&Prime;`, matching the plan
+copy, the pair caption and the spec list; do not leave straight quotes in the markup. The
+framed caption no longer carries the frame-fitting sales line; that promise now lives only in
+the plan description and the spec list.
 
 **Captions must not depend on where a photograph falls.** Tom Hanks was captioned *"Also
 backstage…"* but appears **before** Bette Midler on the page, so the "also" pointed at
