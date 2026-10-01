@@ -111,7 +111,7 @@ misrepresents her product.
 | **One letter per month.** | Not twice monthly. |
 | Business is Oh Susannah Studios; product is Zuzu's Letters. | They are not interchangeable. |
 | **In the sign-off, "Peace and Love" takes a capital L.** | Deliberate, not a typo. Do not correct it, and do not let a tidy-up pass change it. |
-| **`images/september-letter.jpg` is the only genuine photograph of a letter. There is no other.** | Checked with her 30 September 2026 after two fakes turned up in one afternoon. The real one shows the pages in script on a floral tray, sage envelopes edged in gold, the stone-archway print, the Alicia Keys quote card and the playlist cards; it is captioned *"September's letter, just before it went into the envelope."* **`images/letter-on-desk.jpg` was a stylised image that was not the letter at all** — unused by any page, but sitting in the public repo looking like the product, which is how it nearly got reused. Deleted 30 September 2026; recoverable from git history if ever wanted. **More real photographs of September's letter are in her iCloud shared album "Zuzu's Letters photos" (16 items), including the print framed beside a mug and the sealed envelope with its stamps.** Take new letter photographs from there, and nowhere else. |
+| **Only genuine photographs of a real letter may appear as the letter.** | Four exist and all are hers, taken from her iCloud shared album *"Zuzu's Letters photos"* (16 items) — take new ones from there and nowhere else. On the page as of **1 October 2026**: `images/letter-and-framed-print.jpg`, September's letter spread on a slate-grey table with the archway print framed in black beside a mug — **the big photograph** in *Everything I could fit in one envelope*, captioned *"September's letter with the 5" x 7" print framed."*; `images/snap-letter-wood-table.jpg`, the same letter on a dark wood table with the print **unframed**, leaning against the wall beside dried flowers — the snapshot in `#print`, captioned *"September's letter, just before it went into the envelope."*; and `images/snap-envelope.jpg`, the sealed sage envelope with its stamps and stickers, near the sample letter. **`images/september-letter.jpg`** (the floral tray) is genuine too but came **off the page on 1 October 2026** when she moved the framed-table photograph into the big slot; the file is still in `images/`, unused. **`images/letter-on-desk.jpg` was a stylised image that was not the letter at all** — unused by any page, but sitting in the public repo looking like the product, which is how it nearly got reused. Deleted 30 September 2026; recoverable from git history if ever wanted. |
 | **The photograph named "Slide 6 - the letter" is not the actual letter. Do not use it again, anywhere.** | Added to the site 30 September 2026 as `snap-the-letter.jpg` and captioned *"September's letter, before it went in the mail."* It was not September's letter, and it sat in the same section as the real letter photograph, so the page showed a picture of the letter on top of a picture of the letter. She asked for it removed and for that photograph never to be used again. Deleted the same day. **The same caution as the prints rule applies to the letter: only the real thing may be shown as the product.** |
 | **Only genuine prints may be shown or captioned as prints.** | As of 23 August 2026 the real ones photographed are **Bob &amp; Too Big** (the draft horses and yellow wagon), **The Garden Shed** (rust-red roof, flags), **House in Walland** (soft golden light), the **creek reflection** (autumn trees in water) and **Lovely Rita's eye**. The prints have titles and the owner gave these three herself — use them exactly. **Bob and Too Big are not her horses** — corrected by her on 23 August after a session assumed they were. Her own horses are **Hairy Harry** and **Lovely Rita**. Do not assume an animal in a photograph belongs to her. The Garden Shed and House in Walland came from her by email on 23 August, both on ARCHES stock. The mountain road, donkey, grazing horse and troll pictures are **test prints on photo paper** — usable as artwork, never captioned as the 5x7 on ARCHES stock. A caption claiming otherwise went live once and had to be corrected. |
 
@@ -388,17 +388,25 @@ asked for the article change on 1 October 2026. It is the honest one: the page n
 introduces that center, so "the" pointed at nothing, the same failure as the old "Also
 backstage..." caption below.
 
-**Two real photographs of September's letter went up as snapshots**, from her iCloud album:
-the print **framed in black beside a mug** with the letter spread in front of it, captioned
-*"September's letter with the 5" x 7" print framed"* — her wording, 1 October 2026, replacing
-*"It fits a frame you already own"* — and placed in `#print`; and the **sealed sage envelope**
-with its stamps and stickers, captioned *"What lands in the mailbox"*, which she asked to sit
-**near the sample letter** rather than in "What arrives". **The letter text is legible in the
-framed photograph and she decided that is fine** — do not blur it, and do not raise it again.
-**Inch marks are written the page's way** — `5&Prime; &times; 7&Prime;`, matching the plan
-copy, the pair caption and the spec list; do not leave straight quotes in the markup. The
-framed caption no longer carries the frame-fitting sales line; that promise now lives only in
-the plan description and the spec list.
+**The letter photographs were rearranged on 1 October 2026, on her instruction.** The
+**framed-print photograph** (slate-grey table, print framed in black, mug) moved **out of the
+`#print` snapshot and into the big `.desk-photo` slot** in *Everything I could fit in one
+envelope*, carrying her caption with it: *"September's letter with the 5" x 7" print framed."*
+A **new photograph took its place in `#print`** — the same letter on a **dark wood table**
+with the print **unframed**, leaning against the wall beside a jar of dried flowers
+(`IMG_3599` in her own photographs, saved as `images/snap-letter-wood-table.jpg`, 409x620,
+portrait). It carries the caption the big photograph used to have, *"September's letter, just
+before it went into the envelope."* — reused rather than invented, and she was told so she can
+change it. The floral-tray photograph it replaced is off the page but still in `images/`.
+**A portrait snapshot is safe in `#print`** because that section does not carry `snap-host`,
+so the figure stays in the flow and cannot collide with text however tall it is.
+**The sealed sage envelope** stays where it was, captioned *"What lands in the mailbox"*,
+which she asked to sit **near the sample letter** rather than in "What arrives". **The letter
+text is legible in the framed photograph and she decided that is fine** — do not blur it, and
+do not raise it again. **Inch marks are written the page's way** — `5&Prime; &times; 7&Prime;`,
+matching the plan copy, the pair caption and the spec list; do not leave straight quotes in the
+markup. No caption now carries the frame-fitting sales line; that promise lives in the plan
+description and the spec list.
 
 **Captions must not depend on where a photograph falls.** Tom Hanks was captioned *"Also
 backstage…"* but appears **before** Bette Midler on the page, so the "also" pointed at

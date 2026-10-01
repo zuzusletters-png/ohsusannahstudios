@@ -6,3 +6,6 @@ CLAUDE.local.md
 mailing-list*
 schedule.html
 # Internal working documents belong in the private folder on her machine, not here
+
+# OneDrive writes these into synced folders
+desktop.ini
