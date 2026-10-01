@@ -346,6 +346,18 @@ fine and cannot collide. The absolute rule is scoped to `.snap-host > .snap` pre
 a stray figure elsewhere cannot escape its section. **Check a section's widest child
 before adding `snap-host` to it.**
 
+**Hairy Harry joined the page on 1 October 2026, and he is not a photograph.** She asked for
+him **in the "Let's stay in touch" section**, on the **left of the text**, with **Lovely Rita
+kept on the right** — so `#keep-in-touch` now carries two snapshots, `snap-l` and `snap-r`,
+both at `--snap-top:5rem`. The file is `images/snap-hairy-harry.jpg` (620x413), made from her
+own `Hairy Harry watercolor.png`: a **watercolor** of her horse at a dark wooden fence with a
+red barn behind. Captioned *"Hairy Harry, in watercolor."* and the alt text says watercolor
+too, because **the snapshots are otherwise all real photographs and this one is artwork** —
+never let it read as a photograph, and never caption it as a print. Hairy Harry and Lovely
+Rita are **her own two horses**; everything else with a horse in it is not hers.
+The collision test was run at 1300, 1440, 1920 and 375px: no overlap, no overflow, no
+horizontal scroll.
+
 **The check that missed it, and the one that catches it.** The first pass tested photo
 against photo and photo against section box, and reported "no problems" while three
 photographs sat on her paragraphs. **Text was never in the test.** The test that works
