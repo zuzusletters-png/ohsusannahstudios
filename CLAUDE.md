@@ -324,14 +324,34 @@ putting it on the page.
 Both came out of a push to get subscribers for the October letter, whose real deadline
 is **15 October** — the 15th is when orders close, not the 26th when letters post.
 
-**The snapshots.** Photographs from her own life, framed like prints from a drugstore
-envelope: white border with a deeper chin, a slight tilt, soft shadow, straightening on
-hover. Markup is `figure.snap` with `.snap-l` / `.snap-r`, inside any section carrying
-`.snap-host`. **Below 1300px they sit in the normal flow, centred**; at 1300px and up
-they move out into the margins with `position:absolute`, each figure setting its own
-`--snap-top` inline. That custom property does nothing until the media query, which is
-why it is safe to leave on the element. **Do not delete the inline `--snap-top` values**
-— they are hand-tuned per photograph, and without them everything stacks at 4rem.
+**The snapshots.** Thirteen photographs from her own life, framed like prints from a
+drugstore envelope: white border with a deeper chin, a slight tilt, soft shadow,
+straightening on hover. Markup is `figure.snap` with `.snap-l` / `.snap-r`. **Below
+1300px they sit in the normal flow, centred**; at 1300px and up, *only inside a section
+carrying `.snap-host`*, they move out into the margins with `position:absolute`, each
+figure setting its own `--snap-top` inline. That custom property does nothing until the
+media query, which is why it is safe to leave on the element. **Do not delete the inline
+`--snap-top` values** — they are hand-tuned per photograph, and without them everything
+stacks at 4rem.
+
+**`snap-host` is the whole safety mechanism, and it went on four sections it should not
+have.** She found it on the live site: the donkey, the snorkel and the flamingo hat were
+sitting on top of the text. The photo's inner edge lands **22.5rem from centre** (a 36rem
+offset less its own 13.5rem width), so any section whose content is wider than **45rem**
+gets overlapped. That rules out `.about` and `.plans` (66rem, 60rem), `.print-inner`
+(66rem), `.desk-photo` (56rem) and `.encl` (52rem). **Only four sections are safe and
+carry `snap-host`: `#sample` (41rem), the excerpt section and `#stories` (40rem), and
+`#keep-in-touch` (34rem).** Everywhere else the snapshots stay in the flow, which looks
+fine and cannot collide. The absolute rule is scoped to `.snap-host > .snap` precisely so
+a stray figure elsewhere cannot escape its section. **Check a section's widest child
+before adding `snap-host` to it.**
+
+**The check that missed it, and the one that catches it.** The first pass tested photo
+against photo and photo against section box, and reported "no problems" while three
+photographs sat on her paragraphs. **Text was never in the test.** The test that works
+walks every `.snap` against every `p, h1, h2, h3, li, blockquote, a.btn, input, .plan,
+.gift, .print-photo` and any non-snap figure image, at **1300px (the tightest case),
+1440, 1920 and 375**. Run that, not the old one.
 
 Verified before it went up, at 1440px and at 375px: no figure overflows its section, no
 two collide, no horizontal scroll on a phone, every `src` resolves, and the caption colour
@@ -355,6 +375,20 @@ living room, visiting with a friend's child"*, and the two backstage photographs
 for the apostrophe first and then took it out again, so *The Beatles Love* is settled; do not
 add one back. **Still open:** the stories paragraph says *"The Beatles LOVE"* in capitals, so
 the page carries two casings of the same title. She was asked and has not ruled on it.
+
+**Two real photographs of September's letter went up as snapshots**, from her iCloud album:
+the print **framed in black beside a mug** with the letter spread in front of it, captioned
+*"It fits a frame you already own"* and placed in `#print`, where the page makes exactly that
+promise; and the **sealed sage envelope** with its stamps and stickers, captioned *"What
+lands in the mailbox"*, which she asked to sit **near the sample letter** rather than in
+"What arrives". **The letter text is legible in the framed photograph and she decided that
+is fine** — do not blur it, and do not raise it again.
+
+**Captions must not depend on where a photograph falls.** Tom Hanks was captioned *"Also
+backstage…"* but appears **before** Bette Midler on the page, so the "also" pointed at
+nothing. Fixed by making each caption stand alone: *"A visitor backstage at The Beatles
+Love"* and *"Backstage at The Beatles Love"*. Avoid "also", "again", "the same day" and
+anything else that assumes reading order.
 
 **Bette Midler and Tom Hanks.** Both were visitors to the show while she worked on it, met
 backstage. The concern raised was that a recognisable face on a page selling a subscription

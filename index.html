@@ -457,11 +457,19 @@
     .snap:hover{transform:rotate(0deg);}
   }
 
+  /* A snapshot only moves into the margin if its section is narrow enough to
+     leave room. The photo's inner edge sits 22.5rem from centre (36rem offset
+     less its own 13.5rem width), so a section whose content is wider than
+     **45rem** will be overlapped. That rules out .about and .plans (66rem and
+     60rem), .print-inner (66rem), .desk-photo (56rem) and .encl (52rem).
+     Those sections must NOT carry `snap-host` — their snapshots stay in the
+     flow, which looks fine and cannot collide. Only add `snap-host` to a
+     section after checking its widest child. */
   @media (min-width:1300px){
     .snap-host{position:relative;}
-    .snap{position:absolute;top:var(--snap-top,4rem);width:13.5rem;max-width:none;margin:0;}
-    .snap-l{left:calc(50% - 36rem);}
-    .snap-r{right:calc(50% - 36rem);}
+    .snap-host > .snap{position:absolute;top:var(--snap-top,4rem);width:13.5rem;max-width:none;margin:0;}
+    .snap-host > .snap-l{left:calc(50% - 36rem);}
+    .snap-host > .snap-r{right:calc(50% - 36rem);}
   }
 </style>
 </head>
@@ -556,10 +564,15 @@
   </section>
 
   <section class="snap-host" id="sample">
+    <figure class="snap snap-r" style="--snap-top:7rem">
+      <img src="images/snap-envelope.jpg" width="620" height="465" loading="lazy"
+           alt="A sage green envelope on a bamboo mat, sealed and stamped: the Zuzu&rsquo;s Letters mark, a scrolled Z monogram, two pink dahlia Forever stamps, and a sticker reading Smile, you&rsquo;ve got happy mail.">
+      <figcaption>What lands in the mailbox.</figcaption>
+    </figure>
     <figure class="snap snap-l" style="--snap-top:6rem">
       <img src="images/snap-love-visitor.jpg" width="398" height="620" loading="lazy"
            alt="Susannah standing with Tom Hanks backstage, both smiling at the camera.">
-      <figcaption>Also backstage at <em>The Beatles Love</em>.</figcaption>
+      <figcaption>A visitor backstage at <em>The Beatles Love</em>.</figcaption>
     </figure>
     <div class="measure section-head">
       <p class="eyebrow">A sample letter</p>
@@ -627,7 +640,12 @@
     </div>
   </section>
 
-  <section class="print-band snap-host" id="print">
+  <section class="print-band" id="print">
+    <figure class="snap snap-l" style="--snap-top:9rem">
+      <img src="images/snap-print-framed.jpg" width="620" height="467" loading="lazy"
+           alt="September&rsquo;s print of a sunlit stone archway, framed in black and standing on a table beside a mug, with the letter, the sage envelope and the playlist card laid out in front of it.">
+      <figcaption>It fits a frame you already own.</figcaption>
+    </figure>
     <figure class="snap snap-r" style="--snap-top:10rem">
       <img src="images/snap-saunder.jpg" width="620" height="465" loading="lazy"
            alt="Susannah cheek to cheek with Saunder, a Fjord horse, in front of a painted backdrop.">
@@ -670,7 +688,7 @@
     </div>
   </section>
 
-  <section class="band snap-host" id="zuzu">
+  <section class="band" id="zuzu">
     <figure class="snap snap-l" style="--snap-top:6rem">
       <img src="images/snap-donkey-rainbow.jpg" width="620" height="465" loading="lazy"
            alt="Susannah kneeling in a wet field beside a soaked donkey, a rainbow arching behind them after heavy rain.">
@@ -701,7 +719,7 @@
     </div>
   </section>
 
-  <section class="snap-host" id="subscribe">
+  <section id="subscribe">
     <figure class="snap snap-l" style="--snap-top:8rem">
       <img src="images/snap-flamingo-hat.jpg" width="281" height="488" loading="lazy"
            alt="Susannah in a tall pink flamingo hat and an embroidered vest, standing in front of a rack of costumes.">
