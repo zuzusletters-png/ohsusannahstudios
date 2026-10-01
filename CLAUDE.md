@@ -125,7 +125,7 @@ Approved and liked by the owner. **Improve it; do not restart it.**
   requests, no CDN links. Everything inline. **One deliberate exception, added 3
   September 2026:** the email signup posts to Kit, and `index.html` carries a
   small inline script for it. It is not a mistake and it is not a dependency
-  &mdash; see *State of play* for why, and note the form still works with the
+  — see *State of play* for why, and note the form still works with the
   script removed. **A second `<script>` was added 16 September 2026, with her
   approval:** a `type="application/ld+json"` block in the `<head>` of
   `index.html`. It runs nothing and requests nothing; it is a label telling
@@ -361,7 +361,7 @@ needed its top moved from 70rem to 64rem or it hung 9px past the section.
 **The captions are hers, and six of the first draft were wrong.** Worth recording how
 wrong, because it is the general lesson: *a photograph does not explain itself.*
 The "jester hat" is a **flamingo** hat, MGM Grand, Las Vegas. The "palomino" is a **Fjord
-named Saunder**, from a therapeutic riding centre in Dallas — files renamed
+named Saunder**, from a therapeutic riding center in Dallas — files renamed
 `snap-saunder.jpg` and `snap-flamingo-hat.jpg` to match. The red carpet photograph is not
 her in a gown at all: it is **Anne Hathaway, with Susannah photobombing from the back
 right**. The white horse is **Precious Pony**, formally Maestoso Elvira III. The dog in the
@@ -370,11 +370,23 @@ stormtroopers is **Lovely Rita** — "they asked to see her," which is her line 
 than anything written for her. **Ask her what is in a picture before captioning it.**
 
 Two she settled herself: the snorkel is *"Aruba, St. Croix, Maui, the Florida Keys, or my
-living room, visiting with a friend's child"*, and the two backstage photographs are captioned
+living room."* — she shortened it on 1 October 2026, cutting the trailing "visiting with a
+friend's child"; do not put that clause back. The two backstage photographs are captioned
 **"Backstage at *The Beatles Love*"** — her spelling: title case, **no apostrophe**. She asked
 for the apostrophe first and then took it out again, so *The Beatles Love* is settled; do not
 add one back. **Still open:** the stories paragraph says *"The Beatles LOVE"* in capitals, so
 the page carries two casings of the same title. She was asked and has not ruled on it.
+
+**She rewrote the donkey caption on 1 October 2026**, from *"The rainbow came after. We were
+already soaked."* to *"Getting soaked and enjoying the rainbow."* Her own wording, and the
+same move as the snorkel: shorter, and about the pleasure rather than the explanation. **The
+terminal period was added to match the other snapshot captions** — she wrote it without
+one; every snapshot caption on the page ends in a period, so it was kept consistent and she was told.
+
+**Saunder's caption now reads "at *a* therapeutic riding center in Dallas"**, not "the" — she
+asked for the article change on 1 October 2026. It is the honest one: the page never
+introduces that center, so "the" pointed at nothing, the same failure as the old "Also
+backstage..." caption below.
 
 **Two real photographs of September's letter went up as snapshots**, from her iCloud album:
 the print **framed in black beside a mug** with the letter spread in front of it, captioned
