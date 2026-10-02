@@ -209,10 +209,11 @@
   .otter-pair-shots img:first-child{border-radius:2px;box-shadow:0 14px 34px -18px var(--shadow-lift),0 1px 2px var(--shadow);transform:rotate(-1.5deg);}
   .otter-pair-shots img:last-child{mix-blend-mode:multiply;}
   .otter-pair figcaption{margin-top:1rem;font-family:var(--humanist);font-size:var(--step--1);color:var(--ink-faint);letter-spacing:.05em;text-align:center;}
-  .postcard-card{max-width:34rem;margin:0 auto;padding:2.5rem 2rem;background:var(--paper);border:1px solid var(--rule);border-radius:3px;box-shadow:0 18px 40px -24px var(--shadow-lift),0 1px 2px var(--shadow);text-align:center;transform:rotate(-.6deg);}
+  .postcard-card{max-width:38rem;width:calc(100% - 2.5rem);margin:0 auto;padding:2.5rem 2rem;background:var(--paper);border:1px solid var(--rule);border-radius:3px;box-shadow:0 18px 40px -24px var(--shadow-lift),0 1px 2px var(--shadow);text-align:center;transform:rotate(-.6deg);}
   .postcard-card .eyebrow{margin:0 0 .8rem;}
   .postcard-card h2{font-size:var(--step-3);margin:0 0 1.2rem;}
   .postcard-card p:not(.eyebrow){color:var(--ink-soft);margin:0 0 .9rem;}
+  @media (min-width:40rem){ .postcard-card .keep-line{white-space:nowrap;} }
   .postcard-card .actions{margin-top:1.8rem;justify-content:center;}
   .encl-head{
     font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.15em;
@@ -569,7 +570,7 @@
     <div class="postcard-card">
       <p class="eyebrow">A gift from me</p>
       <h2>Let me send you a postcard.</h2>
-      <p>No catch and nothing else to do, but to let me put a little Love in your mailbox.</p>
+      <p>No catch and nothing else to do,<br> <span class="keep-line">but to let me put a little Love in your mailbox.</span></p>
       <p>Tell me where, and I will send it on its way to you.</p>
       <div class="actions">
         <a class="btn btn-solid" href="https://forms.gle/dJmi1DTbA7Qu3zZm7" target="_blank" rel="noopener">Tell me where to send it</a>
