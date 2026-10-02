@@ -234,6 +234,16 @@
   .portrait figcaption{margin-top:.9rem;font-family:var(--humanist);font-size:var(--step--1);color:var(--ink-faint);letter-spacing:.05em;text-align:center;}
 
   /* ---- the stories behind the letters ---- */
+
+  /* Why letters, Who will enjoy these letters, About Zuzu centred (2 Oct 2026) */
+  #for-you{background:color-mix(in srgb, var(--paper) 64%, transparent);}
+  .for-you-list{list-style:none;margin-block:0;font-size:var(--step-1);line-height:1.6;color:var(--ink-soft);}
+  .for-you-list li{display:flex;gap:.7rem;}
+  .for-you-list li + li{margin-top:.7rem;}
+  .for-you-list li::before{content:"\2726";color:var(--plum);flex:none;}
+  .about.about-centered{display:block;max-width:40rem;}
+  .about-centered .portrait{max-width:26rem;margin:0 auto 2.5rem;}
+  .about-centered > p + p, .about-centered > figure.snap + p{margin-top:1.1rem;}
   .stories{max-width:40rem;margin-inline:auto;padding-inline:1.5rem;}
   .stories p{color:var(--ink-soft);}
   .stories p + p{margin-top:1.1rem;}
@@ -470,6 +480,7 @@
     .snap-host > .snap{position:absolute;top:var(--snap-top,4rem);width:13.5rem;max-width:none;margin:0;}
     .snap-host > .snap-l{left:calc(50% - 36rem);}
     .snap-host > .snap-r{right:calc(50% - 36rem);}
+    .about-centered.snap-host > .snap{top:auto;}
   }
 </style>
 </head>
@@ -494,22 +505,59 @@
   <div class="letter-stage">
     <article class="letter">
       <p class="worldwide-banner">Zuzu&rsquo;s Letters travel worldwide!</p>
-      <p class="eyebrow">A letter experience &middot; once a month</p>
+      <p class="eyebrow">Something special in your mailbox each month</p>
       <h1 class="salutation">Hello Dear Friend,</h1>
-      <p>Welcome in&hellip; into the world of Zuzu&rsquo;s Letters! They are filled with tales from the wild adventures I have experienced throughout my life, reflections of lessons learned, and simple moments that make an ordinary day special. Whether this is a gift from someone else, or for yourself, I hope you love these letters as much as I love writing them to you.</p>
+      <p>Welcome in&hellip; into the world of Zuzu&rsquo;s Letters! You are invited to an intimate correspondence experience that celebrates the ordinary and extraordinary moments of life. Each month, a letter arrives just for you, filled with stories, reflections, and a few treasures to make an ordinary day special. Whether this is a gift from someone who loves you, or a gift to yourself, I hope these letters bring you as much joy to read as they bring me to write.</p>
       <p>So go find your favorite comfy spot, make some tea, pour some wine, open a window, or turn on some music (perhaps even the Spotify playlist included in your letter)&hellip; Enjoy this moment in whatever way makes you happy.</p>
       <p class="signature">Zuzu</p>
       <div class="actions">
-        <a class="btn btn-solid" href="#subscribe">Begin receiving letters</a>
+        <a class="btn btn-solid" href="#subscribe">Begin our correspondence</a>
         <a class="btn btn-ghost" href="#sample">Read a sample letter</a>
       </div>
     </article>
   </div>
 
+  <section class="band snap-host" id="why-letters">
+    <figure class="snap snap-l" style="--snap-top:calc(50% - 7rem)">
+      <img src="images/snap-envelopes-stack.jpg" width="700" height="530" loading="lazy"
+           alt="A fan of sage green Zuzu&rsquo;s Letters envelopes with gold-edged flaps, gold seals, flower stamps, and Happy Mail stickers.">
+      <figcaption>A pile of Zuzu&rsquo;s Letters.</figcaption>
+    </figure>
+    <figure class="snap snap-r" style="--snap-top:calc(50% - 8rem)">
+      <img src="images/snap-envelope.jpg" width="620" height="465" loading="lazy"
+           alt="A sage green envelope on a bamboo mat, sealed and stamped: the Zuzu&rsquo;s Letters mark, a scrolled Z monogram, two pink dahlia Forever stamps, and a sticker reading Smile, you&rsquo;ve got happy mail.">
+      <figcaption>What lands in the mailbox.</figcaption>
+    </figure>
+    <div class="measure section-head">
+      <p class="eyebrow">Why letters</p>
+      <h2>A moment to slow down and reconnect.</h2>
+    </div>
+    <div class="stories">
+      <p>In an increasingly disconnected world, you deserve a moment of connection, positivity, and magic. Not another screen, but a real letter in your hands, from someone who has been thinking of you.</p>
+      <p>Your letter is meant to inspire you. Some months you might read about a grand adventure. Other months, it might be a moment of mindfulness found while walking my dog, Otter, on a rainy day. Either way, I hope it reminds you that the ordinary moments of your own life hold magic too.</p>
+      <p>This is not a newsletter. It is a correspondence, thoughtfully composed to inspire, connect, and rejoice in the slower moments of life. Open it whenever you need to pause, breathe, and rediscover the wonder around you.</p>
+    </div>
+  </section>
+
+  <section id="for-you">
+    <div class="measure section-head">
+      <p class="eyebrow">Who will enjoy these letters?</p>
+      <h2>This is for you if&hellip;</h2>
+    </div>
+    <ul class="for-you-list measure">
+      <li>you enjoy little moments of connection.</li>
+      <li>you love receiving something thoughtful in the mail.</li>
+      <li>you would love a little surprise each month to brighten your day.</li>
+      <li>you appreciate meaningful words and simple joys.</li>
+      <li>you would like something special to look forward to each month.</li>
+      <li>you believe the smallest gestures can mean the most.</li>
+    </ul>
+  </section>
+
   <section class="band" id="letters">
     <div class="measure section-head">
       <p class="eyebrow">What arrives</p>
-      <h2>Everything I could fit in one envelope.</h2>
+      <h2>Everything waiting for you in one envelope.</h2>
       <p class="section-lede">Some people call it snail mail. Some call it a letter club, or a letter subscription service. I call it writing to a friend &mdash; one envelope a month, addressed to you and mailed.</p>
     </div>
     <figure class="desk-photo">
@@ -563,168 +611,7 @@
     </div>
   </section>
 
-  <section class="snap-host" id="sample">
-    <figure class="snap snap-r" style="--snap-top:7rem">
-      <img src="images/snap-envelope.jpg" width="620" height="465" loading="lazy"
-           alt="A sage green envelope on a bamboo mat, sealed and stamped: the Zuzu&rsquo;s Letters mark, a scrolled Z monogram, two pink dahlia Forever stamps, and a sticker reading Smile, you&rsquo;ve got happy mail.">
-      <figcaption>What lands in the mailbox.</figcaption>
-    </figure>
-    <figure class="snap snap-l" style="--snap-top:6rem">
-      <img src="images/snap-love-visitor.jpg" width="398" height="620" loading="lazy"
-           alt="Susannah standing with Tom Hanks backstage, both smiling at the camera.">
-      <figcaption>Backstage at <em>The Beatles Love</em>.</figcaption>
-    </figure>
-    <div class="measure section-head">
-      <p class="eyebrow">A sample letter</p>
-      <h2>A letter I wrote to say hello.</h2>
-    </div>
-    <div class="letter-stage">
-      <article class="letter sample-letter">
-        <h3 class="salutation">Hello Dear Friend,</h3>
-        <p>I am so happy you found your way here. To begin with, I would like to tell you that I was nicknamed Zuzu after the character, Zuzu Bailey, George Bailey&rsquo;s youngest daughter, who believed that &ldquo;every time a bell rings an angel gets its wings,&rdquo; from the movie <em>It&rsquo;s a Wonderful Life</em>. I watch the movie at least once a year, and sometimes more. I still believe there is magic in the world and hope to create a moment of magic for you. A moment for you to slow down, take a deep breath, and enjoy a moment of connection through Zuzu&rsquo;s Letters.</p>
-        <p>Now let&rsquo;s back up so I can tell you a little more about myself. I entered this world programmed to love music, horses, performing, and people. My mother told me I sang before I talked&hellip;supposedly it is true&hellip;I sang a tune resembling the Star-Spangled Banner as an infant. This might seem odd, but once I tell you that I am from a family enthralled with sports&hellip;any kind of sports, but particularly football, basketball, and baseball, it might not seem quite as peculiar. If there was a game on the TV, my family would watch it. All three of my siblings played sports&hellip;a couple of them even had hopes of playing a professional sport of some kind. So, when I came out singing and obsessing over horses and musicals, my family didn&rsquo;t know what to think. They used to joke that I was exchanged with a baby from Norway. Not only did I think differently, but I looked different as well. My other siblings took after one of my parents, while I couldn&rsquo;t be compared to anyone else. And, not just to my parents, but one could look through all the old pictures of our relatives passed down for generations and not find a single person that I resemble. This fact led to a very funny story involving one of my roommates from when I participated in the college program at Walt Disney World in Orlando, Florida. All the students in this program lived in the same apartment complex, which, at the time, consisted of three-bedroom apartments that we shared with five other roommates. The young women I lived with during my program were from Mississippi, Mexico, Great Britain, Germany, and Norway! Yes, Norway. Well, when my parents came for a visit and met my Norwegian roommate, who was a little darker complected, with brown hair, my father immediately said she was who they had exchanged me with as an infant. It was hilarious trying to explain what he meant by his comment with my roommate&hellip;by the end we were all laughing. I love this memory! My Norwegian roommate and I have stayed in contact throughout the years.</p>
-        <p>Back to my beginning&hellip;that singing thing seems to be true. My father told me many times before he passed that he and my mom thought the ABBA song &ldquo;Thank You for the Music&rdquo; was written about me. The song is about a woman who has loved music and dance since early childhood, who isn&rsquo;t spectacular, but is filled with joy when she brings happiness to others. That sounds like me, for sure.</p>
-        <p>&hellip;Anyway, these unique character traits, coupled with a blind faith that everything will work out, are what set me fearlessly (or naively) on a lifetime of adventure. Doesn&rsquo;t it feel good to hear from a friend writing to you to share the joys, adventures, memories, and, sometimes, sadness experienced along the way of this journey through life? Well, that is what I want to share with you.</p>
-        <p class="closing">Peace and Love,</p>
-        <p class="signature">Zuzu</p>
-        <div class="actions">
-          <a class="btn btn-solid" href="#subscribe">Begin receiving letters</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="snap-host">
-    <figure class="snap snap-r" style="--snap-top:3rem">
-      <img src="images/snap-red-nose.jpg" width="620" height="465" loading="lazy"
-           alt="Susannah cheek to cheek with Gidget, her small white rescue dog, who is wearing a red clown nose.">
-      <figcaption>Gidget, on Red Nose Day.</figcaption>
-    </figure>
-    <figure class="excerpt">
-      <blockquote>I knew we were not going to make it home without getting soaked, so I just laughed and strolled the rest of the way home. All the while thinking what a picture we must have been &mdash; a woman and her dog strolling through the rain.</blockquote>
-      <figcaption>From letter #1 &middot; September 2026</figcaption>
-    </figure>
-  </section>
-
-  <section class="band snap-host" id="stories">
-    <figure class="snap snap-l" style="--snap-top:5rem">
-      <img src="images/snap-guinevere.jpg" width="496" height="620" loading="lazy"
-           alt="Susannah in a gold and ivory gown beside a king in a red cloak, a castle behind them.">
-      <figcaption>The last full time Queen Guinevere.</figcaption>
-    </figure>
-    <figure class="snap snap-r" style="--snap-top:26rem">
-      <img src="images/snap-love-backstage.jpg" width="604" height="401" loading="lazy"
-           alt="Susannah backstage with Bette Midler, both smiling at the camera.">
-      <figcaption>Fangirling backstage at <em>The Beatles Love</em>.</figcaption>
-    </figure>
-    <figure class="snap snap-l" style="--snap-top:48rem">
-      <img src="images/snap-maestoso.jpg" width="462" height="463" loading="lazy"
-           alt="Susannah leaning in to kiss the nose of Precious Pony, a white Lipizzaner, in his stall.">
-      <figcaption>Precious Pony &mdash; formally Maestoso Elvira III.</figcaption>
-    </figure>
-    <figure class="snap snap-r" style="--snap-top:64rem">
-      <img src="images/snap-red-carpet.jpg" width="374" height="620" loading="lazy"
-           alt="Anne Hathaway in a long black gown on the red carpet at the SAG Awards, with Susannah in the background at the back right.">
-      <figcaption>Photo bombing Anne Hathaway at the SAG Awards.</figcaption>
-    </figure>
-    <div class="measure section-head">
-      <p class="eyebrow">The stories</p>
-      <h2>I have been collecting stories my whole life.</h2>
-      <p class="section-lede">People ask what I could possibly find to write about every month. Well, you see, that has never been a problem&hellip;</p>
-    </div>
-    <div class="stories">
-      <p>I began acting when I was seven years old and I have been finding my way back to the stage ever since. I have sung in Russia and I have sung in Las Vegas. I danced for Sesame Street Live. I sang with the Knoxville Opera Company. I was a puppeteer for <em>Avenue Q</em> in Las Vegas. I was the first woman to perform Sebastian in the original Little Mermaid show at Walt Disney World when it was Disney-MGM Studios. I acted in King Arthur&rsquo;s Tournament in Las Vegas. And I was the last full time Queen Guinevere at the Excalibur Hotel and Casino&hellip;which is a peculiar thing to be. There have been musicals, commercials, films, and television as well.</p>
-      <p>And there have been horses through all of it. I galloped along the beach on Nantucket for a fundraiser for the Atheneum, which is their library, and I have never forgotten the smell of the sea, the sound of the surf, and the feel of my horse beneath me stepping along the shore. I performed in the dinner theater show, <em>Arabian Nights</em>, as a rider and actress both. I toured the country with the Royal Lipizzaner Stallions. Years later I began, what was once, one of the largest equine assisted activities and therapies programs in the country for veterans, first responders, and their families. It was called Equest Hooves for Heroes, and of everything I have done, that is the one I am proud of the most.</p>
-      <p>I have spent just as much time off the stage as on it. I was on the management team that opened <em>The Beatles LOVE</em> for Cirque du Soleil and I stayed with that show for five years. I worked with the talent on the Jerry Lewis telethon. I was a talent assistant at the SAG Awards. You learn a great deal about people while you are standing in the wings holding a clipboard.</p>
-      <p>Every one of those things came with a story, and the stories are what I am sending you in Zuzu&rsquo;s Letters. Not all of them are grand. Most of them not. A rainy walk home with my dog Otter is every bit as likely to turn up in your mailbox as a Lipizzaner stallion, and I could not tell you which one you will like better. That is rather the point of it. One envelope a month, and no knowing what is inside until you open it.</p>
-    </div>
-  </section>
-
-  <section class="print-band" id="print">
-    <figure class="snap snap-l" style="--snap-top:9rem">
-      <img src="images/snap-letter-tray.jpg" width="620" height="417" loading="lazy"
-           alt="September&rsquo;s letter laid out on a floral tray: the letter pages in Zuzu&rsquo;s script, sage green envelopes edged in gold, an original print of a sunlit stone archway, a quote card that doubles as a bookmark, and the cards carrying the playlist code.">
-      <figcaption>September&rsquo;s letter, just before it went into the envelope.</figcaption>
-    </figure>
-    <figure class="snap snap-r" style="--snap-top:10rem">
-      <img src="images/snap-saunder.jpg" width="620" height="465" loading="lazy"
-           alt="Susannah cheek to cheek with Saunder, a Fjord horse, in front of a painted backdrop.">
-      <figcaption>Saunder, at a therapeutic riding center in Dallas.</figcaption>
-    </figure>
-    <div class="measure section-head">
-      <p class="eyebrow">The print</p>
-      <h2>A small piece of art, in its own right.</h2>
-    </div>
-    <div class="print-inner">
-      <div class="print-pair">
-        <figure class="print-photo">
-          <img src="images/print-garden-shed.jpg" width="1500" height="1067" loading="lazy"
-               alt="A gicl&eacute;e print of an old garden shed with a rust-red tin roof, ivy climbing the boards, and small flags among the pots, printed on textured 100&percnt; cotton fiber paper.">
-          <figcaption>The Garden Shed</figcaption>
-        </figure>
-        <figure class="print-photo">
-          <img src="images/print-house-in-walland.jpg" width="1500" height="1098" loading="lazy"
-               alt="A gicl&eacute;e print of a house half hidden among trees, its roof rising through the branches in soft golden light, printed on textured 100&percnt; cotton fiber paper.">
-          <figcaption>House in Walland</figcaption>
-        </figure>
-        <figure class="print-photo">
-          <img src="images/print-draft-horses.jpg" width="1500" height="1114" loading="lazy"
-               alt="A gicl&eacute;e print of two draft horses in harness pulling a yellow wagon along a dirt road, wooded hills behind, printed on textured 100&percnt; cotton fiber paper.">
-          <figcaption>Bob &amp; Too Big</figcaption>
-        </figure>
-        <p class="pair-caption">Three actual prints &mdash; each 5&Prime; &times; 7&Prime; on 100&percnt; cotton fiber paper produced from the ARCHES&reg; traditional molds.</p>
-      </div>
-      <div>
-        <p>Every letter arrives with an original gicl&eacute;e print, made from one of my own photographs &mdash; a place I&rsquo;ve been, something I saw that morning, a moment worth keeping.</p>
-        <p style="margin-top:1.1rem;">Each one is printed on 100&percnt; cotton fiber paper produced from the ARCHES&reg; traditional molds that create beautiful texture, made to last for generations, and sized to fit a frame you already own.</p>
-        <ul class="specs">
-          <li><span class="k">Paper</span><span class="v">ARCHES&reg; Aquarelle Rag Paper</span></li>
-          <li><span class="k">Size</span><span class="v">5&Prime; &times; 7&Prime;</span></li>
-          <li><span class="k">Thickness</span><span class="v">0.61&nbsp;mm</span></li>
-          <li><span class="k">Archival</span><span class="v">Acid-free, pH-neutral</span></li>
-          <li><span class="k">Made from</span><span class="v">My own photographs</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="band" id="zuzu">
-    <figure class="snap snap-l" style="--snap-top:6rem">
-      <img src="images/snap-donkey-rainbow.jpg" width="620" height="465" loading="lazy"
-           alt="Susannah kneeling in a wet field beside a soaked donkey, a rainbow arching behind them after heavy rain.">
-      <figcaption>Getting soaked and enjoying the rainbow.</figcaption>
-    </figure>
-    <figure class="snap snap-r" style="--snap-top:28rem">
-      <img src="images/snap-snorkel.jpg" width="619" height="620" loading="lazy"
-           alt="Susannah close to the camera in a snorkel mask and snorkel, in bright sun.">
-      <figcaption>Aruba, St. Croix, Maui, the Florida Keys, or my living room.</figcaption>
-    </figure>
-    <div class="measure section-head">
-      <p class="eyebrow">About Zuzu</p>
-      <h2>I believe there is still magic in the world.</h2>
-    </div>
-    <div class="about">
-      <div>
-        <p class="about-quote">&ldquo;I entered this world programmed to love music, horses, performing, and people.&rdquo;</p>
-        <p>I spent many years as a singer, dancer, puppeteer, actor, equestrian, and manager for some of the biggest entertainment companies in the world.</p>
-        <p>It is loss that sent me on a journey of self-discovery and led me to my real purpose: working in equine assisted activities and therapies, helping people heal through partnering with horses. Horses are authentic, live in the moment, and are interdependent in the herd. These all seem like good qualities to me. So, I guess we could all aspire to be more herd-like. &#128156;</p>
-        <p>I have had the idea of Zuzu&rsquo;s Letters for about three years now but have allowed fear to prevent me from bringing the idea to fruition. I have used all sorts of excuses, from &ldquo;I don&rsquo;t have enough time&rdquo; to &ldquo;I am not good enough, smart enough, or brave enough.&rdquo; Well, I had spinal fusion surgery three months ago, and I am now determined to fill my recovery time productively. If I don&rsquo;t start Zuzu&rsquo;s Letters now, I will never do it&hellip;What is the saying about if not now, then when? Or it&rsquo;s now or never? Face your fears. You can do it. Be brave. All of these sayings ring true &mdash; and here I am, being brave.</p>
-        <p>It seems to me our world needs a little more connection, positivity, love, and kindness these days. That is what I hope you find each time you open one of my letters.</p>
-      </div>
-      <figure class="portrait">
-        <img src="images/zuzu-and-too-big.jpg" width="900" height="1200" loading="lazy"
-             alt="Zuzu in a corduroy cap and glasses, cheek to cheek with a chestnut and white horse in harness, both looking at the camera.">
-        <figcaption>Me and Too Big.</figcaption>
-      </figure>
-    </div>
-  </section>
-
   <section id="subscribe">
-    <figure class="snap snap-l" style="--snap-top:8rem">
-      <img src="images/snap-flamingo-hat.jpg" width="281" height="488" loading="lazy"
-           alt="Susannah in a tall pink flamingo hat and an embroidered vest, standing in front of a rack of costumes.">
-      <figcaption>A flamingo hat at the MGM Grand, for no particular reason.</figcaption>
-    </figure>
     <div class="measure section-head">
       <p class="eyebrow">Subscribe</p>
       <h2>Let&rsquo;s begin.</h2>
@@ -781,6 +668,162 @@
       <p class="timing-dec for-intl"><span class="by">December is the exception.</span> Order through the 20th and the December letter still goes out to you &mdash; though traveling abroad in holiday mail, it will most likely reach you in the new year.</p>
     </div>
   </section>
+
+  <section class="snap-host" id="sample">
+    <figure class="snap snap-r" style="--snap-top:520px">
+      <img src="images/snap-love-visitor.jpg" width="398" height="620" loading="lazy"
+           alt="Susannah standing with Tom Hanks backstage, both smiling at the camera.">
+      <figcaption>Backstage at <em>The Beatles Love</em>.</figcaption>
+    </figure>
+    <figure class="snap snap-l" style="--snap-top:1372px">
+      <img src="images/snap-flamingo-hat.jpg" width="281" height="488" loading="lazy"
+           alt="Susannah in a tall pink flamingo hat and an embroidered vest, standing in front of a rack of costumes.">
+      <figcaption>A flamingo hat at the MGM Grand, for no particular reason.</figcaption>
+    </figure>
+    <figure class="snap snap-r" style="--snap-top:1950px">
+      <img src="images/snap-pluto-antlers.jpg" width="620" height="620" loading="lazy"
+           alt="Zuzu clasping her hands in delight as Pluto, wearing reindeer antlers, poses beside a little Christmas tree under twinkling lights.">
+      <figcaption>Me and Pluto, antlers and all.</figcaption>
+    </figure>
+    <div class="measure section-head">
+      <p class="eyebrow">A sample letter</p>
+      <h2>A letter I wrote to say hello.</h2>
+    </div>
+    <div class="letter-stage">
+      <article class="letter sample-letter">
+        <h3 class="salutation">Hello Dear Friend,</h3>
+        <p>I am so happy you found your way here. To begin with, I would like to tell you that I was nicknamed Zuzu after the character, Zuzu Bailey, George Bailey&rsquo;s youngest daughter, who believed that &ldquo;every time a bell rings an angel gets its wings,&rdquo; from the movie <em>It&rsquo;s a Wonderful Life</em>. I watch the movie at least once a year, and sometimes more. I still believe there is magic in the world and hope to create a moment of magic for you. A moment for you to slow down, take a deep breath, and enjoy a moment of connection through Zuzu&rsquo;s Letters.</p>
+        <p>Now let&rsquo;s back up so I can tell you a little more about myself. I entered this world programmed to love music, horses, performing, and people. My mother told me I sang before I talked&hellip;supposedly it is true&hellip;I sang a tune resembling the Star-Spangled Banner as an infant. This might seem odd, but once I tell you that I am from a family enthralled with sports&hellip;any kind of sports, but particularly football, basketball, and baseball, it might not seem quite as peculiar. If there was a game on the TV, my family would watch it. All three of my siblings played sports&hellip;a couple of them even had hopes of playing a professional sport of some kind. So, when I came out singing and obsessing over horses and musicals, my family didn&rsquo;t know what to think. They used to joke that I was exchanged with a baby from Norway. Not only did I think differently, but I looked different as well. My other siblings took after one of my parents, while I couldn&rsquo;t be compared to anyone else. And, not just to my parents, but one could look through all the old pictures of our relatives passed down for generations and not find a single person that I resemble. This fact led to a very funny story involving one of my roommates from when I participated in the college program at Walt Disney World in Orlando, Florida. All the students in this program lived in the same apartment complex, which, at the time, consisted of three-bedroom apartments that we shared with five other roommates. The young women I lived with during my program were from Mississippi, Mexico, Great Britain, Germany, and Norway! Yes, Norway. Well, when my parents came for a visit and met my Norwegian roommate, who was a little darker complected, with brown hair, my father immediately said she was who they had exchanged me with as an infant. It was hilarious trying to explain what he meant by his comment with my roommate&hellip;by the end we were all laughing. I love this memory! My Norwegian roommate and I have stayed in contact throughout the years.</p>
+        <p>Back to my beginning&hellip;that singing thing seems to be true. My father told me many times before he passed that he and my mom thought the ABBA song &ldquo;Thank You for the Music&rdquo; was written about me. The song is about a woman who has loved music and dance since early childhood, who isn&rsquo;t spectacular, but is filled with joy when she brings happiness to others. That sounds like me, for sure.</p>
+        <p>&hellip;Anyway, these unique character traits, coupled with a blind faith that everything will work out, are what set me fearlessly (or naively) on a lifetime of adventure. Doesn&rsquo;t it feel good to hear from a friend writing to you to share the joys, adventures, memories, and, sometimes, sadness experienced along the way of this journey through life? Well, that is what I want to share with you.</p>
+        <p class="closing">Peace and Love,</p>
+        <p class="signature">Zuzu</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="#subscribe">Begin our correspondence</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="snap-host">
+    <figure class="snap snap-r" style="--snap-top:3rem">
+      <img src="images/snap-red-nose.jpg" width="620" height="465" loading="lazy"
+           alt="Susannah cheek to cheek with Gidget, her small white rescue dog, who is wearing a red clown nose.">
+      <figcaption>Gidget, on Red Nose Day.</figcaption>
+    </figure>
+    <figure class="snap snap-l" style="--snap-top:3rem">
+      <img src="images/snap-otter-trail.jpg" width="465" height="620" loading="lazy"
+           alt="Otter, a curly black and white dog, trotting toward the camera on a shaded paved trail through green woods.">
+      <figcaption>Otter on our favorite trail.</figcaption>
+    </figure>
+    <figure class="excerpt">
+      <blockquote>I knew we were not going to make it home without getting soaked, so I just laughed and strolled the rest of the way home. All the while thinking what a picture we must have been &mdash; a woman and her dog strolling through the rain.</blockquote>
+      <figcaption>From letter #2 &middot; October 2026</figcaption>
+    </figure>
+  </section>
+
+
+  <section class="print-band" id="print">
+    <figure class="snap snap-l" style="--snap-top:9rem">
+      <img src="images/snap-letter-tray.jpg" width="620" height="417" loading="lazy"
+           alt="September&rsquo;s letter laid out on a floral tray: the letter pages in Zuzu&rsquo;s script, sage green envelopes edged in gold, an original print of a sunlit stone archway, a quote card that doubles as a bookmark, and the cards carrying the playlist code.">
+      <figcaption>September&rsquo;s letter, just before it went into the envelope.</figcaption>
+    </figure>
+    <figure class="snap snap-r" style="--snap-top:10rem">
+      <img src="images/snap-saunder.jpg" width="620" height="465" loading="lazy"
+           alt="Susannah cheek to cheek with Saunder, a Fjord horse, in front of a painted backdrop.">
+      <figcaption>Saunder, at a therapeutic riding center in Dallas.</figcaption>
+    </figure>
+    <div class="measure section-head">
+      <p class="eyebrow">The print</p>
+      <h2>A small piece of art, in its own right.</h2>
+    </div>
+    <div class="print-inner">
+      <div class="print-pair">
+        <figure class="print-photo">
+          <img src="images/print-garden-shed.jpg" width="1500" height="1067" loading="lazy"
+               alt="A gicl&eacute;e print of an old garden shed with a rust-red tin roof, ivy climbing the boards, and small flags among the pots, printed on textured 100&percnt; cotton fiber paper.">
+          <figcaption>The Garden Shed</figcaption>
+        </figure>
+        <figure class="print-photo">
+          <img src="images/print-house-in-walland.jpg" width="1500" height="1098" loading="lazy"
+               alt="A gicl&eacute;e print of a house half hidden among trees, its roof rising through the branches in soft golden light, printed on textured 100&percnt; cotton fiber paper.">
+          <figcaption>House in Walland</figcaption>
+        </figure>
+        <figure class="print-photo">
+          <img src="images/print-draft-horses.jpg" width="1500" height="1114" loading="lazy"
+               alt="A gicl&eacute;e print of two draft horses in harness pulling a yellow wagon along a dirt road, wooded hills behind, printed on textured 100&percnt; cotton fiber paper.">
+          <figcaption>Bob &amp; Too Big</figcaption>
+        </figure>
+        <p class="pair-caption">Three actual prints &mdash; each 5&Prime; &times; 7&Prime; on 100&percnt; cotton fiber paper produced from the ARCHES&reg; traditional molds.</p>
+      </div>
+      <div>
+        <p>Every letter arrives with an original gicl&eacute;e print, made from one of my own photographs &mdash; a place I&rsquo;ve been, something I saw that morning, a moment worth keeping.</p>
+        <p style="margin-top:1.1rem;">Each one is printed on 100&percnt; cotton fiber paper produced from the ARCHES&reg; traditional molds that create beautiful texture, made to last for generations, and sized to fit a frame you already own.</p>
+        <ul class="specs">
+          <li><span class="k">Paper</span><span class="v">ARCHES&reg; Aquarelle Rag Paper</span></li>
+          <li><span class="k">Size</span><span class="v">5&Prime; &times; 7&Prime;</span></li>
+          <li><span class="k">Thickness</span><span class="v">0.61&nbsp;mm</span></li>
+          <li><span class="k">Archival</span><span class="v">Acid-free, pH-neutral</span></li>
+          <li><span class="k">Made from</span><span class="v">My own photographs</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="zuzu">
+    <div class="measure section-head">
+      <p class="eyebrow">About Zuzu</p>
+      <h2>I believe there is still magic in the world.</h2>
+    </div>
+    <div class="about about-centered snap-host">
+      <figure class="portrait">
+        <img src="images/zuzu-and-too-big.jpg" width="900" height="1200" loading="lazy"
+             alt="Zuzu in a corduroy cap and glasses, cheek to cheek with a chestnut and white horse in harness, both looking at the camera.">
+        <figcaption>Me and Too Big.</figcaption>
+      </figure>
+      <p class="about-quote">&ldquo;I entered this world programmed to love music, horses, performing, and people.&rdquo;</p>
+      <figure class="snap snap-l">
+      <img src="images/snap-donkey-rainbow.jpg" width="620" height="465" loading="lazy"
+           alt="Susannah kneeling in a wet field beside a soaked donkey, a rainbow arching behind them after heavy rain.">
+      <figcaption>Getting soaked and enjoying the rainbow.</figcaption>
+    </figure>
+      <p>I began acting when I was seven years old and I have been finding my way back to the stage ever since. I have sung in Russia and I have sung in Las Vegas. I danced for Sesame Street Live. I sang with the Knoxville Opera Company. I was a puppeteer for <em>Avenue Q</em> in Las Vegas. I was the first woman to perform Sebastian in the original Little Mermaid show at Walt Disney World when it was Disney-MGM Studios. I acted in King Arthur&rsquo;s Tournament in Las Vegas. And I was the last full time Queen Guinevere at the Excalibur Hotel and Casino&hellip;which is a peculiar thing to be. There have been musicals, commercials, films, and television as well.</p>
+      <figure class="snap snap-r">
+      <img src="images/snap-snorkel.jpg" width="619" height="620" loading="lazy"
+           alt="Susannah close to the camera in a snorkel mask and snorkel, in bright sun.">
+      <figcaption>Aruba, St. Croix, Maui, the Florida Keys, or my living room.</figcaption>
+    </figure>
+      <p>And there have been horses through all of it. I galloped along the beach on Nantucket for a fundraiser for the Atheneum, which is their library, and I have never forgotten the smell of the sea, the sound of the surf, and the feel of my horse beneath me stepping along the shore. I performed in the dinner theater show, <em>Arabian Nights</em>, as a rider and actress both. I toured the country with the Royal Lipizzaner Stallions. Years later I began, what was once, one of the largest equine assisted activities and therapies programs in the country for veterans, first responders, and their families. It was called Equest Hooves for Heroes, and of everything I have done, that is the one I am proud of the most.</p>
+      <figure class="snap snap-l">
+      <img src="images/snap-guinevere.jpg" width="496" height="620" loading="lazy"
+           alt="Susannah in a gold and ivory gown beside a king in a red cloak, a castle behind them.">
+      <figcaption>The last full time Queen Guinevere.</figcaption>
+    </figure>
+      <p>I have spent just as much time off the stage as on it. I was on the management team that opened <em>The Beatles LOVE</em> for Cirque du Soleil and I stayed with that show for five years. I worked with the talent on the Jerry Lewis telethon. I was a talent assistant at the SAG Awards. You learn a great deal about people while you are standing in the wings holding a clipboard.</p>
+      <figure class="snap snap-r">
+      <img src="images/snap-love-backstage.jpg" width="604" height="401" loading="lazy"
+           alt="Susannah backstage with Bette Midler, both smiling at the camera.">
+      <figcaption>Fangirling backstage at <em>The Beatles Love</em>.</figcaption>
+    </figure>
+      <p>Every one of those things came with a story, and the stories are what I am sending you in Zuzu&rsquo;s Letters. Not all of them are grand. Most of them not. A rainy walk home with my dog Otter is every bit as likely to turn up in your mailbox as a Lipizzaner stallion, and I could not tell you which one you will like better. That is rather the point of it. One envelope a month, and no knowing what is inside until you open it.</p>
+      <figure class="snap snap-l">
+      <img src="images/snap-maestoso.jpg" width="462" height="463" loading="lazy"
+           alt="Susannah leaning in to kiss the nose of Precious Pony, a white Lipizzaner, in his stall.">
+      <figcaption>Precious Pony &mdash; formally Maestoso Elvira III.</figcaption>
+    </figure>
+      <p>It is loss that sent me on a journey of self-discovery and led me to my real purpose: working in equine assisted activities and therapies, helping people heal through partnering with horses. Horses are authentic, live in the moment, and are interdependent in the herd. These all seem like good qualities to me. So, I guess we could all aspire to be more herd-like. &#128156;</p>
+      <figure class="snap snap-r">
+      <img src="images/snap-sag-awards.jpg" width="465" height="620" loading="lazy"
+           alt="Zuzu smiling on the red carpet at the Screen Actors Guild Awards, beside the giant SAG statue, wearing her production headset and badge.">
+      <figcaption>Working the red carpet at the SAG Awards.</figcaption>
+    </figure>
+      <p>I have had the idea of Zuzu&rsquo;s Letters for about three years now but have allowed fear to prevent me from bringing the idea to fruition. I have used all sorts of excuses, from &ldquo;I don&rsquo;t have enough time&rdquo; to &ldquo;I am not good enough, smart enough, or brave enough.&rdquo; Well, I had spinal fusion surgery three months ago, and I am now determined to fill my recovery time productively. If I don&rsquo;t start Zuzu&rsquo;s Letters now, I will never do it&hellip;What is the saying about if not now, then when? Or it&rsquo;s now or never? Face your fears. You can do it. Be brave. All of these sayings ring true &mdash; and here I am, being brave.</p>
+      <p>It seems to me our world needs a little more connection, positivity, love, and kindness these days. That is what I hope you find each time you open one of my letters.</p>
+    </div>
+  </section>
+
+  
 
   <section class="band snap-host" id="keep-in-touch">
     <figure class="snap snap-l" style="--snap-top:5rem">
