@@ -203,6 +203,12 @@
     border:1px solid var(--rule);border-radius:2px;
     box-shadow:0 10px 26px -16px var(--shadow-lift),0 1px 2px var(--shadow);
   }
+  .otter-pair{margin:2.5rem auto 0;max-width:30rem;}
+  .otter-pair-shots{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;align-items:center;}
+  .otter-pair-shots img{display:block;width:100%;height:auto;}
+  .otter-pair-shots img:first-child{border-radius:2px;box-shadow:0 14px 34px -18px var(--shadow-lift),0 1px 2px var(--shadow);transform:rotate(-1.5deg);}
+  .otter-pair-shots img:last-child{mix-blend-mode:multiply;}
+  .otter-pair figcaption{margin-top:1rem;font-family:var(--humanist);font-size:var(--step--1);color:var(--ink-faint);letter-spacing:.05em;text-align:center;}
   .encl-head{
     font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.15em;
     text-transform:uppercase;color:var(--ink-soft);margin:3.5rem 0 .8rem;
@@ -596,6 +602,16 @@
           </span>
         </li>
       </ul>
+
+      <figure class="otter-pair">
+        <div class="otter-pair-shots">
+          <img src="images/otter-before.jpg" width="376" height="458" loading="lazy"
+               alt="Otter, a curly black and white dog, grinning at the camera with his mouth open.">
+          <img src="images/otter-sticker.jpg" width="546" height="600" loading="lazy"
+               alt="A die-cut sticker illustration of Otter&rsquo;s curly black and white face, grinning with his tongue out.">
+        </div>
+        <figcaption>Otter, and the sticker he became.</figcaption>
+      </figure>
 
       <p class="encl-head">And beyond the envelope</p>
       <ul>
