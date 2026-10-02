@@ -107,7 +107,7 @@ misrepresents her product.
 | --- | --- |
 | **Never write "handwritten" or "written by hand."** | The letters are composed by hand but **computer-printed in a script font**. |
 | **Prints are "made from" her photographs.** | Do **not** claim she paints each one by hand — that is unconfirmed. |
-| **Describe the paper in exactly these words:** *"printed on 100% cotton fiber paper produced from the ARCHES® traditional molds that create beautiful texture."* | The owner supplied this phrasing verbatim and asked for it exactly. Treat it as required brand wording — do not paraphrase, shorten, or "improve" it. Keep the ® symbol. Earlier copy said "ARCHES 100% cotton fine art paper," which was wrong. |
+| **Describe the paper as the owner gave it on 2 October 2026:** giclée, printed with archival pigment inks on **smooth matte paper made from 100% cotton hot press paper**, acid-free and pH-neutral, **0.43 mm** thick. | She changed paper on 2 October 2026. The old ARCHES® Aquarelle Rag wording (0.61 mm, "traditional molds that create beautiful texture") is retired everywhere — do not bring it back. The three print photographs on the page were made on the old paper, so their caption no longer names a paper. |
 | **One letter per month.** | Not twice monthly. |
 | Business is Oh Susannah Studios; product is Zuzu's Letters. | They are not interchangeable. |
 | **In the sign-off, "Peace and Love" takes a capital L.** | Deliberate, not a typo. Do not correct it, and do not let a tidy-up pass change it. |
