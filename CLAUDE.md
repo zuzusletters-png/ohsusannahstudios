@@ -210,13 +210,14 @@ custom checkout.
 
 **Never put a Stripe secret key in this repository.**
 
-**Eight** live links are wired into `index.html`, in two cards — four for US
-addresses and four for everywhere else:
+**Ten** live links are wired into `index.html`, in two cards — five for US
+addresses and five for everywhere else:
 
 | Card | Button | Product | US price | Outside the US |
 | --- | --- | --- | --- | --- |
 | One at a time | Keep them coming | Month-to-Month | $18.99 / month, recurring | $19.99 / month, recurring |
 | One at a time | Try a single letter | Zuzu's Letter | $18.99 one-time | $19.99 one-time |
+| All at once | Three months | 3-Month Bundle | $54.99 ($18.33 a letter) | $57.99 ($19.33 a letter) |
 | All at once | Six months | 6-Month Bundle | $97.99 ($16.33 a letter) | $103.99 ($17.33 a letter) |
 | All at once | Twelve months | 12-Month Bundle | $179.99 ($15.00 a letter) | $191.99 ($16.00 a letter) |
 
@@ -271,6 +272,10 @@ set it again — it does not inherit.
 Do **not** fix this by changing the account-level descriptor. The account also
 sells mugs and totes, and those buyers should not see "Zuzus Letters."
 
+**The US 3-Month Bundle link (added 6 October 2026) does NOT have it either** — it was
+duplicated from the 6-month link in the dashboard, so it reads `O.S. STUDIOS`.
+The international 3-month link is in the same position as the other overseas ones.
+
 **The three one-time overseas links do NOT have it, and currently cannot (22
 September 2026).** The overseas monthly is fine — it inherits `Zuzus Letters`
 from its product, which is what products are for. But `payment_intent_data` is
@@ -293,7 +298,7 @@ name, unless she registers it as a third fictitious name. Receipts have no slot 
 the website, and the support address is stored but not printed; the support email
 and phone are.
 
-All eight collect the buyer's **name and shipping address** — these are physical
+All ten collect the buyer's **name and shipping address** — these are physical
 goods sent by post, and Stripe defaults to billing address only, which does not
 give the owner somewhere to mail to. If you ever recreate a link, set
 **"Billing and shipping addresses,"** not the default.
