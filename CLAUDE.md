@@ -44,6 +44,7 @@ implying the work is done.
 | --- | --- |
 | `index.html` | The shop — one self-contained file, no build step |
 | `blog.html` | The blog, *Notes between letters*. One page, newest post at the top. Self-contained, modelled on `details.html`, no custom fonts |
+| `blog/` | One page per blog post, added 6 October 2026 so each post can be found in search on its own. See *Blog posts* below |
 | `images/` | Photographs used by the page |
 | `CNAME` | The custom domain, exactly `ohsusannahstudios.com` |
 | `CLAUDE.md` | This file: the durable, public-safe project record |
@@ -308,6 +309,22 @@ screen that the copies do not affect the originals, and the US links were verifi
 untouched afterwards. Duplicating creates a **new product** each time, named
 `(Copy) …`; rename it before creating the link, or archive it if you abandon the
 attempt.
+
+---
+
+## Blog posts
+
+**Every post lives in two places (6 October 2026).** `blog.html` still shows every post in
+full, newest first, and each post *also* has its own page at `blog/<title-in-lowercase-with-hyphens>.html`.
+The single page was invisible to search: Google counted it as one page however many posts
+it held. A page per post gives each one its own title and description in search results.
+
+To add a post: paste the `<article>` into `blog.html` as before, with its `<h2>` linked to
+the new page; copy an existing file in `blog/` and swap in the article (its heading is an
+`<h1 class="post-title">` there), the `<title>`, description, canonical and `og:` tags, and
+`article:published_time`; then add the new address to `sitemap.xml`. Paths inside
+`blog/` are absolute (`/images/wash.jpg`, `/blog.html`) because the pages sit one folder
+down. The post text is hers: copy it exactly, the same in both places.
 
 ---
 
