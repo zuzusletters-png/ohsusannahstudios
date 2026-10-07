@@ -438,7 +438,9 @@
   }
   /* side by side and matched in height; stacked and full width on a phone */
   @media (min-width:44rem){
-    .studio-inner{grid-template-columns:auto auto;justify-content:center;}
+    /* both pictures are 16rem tall, so starting them level centres the stamp on the
+       photograph alone and lets the caption hang below it */
+    .studio-inner{grid-template-columns:auto auto;justify-content:center;align-items:start;}
     .studio-logo{width:auto;height:16rem;max-width:100%;}
     .otter-photo{max-width:none;}
     .otter-photo img{width:auto;height:16rem;}
