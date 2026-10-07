@@ -20,7 +20,7 @@
     --shadow-lift:rgba(44,52,70,.16);
     --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
     --humanist:Optima,Candara,"Gill Sans MT","Gill Sans","Trebuchet MS",sans-serif;
-    --step--1:.86rem;
+    --step--1:calc(.86rem + 2pt);
     --step-1:1.42rem;
     --step-3:2.3rem;
   }
@@ -56,6 +56,7 @@
         font-size:var(--step--1);letter-spacing:.06em;text-transform:uppercase;}
   footer{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--rule);
          font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.05em;color:var(--ink-faint);}
+  footer .footer-logo{display:block;width:9rem;max-width:60%;height:auto;margin:1rem 0 0;}
 </style>
 </head>
 <body>
@@ -74,7 +75,8 @@
   <a class="back" href="/">&larr; Back to the letters</a>
 
   <footer>
-    <p>Zuzu&rsquo;s Letters &middot; A small venture of Oh Susannah Studios</p>
+    <p>Zuzu&rsquo;s Letters are brought to you by Oh Susannah Studios</p>
+    <img class="footer-logo" src="/images/os-studios-logo.png" width="900" height="695" loading="lazy" alt="The O.S. Studios mark: a curly-haired dog in spectacles at a typewriter, with an envelope on one side and a steaming cup on the other.">
   </footer>
 
 </div>

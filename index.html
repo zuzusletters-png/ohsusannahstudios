@@ -65,7 +65,7 @@
     --humanist:Optima,Candara,"Gill Sans MT","Gill Sans","Trebuchet MS",sans-serif;
 
     --measure:34rem;
-    --step--1:.86rem;
+    --step--1:calc(.86rem + 2pt);
     --step-0:1.19rem;
     --step-1:1.42rem;
     --step-2:1.78rem;
@@ -139,10 +139,10 @@
   @keyframes rise{from{opacity:0;transform:translateY(.7rem);}to{opacity:1;transform:none;}}
   @media (prefers-reduced-motion:reduce){.letter > *{animation:none;}}
 
-  .salutation{font-size:clamp(2rem,6vw,3.1rem);font-style:italic;color:var(--ink);}
+  .salutation{font-size:calc(clamp(2rem,6vw,3.1rem) + 4pt);font-style:italic;color:var(--ink);}
   .letter p{font-size:var(--step-1);}
   .signature{
-    font-size:var(--step-3);font-style:italic;color:var(--pen);
+    font-size:calc(var(--step-3) + 4pt);font-style:italic;color:var(--pen);
     margin-top:.5rem;
   }
   .letter .eyebrow{border-bottom:1px solid var(--rule);padding-bottom:1.2rem;font-size:var(--step--1);}
@@ -152,7 +152,9 @@
      letter's own voice rather than the eyebrow's. Do not give it a font. */
   .worldwide-banner{text-align:center;margin-bottom:-.4rem;}
   .sample-letter p{font-style:italic;line-height:1.8;font-size:1.24rem;}
-  .sample-letter .signature{font-family:"Caveat",var(--serif),cursive;font-style:normal;color:var(--pen);}
+  .sample-letter .signature{font-family:"Caveat",var(--serif),cursive;font-style:normal;color:var(--pen);font-size:var(--step-3);}
+  /* the larger greeting and signature belong to the opening letter only */
+  .sample-letter .salutation{font-size:clamp(2rem,6vw,3.1rem);}
   .sample-letter .closing{margin-top:.6rem;font-style:italic;color:var(--ink-soft);}
   .sample-letter .signature{margin-top:.2rem;font-size:clamp(2.6rem,6vw,3.6rem);}
 
@@ -315,14 +317,14 @@
   .worldwide-line{
     max-width:38rem;margin:0 auto 1.3rem;padding-inline:1.5rem;
     text-align:center;font-style:italic;color:var(--ink-soft);
-    font-size:1.05rem;line-height:1.6;
+    font-size:calc(1.05rem + 2pt);line-height:1.6;
   }
   .region-switch{
     display:grid;grid-template-columns:1fr 1fr;
     max-width:28rem;margin:0 auto 1.9rem;padding-inline:1.5rem;
   }
   .region-btn{
-    font-family:var(--humanist);font-size:.95rem;letter-spacing:.06em;
+    font-family:var(--humanist);font-size:calc(.95rem + 2pt);letter-spacing:.06em;
     padding:.8rem .6rem;text-align:center;cursor:pointer;
     background:transparent;color:var(--pen);border:1px solid var(--pen);
     transition:background .18s,color .18s;
@@ -403,6 +405,7 @@
   footer .details-link{font-family:var(--humanist);font-size:var(--step--1);letter-spacing:.05em;margin-top:1rem;}
   footer .details-link a{color:var(--pen);}
   footer .studio{margin-top:1.2rem;color:var(--ink-faint);}
+  footer .footer-logo{display:block;width:9rem;max-width:60%;height:auto;margin:1rem auto 0;}
 
   /* ---- the print ---- */
   .print-band{position:relative;overflow:hidden;}
@@ -480,7 +483,7 @@
   }
   .snap img{display:block;width:100%;height:auto;}
   .snap figcaption{
-    margin-top:.7rem;font-family:var(--humanist);font-size:.82rem;line-height:1.35;
+    margin-top:.7rem;font-family:var(--humanist);font-size:calc(.82rem + 2pt);line-height:1.35;
     color:var(--ink-soft);letter-spacing:.04em;text-align:center;
   }
   .snap-l{transform:rotate(-2deg);}
@@ -505,6 +508,10 @@
     .snap-host > .snap-r{right:calc(50% - 36rem);}
     .about-centered.snap-host > .snap{top:auto;}
   }
+  /* Photograph captions keep the original small size (.86rem) while the rest of the
+     small type is 2pt larger. Her request, 7 October 2026. Keep this rule last. */
+  /* the snapshots and the photo placeholder stay small; every other caption is larger */
+  .snap figcaption,.photo span{font-size:.86rem;}
 </style>
 </head>
 <body>
@@ -920,7 +927,8 @@
     <p class="contact">Write to me any time &mdash; <a href="mailto:hello@ohsusannahstudios.com">hello@ohsusannahstudios.com</a></p>
     <p class="details-link"><a href="blog.html">Notes between letters &middot; the blog</a></p>
     <p class="details-link"><a href="details.html">Delivery, canceling, refunds, and your details</a></p>
-    <p class="studio">A small venture of Oh Susannah Studios</p>
+    <p class="studio">Zuzu&rsquo;s Letters are brought to you by Oh Susannah Studios</p>
+    <img class="footer-logo" src="images/os-studios-logo.png" width="900" height="695" loading="lazy" alt="The O.S. Studios mark: a curly-haired dog in spectacles at a typewriter, with an envelope on one side and a steaming cup on the other.">
   </footer>
 
 </div>

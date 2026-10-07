@@ -318,6 +318,10 @@ attempt.
 
 ## State of play — 7 October 2026
 
+**Small type was enlarged site-wide at her request.** `--step--1` (the small humanist type: menu, section labels, buttons, footer, spec labels) went from `.86rem` to `calc(.86rem + 2pt)` on all four pages, in normal weight, **not bold** — she asked for bold, then took it back for both the menu and the hero tagline. The opening letter's *"Hello Dear Friend,"* and *"Zuzu"* signature are 4pt larger, **opening letter only**; the sample letter keeps its old sizes (override under `.sample-letter`). **Photograph captions:** the snapshot captions (`.snap figcaption`) and `.photo span` stay at the original `.86rem`, set by the last rule in `index.html`'s style block; every other caption is larger, including the desk photo, Otter and the sticker, the three print titles with *"Three actual prints"*, *"Me and Too Big,"* and *"Otter, with his otter."* *"Letters now travel worldwide."* (`.worldwide-line`) is 2pt larger. Her unit is points; 2pt = 0.1667rem.
+
+**Footer:** now reads *"Zuzu&rsquo;s Letters are brought to you by Oh Susannah Studios"* with the O.S. Studios logo (`images/os-studios-logo.png`, the navy version, `.footer-logo`) beneath it, on all four pages. She said "original logo"; the navy site version was used. The Details-page sentence *"is a small venture of Oh Susannah Studios"* was left alone.
+
 **The masthead order was swapped at her request.** *Zuzu&rsquo;s Letters* is now the first line, with *"from Oh Susannah Studios"* beneath it in the small bold `.presents` style. The old *"Oh Susannah Studios presents:"* wording, colon included, is retired. The class name `.presents` was kept so the bold rule from 22 September still applies.
 
 ## State of play — 2 October 2026
