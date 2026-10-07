@@ -438,9 +438,11 @@
   }
   /* side by side and matched in height; stacked and full width on a phone */
   @media (min-width:44rem){
-    /* both pictures are 16rem tall, so starting them level centres the stamp on the
-       photograph alone and lets the caption hang below it */
-    .studio-inner{grid-template-columns:auto auto;justify-content:center;align-items:start;}
+    /* the caption is lifted out of the figure's height, so the stamp centres on the
+       photograph alone and the caption hangs just below it */
+    .studio-inner{grid-template-columns:auto auto;justify-content:center;}
+    .otter-photo{position:relative;}
+    .otter-photo figcaption{position:absolute;top:100%;left:0;right:0;}
     .studio-logo{width:auto;height:16rem;max-width:100%;}
     .otter-photo{max-width:none;}
     .otter-photo img{width:auto;height:16rem;}
