@@ -316,6 +316,10 @@ attempt.
 
 ---
 
+## State of play — 7 October 2026
+
+**The masthead order was swapped at her request.** *Zuzu&rsquo;s Letters* is now the first line, with *"from Oh Susannah Studios"* beneath it in the small bold `.presents` style. The old *"Oh Susannah Studios presents:"* wording, colon included, is retired. The class name `.presents` was kept so the bold rule from 22 September still applies.
+
 ## State of play — 2 October 2026
 
 Reader-focused copy pass, approved section by section by the owner in a live preview before pushing.
