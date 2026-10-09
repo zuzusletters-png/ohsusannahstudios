@@ -44,7 +44,7 @@ implying the work is done.
 | --- | --- |
 | `index.html` | The shop — one self-contained file, no build step |
 | `blog.html` | The blog, *Notes between letters*. One page, newest post at the top. Self-contained, modelled on `details.html`, no custom fonts |
-| `art.html` | *Other Art*: a gallery of her non-letter artwork (painted furniture, flowers in wood stain, watercolors, pet portraits, backdrops). Same template as `blog.html`. Images are `images/art-*.jpg`, resized to 1400px and stripped of photo metadata |
+| `art.html` | *Other Art*: a gallery of her non-letter artwork (painted furniture, candlesticks and mills, flowers in wood stain, watercolors, pet portraits, backdrops). Same template as `blog.html`. Images are `images/art-*.jpg`, resized to 1400px and stripped of photo metadata |
 | `images/` | Photographs used by the page |
 | `CNAME` | The custom domain, exactly `ohsusannahstudios.com` |
 | `CLAUDE.md` | This file: the durable, public-safe project record |
