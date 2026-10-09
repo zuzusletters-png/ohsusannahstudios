@@ -319,7 +319,7 @@ attempt.
 
 ## State of play — 9 October 2026
 
-**New page: `art.html`, *Other Art*,** added from 21 phone photos she sent on 9 October 2026, with captions drafted by Claude for her to edit. It sits in the menu between *The Blog* and *Subscribe* on all four menus (index, details, blog, art), and is in `sitemap.xml`. Near-duplicate shots of the wall shelf and mirror, and the reference photo of the two dogs, were left out. The horse in the backdrop photo and the dogs in the portraits are not named, since nobody has said whose they are. **None of this artwork is the print or the letter,** so nothing on the page may suggest it arrives in the envelope.
+**New page: `art.html`, *Other Art*,** added from 21 phone photos she sent on 9 October 2026, with captions drafted by Claude for her to edit. It sits in the menu between *The Blog* and *Subscribe* on all four menus (index, details, blog, art), and is in `sitemap.xml`. Near-duplicate shots of the wall shelf and mirror, and the reference photo of the two dogs, were left out. Her video *When the watercolor has other plans* opens the Watercolors group (`images/art-watercolor-video.mp4`, re-encoded to 720p at about 4 MB with metadata stripped, plus a poster frame). The horse in the backdrop photo and the dogs in the portraits are not named, since nobody has said whose they are. **None of this artwork is the print or the letter,** so nothing on the page may suggest it arrives in the envelope.
 
 ## State of play — 7 October 2026
 
