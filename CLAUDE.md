@@ -45,6 +45,7 @@ implying the work is done.
 | `index.html` | The shop — one self-contained file, no build step |
 | `blog.html` | The blog, *Notes between letters*. One page, newest post at the top. Self-contained, modelled on `details.html`, no custom fonts |
 | `images/` | Photographs used by the page |
+| `images/stones/` | **Not on any page yet.** 22 phone screenshots of her painted stones (16 single stones, 4 group shots), saved 9 October 2026 for a planned separate art-and-projects page where she may sell them. The group shots also show "Choose Joy!" and "Yes you can!", which have no single photograph. They are screenshots with her phone's status bar and some unrelated background (floor, feet, a Mickey wallet), so crop before use. Titles, sizes and prices are hers to give; none are settled |
 | `CNAME` | The custom domain, exactly `ohsusannahstudios.com` |
 | `CLAUDE.md` | This file: the durable, public-safe project record |
 | `CLAUDE.local.md` | Owner context, accounts, open questions — gitignored, local only, never pushed |
