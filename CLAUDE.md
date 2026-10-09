@@ -44,6 +44,7 @@ implying the work is done.
 | --- | --- |
 | `index.html` | The shop — one self-contained file, no build step |
 | `blog.html` | The blog, *Notes between letters*. One page, newest post at the top. Self-contained, modelled on `details.html`, no custom fonts |
+| `art.html` | *Other Art*: a gallery of her non-letter artwork (painted furniture, flowers on wood, watercolors, pet portraits, backdrops). Same template as `blog.html`. Images are `images/art-*.jpg`, resized to 1400px and stripped of photo metadata |
 | `images/` | Photographs used by the page |
 | `CNAME` | The custom domain, exactly `ohsusannahstudios.com` |
 | `CLAUDE.md` | This file: the durable, public-safe project record |
@@ -315,6 +316,10 @@ untouched afterwards. Duplicating creates a **new product** each time, named
 attempt.
 
 ---
+
+## State of play — 9 October 2026
+
+**New page: `art.html`, *Other Art*,** added from 21 phone photos she sent on 9 October 2026, with captions drafted by Claude for her to edit. It sits in the menu between *The Blog* and *Subscribe* on all four menus (index, details, blog, art), and is in `sitemap.xml`. Near-duplicate shots of the wall shelf and mirror, and the reference photo of the two dogs, were left out. The horse in the backdrop photo and the dogs in the portraits are not named, since nobody has said whose they are. **None of this artwork is the print or the letter,** so nothing on the page may suggest it arrives in the envelope.
 
 ## State of play — 7 October 2026
 
