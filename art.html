@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#EFEDE4">
 <meta name="color-scheme" content="light only">
-<title>Other Art &middot; Painted furniture, watercolors and pet portraits by Zuzu of Zuzu's Letters</title>
-<meta name="description" content="Other art by Zuzu, the writer behind Zuzu&rsquo;s Letters: painted furniture and candlesticks, wood stain flowers, watercolors, pet portraits and painted backdrops.">
+<title>Other Art &middot; Painted stones, furniture, watercolors, and pet portraits by Zuzu of Zuzu's Letters</title>
+<meta name="description" content="Other art by Zuzu, the writer behind Zuzu&rsquo;s Letters: painted stones to order, painted furniture and candlesticks, wood stain flowers, watercolors, pet portraits and painted backdrops.">
 <link rel="canonical" href="https://ohsusannahstudios.com/art.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Zuzu's Letters">
-<meta property="og:title" content="Other Art &middot; Painted furniture, watercolors and pet portraits by Zuzu of Zuzu's Letters">
-<meta property="og:description" content="Other art by Zuzu, the writer behind Zuzu&rsquo;s Letters: painted furniture and candlesticks, wood stain flowers, watercolors, pet portraits and painted backdrops.">
+<meta property="og:title" content="Other Art &middot; Painted stones, furniture, watercolors, and pet portraits by Zuzu of Zuzu's Letters">
+<meta property="og:description" content="Other art by Zuzu, the writer behind Zuzu&rsquo;s Letters: painted stones to order, painted furniture and candlesticks, wood stain flowers, watercolors, pet portraits and painted backdrops.">
 <meta property="og:url" content="https://ohsusannahstudios.com/art.html">
 <meta property="og:image" content="https://ohsusannahstudios.com/images/art-flower-panel-square.jpg">
 <meta property="og:image:width" content="1400">
@@ -93,6 +93,20 @@
   .gallery img{display:block;width:100%;height:auto;background:var(--paper-raised);
        padding:.45rem;box-shadow:0 2px 10px var(--shadow);}
   .gallery figcaption{margin-top:.7rem;font-style:italic;font-size:1.02rem;line-height:1.5;color:var(--ink-soft);}
+
+  /* painted stones for sale, added 10 October 2026 */
+  .stones .gallery{grid-template-columns:1fr 1fr;gap:1.6rem 1.1rem;}
+  @media (min-width:34rem){ .stones .gallery{grid-template-columns:1fr 1fr 1fr;} }
+  .stones .gallery figcaption{font-size:1rem;}
+  .stone-price{display:block;margin-top:.3rem;font-style:normal;font-family:var(--humanist);
+       font-size:var(--step--1);letter-spacing:.04em;color:var(--ink);}
+  .stones h3{font-size:var(--step-1);font-style:italic;font-weight:400;margin:2.2rem 0 1rem;}
+  .stones ul{margin:0 0 1.1rem;padding-left:1.2rem;color:var(--ink-soft);}
+  .stones li{margin-bottom:.4rem;}
+  .order{display:inline-block;margin:.4rem 0 1.4rem;padding:.75rem 1.4rem;background:var(--pen);
+       color:var(--paper-raised);text-decoration:none;font-family:var(--humanist);
+       font-size:var(--step--1);letter-spacing:.06em;text-transform:uppercase;border-radius:3px;}
+  .order:hover{background:var(--ink);}
 </style>
 </head>
 <body>
@@ -110,8 +124,130 @@
     </nav>
     <p class="sub" style="margin-top:1.4rem;">Other Art</p>
     <h1>Other things I have made</h1>
-    <p class="intro">Not everything I make fits in an envelope. Here are some of the shelves, mirrors, paintings and portraits I have made along the way. Tap any picture to see it larger.</p>
+    <p class="intro">Not everything I make fits in an envelope. Here are some of the stones, shelves, mirrors, paintings, and portraits I have made along the way, starting with painted stones you can order. Tap any picture to see it larger.</p>
   </header>
+
+  <section class="group stones" id="stones">
+    <h2>Painted stones</h2>
+    <p>Little stones to keep on a desk, a windowsill, or a bookshelf, or to tuck into someone&rsquo;s hand. Choose a design and I will paint it for you. No two natural stones are the same, so yours will be a little different in size and shape from the one pictured.</p>
+    <div class="gallery">
+      <figure class="wide">
+        <a href="images/art-stones-all.jpg"><img src="images/art-stones-all.jpg" width="1558" height="820" loading="lazy" alt="Fourteen painted stones laid out on a grey counter beside three quarters for scale: birds, a peacock, mandalas, flowers, hearts, a sailboat, an otter, a snail, and a sunshine"></a>
+        <figcaption>A table full of stones, with a few quarters to show their size.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Detailed designs</h3>
+    <div class="gallery">
+      <figure>
+        <a href="images/art-stone-sailboat.jpg"><img src="images/art-stone-sailboat.jpg" width="800" height="800" loading="lazy" alt="A round stone painted with a white sailboat on deep blue waves under a yellow sun"></a>
+        <figcaption>Sailboat<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-bird.jpg"><img src="images/art-stone-bird.jpg" width="800" height="800" loading="lazy" alt="A stone painted with a patterned blue bird on a branch, framed by green leaves and small red flowers"></a>
+        <figcaption>Blue bird<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-peacock.jpg"><img src="images/art-stone-peacock.jpg" width="800" height="800" loading="lazy" alt="A grey stone painted with a purple peacock and a fan of blue, green, and yellow tail feathers"></a>
+        <figcaption>Peacock<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-otter.jpg"><img src="images/art-stone-otter.jpg" width="800" height="800" loading="lazy" alt="A blue stone painted with an otter in the water and a little yellow bird on its head"></a>
+        <figcaption>Otter and a little bird<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-dot-mandala.jpg"><img src="images/art-stone-dot-mandala.jpg" width="800" height="800" loading="lazy" alt="A dark stone covered in rings of colored dots in blue, purple, coral, and yellow"></a>
+        <figcaption>Dotted mandala<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-pastel-mandala.jpg"><img src="images/art-stone-pastel-mandala.jpg" width="800" height="800" loading="lazy" alt="A pale stone with a mandala of pink, green, blue, and silver dots, dashes, and waves"></a>
+        <figcaption>Pastel mandala<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-white-mandala.jpg"><img src="images/art-stone-white-mandala.jpg" width="800" height="800" loading="lazy" alt="A dark grey stone with a fine white mandala flower"></a>
+        <figcaption>White mandala<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-bouquet.jpg"><img src="images/art-stone-bouquet.jpg" width="800" height="800" loading="lazy" alt="A black stone painted with a bouquet of bright flowers in yellow, red, blue, pink, white, and purple"></a>
+        <figcaption>Bouquet on black<span class="stone-price">$22</span></figcaption>
+      </figure>
+    </div>
+
+    <h3>Simple designs</h3>
+    <div class="gallery">
+      <figure>
+        <a href="images/art-stone-gold-hearts.jpg"><img src="images/art-stone-gold-hearts.jpg" width="800" height="800" loading="lazy" alt="A grey stone painted with red and pink hearts, two with gold hearts inside, and gold sprigs"></a>
+        <figcaption>Hearts and gold sprigs<span class="stone-price">$17</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-banner-hearts.jpg"><img src="images/art-stone-banner-hearts.jpg" width="800" height="800" loading="lazy" alt="A blue stone painted with a row of pink, purple, and pale blue hearts behind a yellow banner"></a>
+        <figcaption>Hearts and a banner<span class="stone-price">$17</span></figcaption>
+      </figure>
+    </div>
+
+    <h3>Two-sided stones</h3>
+    <p>These six have a design on each side. Turn them over for a second surprise.</p>
+    <div class="gallery">
+      <figure>
+        <a href="images/art-stone-snail.jpg"><img src="images/art-stone-snail.jpg" width="800" height="800" loading="lazy" alt="A stone painted with a cheerful orange snail with a purple shell holding a pink flower"></a>
+        <figcaption>Snail, with <em>Choose Joy!</em> on the back<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-rainbow-heart.jpg"><img src="images/art-stone-rainbow-heart.jpg" width="800" height="800" loading="lazy" alt="A stone painted with a black heart outlined in white, with rainbow rays all around it"></a>
+        <figcaption>Rainbow heart, with <em>Love is Love</em> on the back<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-flower-mandala.jpg"><img src="images/art-stone-flower-mandala.jpg" width="800" height="800" loading="lazy" alt="A pale stone painted with a layered flower mandala in blue, purple, pink, and coral with colored dots"></a>
+        <figcaption>Flower mandala, with <em>Be Kind Stay Weird</em> on the back<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-sun.jpg"><img src="images/art-stone-sun.jpg" width="800" height="800" loading="lazy" alt="An oval stone painted with an orange sun in a yellow sky, white clouds, and pink and white flowers on green"></a>
+        <figcaption>Sunshine, with <em>Yes you can!</em> on the back<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-banded-egg.jpg"><img src="images/art-stone-banded-egg.jpg" width="800" height="800" loading="lazy" alt="A small egg-shaped stone painted in bands of purple, turquoise, green, and coral, with a flower at each end"></a>
+        <figcaption>Little banded egg, with lettering on the back<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stone-dotted-flowers.jpg"><img src="images/art-stone-dotted-flowers.jpg" width="800" height="800" loading="lazy" alt="A black oval stone covered in small dotted flowers in orange, pink, blue, and yellow"></a>
+        <figcaption>Dotted flowers, with more flowers on the back<span class="stone-price">$22</span></figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stones-side-one.jpg"><img src="images/art-stones-side-one.jpg" width="1170" height="1283" loading="lazy" alt="Six painted stones on a grey counter: a snail, a rainbow heart, a small banded egg, dotted flowers, a sunshine, and a flower mandala"></a>
+        <figcaption>All six, one side up.</figcaption>
+      </figure>
+      <figure>
+        <a href="images/art-stones-side-two.jpg"><img src="images/art-stones-side-two.jpg" width="1170" height="1303" loading="lazy" alt="The same six stones turned over: Choose Joy!, Love is Love, a lettered banded egg, dotted flowers, Yes you can!, and Be Kind Stay Weird"></a>
+        <figcaption>The same six, turned over.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Make it yours</h3>
+    <p>For $5 more, I will paint a design of your choosing on the back of any one-sided stone.</p>
+
+    <h3>About the stones</h3>
+    <ul>
+      <li>Most are between 2 and 3 inches across, and some are a little larger or smaller.</li>
+      <li>Painted by hand in acrylic paint on natural stones, then finished with layers of UV resistant clear coat for a glossy shine.</li>
+      <li>Not every stone is round, flat, or smooth. Because each one is painted by hand, there may be small imperfections, air bubbles, and bumps or divots in the paint.</li>
+    </ul>
+
+    <h3>Caring for your stone</h3>
+    <ul>
+      <li>They are happiest indoors. Sun and moisture can fade or crack the paint over time.</li>
+      <li>To clean, gently wipe with a damp cloth.</li>
+    </ul>
+
+    <h3>Shipping</h3>
+    <ul>
+      <li>Each stone is wrapped on its own for protection and packed with recycled materials.</li>
+      <li>Stones ship within the United States only.</li>
+    </ul>
+
+    <h3>To order</h3>
+    <p>Write to me with the design you would like and how many, and tell me if you would like a design of your own on the back. I will write back with your total and how to pay. If you have any questions, ask away&hellip;I will get back to you as soon as I can!</p>
+    <a class="order" href="mailto:hello@ohsusannahstudios.com?subject=Painted%20stones">Write to me about a stone</a>
+  </section>
 
   <section class="group">
     <h2>Painted furniture</h2>
