@@ -322,6 +322,21 @@ attempt.
 
 **New page: `art.html`, *Other Art*,** added from 21 phone photos she sent on 9 October 2026, with captions drafted by Claude for her to edit. It sits in the menu between *The Blog* and *Subscribe* on all four menus (index, details, blog, art), and is in `sitemap.xml`. Near-duplicate shots of the wall shelf and mirror, and the reference photo of the two dogs, were left out. **The flower panels are wood stain only, no paint** (her words: exploring wood stain application), so never call them painted. Her video *When the watercolor has other plans* opens the Watercolors group (`images/art-watercolor-video.mp4`, re-encoded to 720p at about 4 MB with metadata stripped, plus a poster frame). The horse in the backdrop photo and the dogs in the portraits are not named, since nobody has said whose they are. **None of this artwork is the print or the letter,** so nothing on the page may suggest it arrives in the envelope.
 
+## State of play — 10 October 2026: painted stones (handoff)
+
+**Where the work is:** branch `claude/new-session-k7q23k` on GitHub. It contains the whole `other-art-page` branch (the *Other Art* page, `art.html`) plus the new **Painted stones** section at the top of that page. **Nothing is on `main`, so nothing is live.** A session on her computer should `git fetch origin claude/new-session-k7q23k` and work from there. Going live means merging that branch into `main`, which also adds "Other Art" to the home page menu, so only do it when she says so.
+
+**What she decided (all recorded in the `images/stones/` row of *Where things live*):** detailed designs $22, simple $17, the six two-sided stones $22, and $5 extra for a custom design on the back of a one-sided stone. She confirmed which stones are detailed and which are simple. The two-sided stones are shown front and back side by side, at her request. The text about size, paint, care, and shipping (US only) comes from her DETAILS file.
+
+**Still open, ask one at a time:**
+1. **How people pay for a stone.** For now the page says to email her and promises "I will write back with your total and how to pay." The alternative is Stripe payment links like the letters, which only a session on her computer can make. Asked, not yet answered.
+2. **Shipping cost.** Not on the page because she has not given a figure.
+3. **The lettering on the back of the little banded egg** is unreadable in the photo, so its caption says only "lettering on the back."
+4. **Close-up photos** of *Choose Joy!*, *Yes you can!*, the egg's back, and the purple and orange flowers would replace the softer crops taken from her group photos.
+5. **The stone names in the captions** ("Sailboat," "Otter and a little bird," and so on) were written by Claude; she has not reviewed them.
+
+**A session without her earlier chats cannot see them.** On 10 October she remembered a full-page mockup and a $5 customization idea from an earlier session; neither was written down anywhere this session could see. Write decisions here as they are made.
+
 ## State of play — 7 October 2026
 
 **Small type was enlarged site-wide at her request.** `--step--1` (the small humanist type: menu, section labels, buttons, footer, spec labels) went from `.86rem` to `calc(.86rem + 2pt)` on all four pages, in normal weight, **not bold** — she asked for bold, then took it back for both the menu and the hero tagline. The opening letter's *"Hello Dear Friend,"* and *"Zuzu"* signature are 4pt larger, **opening letter only**; the sample letter keeps its old sizes (override under `.sample-letter`). **Photograph captions:** the snapshot captions (`.snap figcaption`) and `.photo span` stay at the original `.86rem`, set by the last rule in `index.html`'s style block; every other caption is larger, including the desk photo, Otter and the sticker, the three print titles with *"Three actual prints"*, *"Me and Too Big,"* and *"Otter, with his otter."* *"Letters now travel worldwide."* (`.worldwide-line`) is 2pt larger. Her unit is points; 2pt = 0.1667rem.
