@@ -329,7 +329,7 @@ attempt.
 **What she decided (all recorded in the `images/stones/` row of *Where things live*):** detailed designs $22, simple $17, the six two-sided stones $22, and $5 extra for a custom design on the back of a one-sided stone. She confirmed which stones are detailed and which are simple. The two-sided stones are shown front and back side by side, at her request. The text about size, paint, care, and shipping (US only) comes from her DETAILS file.
 
 **Still open, ask one at a time:**
-1. **How people pay for a stone.** For now the page says to email her and promises "I will write back with your total and how to pay." The alternative is Stripe payment links like the letters, which only a session on her computer can make. Asked, not yet answered.
+1. **How people pay for a stone: decided 10 October 2026, Buy buttons.** Each stone price gets a Stripe payment link (collecting the shipping address, like the letters); custom backs and questions still go by email. Not built yet: the links need her Stripe account, and the price includes or adds shipping, which is item 2. Until the links exist the page keeps the email ordering.
 2. **Shipping cost.** Not on the page because she has not given a figure.
 3. **The lettering on the back of the little banded egg** is unreadable in the photo, so its caption says only "lettering on the back."
 4. **Close-up photos** of *Choose Joy!*, *Yes you can!*, the egg's back, and the purple and orange flowers would replace the softer crops taken from her group photos.
