@@ -110,6 +110,10 @@
        color:var(--paper-raised);text-decoration:none;font-family:var(--humanist);
        font-size:var(--step--1);letter-spacing:.06em;text-transform:uppercase;border-radius:3px;}
   .order:hover{background:var(--ink);}
+  .order-buttons{display:flex;flex-wrap:wrap;gap:.8rem;margin:0 0 1.2rem;}
+  .order-buttons .order{margin:0;}
+  .order-quiet{background:transparent;color:var(--pen);border:1px solid var(--pen);}
+  .order-quiet:hover{background:var(--pen);color:var(--paper-raised);}
 </style>
 </head>
 <body>
@@ -127,7 +131,7 @@
     </nav>
     <p class="sub" style="margin-top:1.4rem;">Other Art</p>
     <h1>Other things I have made</h1>
-    <p class="intro">Not everything I make fits in an envelope. Here are some of the stones, shelves, mirrors, paintings, and portraits I have made along the way. At the end of the page are painted stones you can order. Tap any picture to see it larger.</p>
+    <p class="intro">Not everything I make fits in an envelope. Here are some of the shelves, mirrors, paintings, and portraits I have made along the way, and, at the end, painted stones you can order. Tap any picture to see it larger.</p>
   </header>
 
   <section class="group">
@@ -378,11 +382,17 @@
     <ul>
       <li>Each stone is wrapped on its own for protection and packed with recycled materials.</li>
       <li>Stones ship within the United States only.</li>
+      <li>Shipping is $6.99 for up to 4 stones, and $1 more for each stone after the fourth.</li>
     </ul>
 
     <h3>To order</h3>
-    <p>Write to me with the design you would like and how many, and tell me if you would like a design of your own on the back. I will write back with your total and how to pay. If you have any questions, ask away&hellip;I will get back to you as soon as I can!</p>
-    <a class="order" href="mailto:hello@ohsusannahstudios.com?subject=Painted%20stones">Write to me about a stone</a>
+    <p>Choose the button for the first stone you would like. At checkout you can change how many, add stones at the other price, add a custom design for the back, and tell me which designs you would like. You can order up to 4 stones at a time online, with $6.99 shipping.</p>
+    <p class="order-buttons">
+      <a class="order" href="https://buy.stripe.com/bJeeVe7MD6GlfjKaeMcEw0c">Order a $22 stone</a>
+      <a class="order" href="https://buy.stripe.com/7sY28s2sjfcR0oQ4UscEw0d">Order a $17 stone</a>
+    </p>
+    <p>Would you like 5 or more? Write to me with the designs you would like, and I will send you your total with $6.99 shipping plus $1 for each stone after the fourth. If you have any questions, ask away&hellip;I will get back to you as soon as I can!</p>
+    <a class="order order-quiet" href="mailto:hello@ohsusannahstudios.com?subject=Painted%20stones">Write to me about stones</a>
   </section>
 
   <a class="back" href="/">&larr; Back to the letters</a>
