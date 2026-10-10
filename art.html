@@ -100,6 +100,9 @@
   .stones .gallery figcaption{font-size:1rem;}
   .stone-price{display:block;margin-top:.3rem;font-style:normal;font-family:var(--humanist);
        font-size:var(--step--1);letter-spacing:.04em;color:var(--ink);}
+  .stones .two-sided{grid-template-columns:1fr;}
+  @media (min-width:34rem){ .stones .two-sided{grid-template-columns:1fr 1fr;} }
+  .sides{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;}
   .stones h3{font-size:var(--step-1);font-style:italic;font-weight:400;margin:2.2rem 0 1rem;}
   .stones ul{margin:0 0 1.1rem;padding-left:1.2rem;color:var(--ink-soft);}
   .stones li{margin-bottom:.4rem;}
@@ -186,39 +189,49 @@
     </div>
 
     <h3>Two-sided stones</h3>
-    <p>These six have a design on each side. Turn them over for a second surprise.</p>
-    <div class="gallery">
+    <p>These six have a design on each side, shown here front and back. Turn them over for a second surprise.</p>
+    <div class="gallery two-sided">
       <figure>
-        <a href="images/art-stone-snail.jpg"><img src="images/art-stone-snail.jpg" width="800" height="800" loading="lazy" alt="A stone painted with a cheerful orange snail with a purple shell holding a pink flower"></a>
+        <div class="sides">
+          <a href="images/art-stone-snail.jpg"><img src="images/art-stone-snail.jpg" width="800" height="800" loading="lazy" alt="A stone painted with a cheerful orange snail with a purple shell holding a pink flower"></a>
+          <a href="images/art-stone-choose-joy.jpg"><img src="images/art-stone-choose-joy.jpg" width="800" height="800" loading="lazy" alt="The back of the snail stone, lettered Choose Joy! in yellow and purple with a little heart"></a>
+        </div>
         <figcaption>Snail, with <em>Choose Joy!</em> on the back<span class="stone-price">$22</span></figcaption>
       </figure>
       <figure>
-        <a href="images/art-stone-rainbow-heart.jpg"><img src="images/art-stone-rainbow-heart.jpg" width="800" height="800" loading="lazy" alt="A stone painted with a black heart outlined in white, with rainbow rays all around it"></a>
+        <div class="sides">
+          <a href="images/art-stone-rainbow-heart.jpg"><img src="images/art-stone-rainbow-heart.jpg" width="800" height="800" loading="lazy" alt="A stone painted with a black heart outlined in white, with rainbow rays all around it"></a>
+          <a href="images/art-stone-love-is-love.jpg"><img src="images/art-stone-love-is-love.jpg" width="800" height="800" loading="lazy" alt="The back of the rainbow heart stone, black with Love is Love lettered in rainbow colors"></a>
+        </div>
         <figcaption>Rainbow heart, with <em>Love is Love</em> on the back<span class="stone-price">$22</span></figcaption>
       </figure>
       <figure>
-        <a href="images/art-stone-flower-mandala.jpg"><img src="images/art-stone-flower-mandala.jpg" width="800" height="800" loading="lazy" alt="A pale stone painted with a layered flower mandala in blue, purple, pink, and coral with colored dots"></a>
+        <div class="sides">
+          <a href="images/art-stone-flower-mandala.jpg"><img src="images/art-stone-flower-mandala.jpg" width="800" height="800" loading="lazy" alt="A pale stone painted with a layered flower mandala in blue, purple, pink, and coral with colored dots"></a>
+          <a href="images/art-stone-be-kind.jpg"><img src="images/art-stone-be-kind.jpg" width="800" height="800" loading="lazy" alt="The back of the flower mandala stone, lettered Be Kind Stay Weird in purple"></a>
+        </div>
         <figcaption>Flower mandala, with <em>Be Kind Stay Weird</em> on the back<span class="stone-price">$22</span></figcaption>
       </figure>
       <figure>
-        <a href="images/art-stone-sun.jpg"><img src="images/art-stone-sun.jpg" width="800" height="800" loading="lazy" alt="An oval stone painted with an orange sun in a yellow sky, white clouds, and pink and white flowers on green"></a>
+        <div class="sides">
+          <a href="images/art-stone-sun.jpg"><img src="images/art-stone-sun.jpg" width="800" height="800" loading="lazy" alt="An oval stone painted with an orange sun in a yellow sky, white clouds, and pink and white flowers on green"></a>
+          <a href="images/art-stone-yes-you-can.jpg"><img src="images/art-stone-yes-you-can.jpg" width="800" height="800" loading="lazy" alt="The back of the sunshine stone, grey with Yes you can! lettered in pink, yellow, and green inside a yellow rim"></a>
+        </div>
         <figcaption>Sunshine, with <em>Yes you can!</em> on the back<span class="stone-price">$22</span></figcaption>
       </figure>
       <figure>
-        <a href="images/art-stone-banded-egg.jpg"><img src="images/art-stone-banded-egg.jpg" width="800" height="800" loading="lazy" alt="A small egg-shaped stone painted in bands of purple, turquoise, green, and coral, with a flower at each end"></a>
+        <div class="sides">
+          <a href="images/art-stone-banded-egg.jpg"><img src="images/art-stone-banded-egg.jpg" width="800" height="800" loading="lazy" alt="A small egg-shaped stone painted in bands of purple, turquoise, green, and coral, with a flower at each end"></a>
+          <a href="images/art-stone-banded-egg-back.jpg"><img src="images/art-stone-banded-egg-back.jpg" width="800" height="800" loading="lazy" alt="The back of the little banded egg, striped in purple, blue, and orange with pale lettering"></a>
+        </div>
         <figcaption>Little banded egg, with lettering on the back<span class="stone-price">$22</span></figcaption>
       </figure>
       <figure>
-        <a href="images/art-stone-dotted-flowers.jpg"><img src="images/art-stone-dotted-flowers.jpg" width="800" height="800" loading="lazy" alt="A black oval stone covered in small dotted flowers in orange, pink, blue, and yellow"></a>
-        <figcaption>Dotted flowers, with more flowers on the back<span class="stone-price">$22</span></figcaption>
-      </figure>
-      <figure>
-        <a href="images/art-stones-side-one.jpg"><img src="images/art-stones-side-one.jpg" width="1170" height="1283" loading="lazy" alt="Six painted stones on a grey counter: a snail, a rainbow heart, a small banded egg, dotted flowers, a sunshine, and a flower mandala"></a>
-        <figcaption>All six, one side up.</figcaption>
-      </figure>
-      <figure>
-        <a href="images/art-stones-side-two.jpg"><img src="images/art-stones-side-two.jpg" width="1170" height="1303" loading="lazy" alt="The same six stones turned over: Choose Joy!, Love is Love, a lettered banded egg, dotted flowers, Yes you can!, and Be Kind Stay Weird"></a>
-        <figcaption>The same six, turned over.</figcaption>
+        <div class="sides">
+          <a href="images/art-stone-purple-flowers.jpg"><img src="images/art-stone-purple-flowers.jpg" width="800" height="800" loading="lazy" alt="A dark oval stone painted with purple and orange flowers with pink centers"></a>
+          <a href="images/art-stone-dotted-flowers.jpg"><img src="images/art-stone-dotted-flowers.jpg" width="800" height="800" loading="lazy" alt="The back of the same stone, covered in small dotted flowers in orange, pink, blue, and yellow"></a>
+        </div>
+        <figcaption>Purple and orange flowers, with dotted flowers on the back<span class="stone-price">$22</span></figcaption>
       </figure>
     </div>
 
