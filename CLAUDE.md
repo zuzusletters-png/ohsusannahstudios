@@ -324,7 +324,7 @@ attempt.
 
 ## State of play — 10 October 2026: painted stones (handoff)
 
-**Where the work is:** branch `claude/new-session-k7q23k` on GitHub. It contains the whole `other-art-page` branch (the *Other Art* page, `art.html`) plus the new **Painted stones** section at the top of that page. **Nothing is on `main`, so nothing is live.** A session on her computer should `git fetch origin claude/new-session-k7q23k` and work from there. Going live means merging that branch into `main`, which also adds "Other Art" to the home page menu, so only do it when she says so.
+**Where the work is:** branch `claude/new-session-k7q23k` on GitHub. It contains the whole `other-art-page` branch (the *Other Art* page, `art.html`) plus the new **Painted stones** section. At her request (10 October 2026) the stones come **last**, after *Backdrops*: all the art photographs first, then the stones with their prices and ordering. **Nothing is on `main`, so nothing is live.** A session on her computer should `git fetch origin claude/new-session-k7q23k` and work from there. Going live means merging that branch into `main`, which also adds "Other Art" to the home page menu, so only do it when she says so.
 
 **What she decided (all recorded in the `images/stones/` row of *Where things live*):** detailed designs $22, simple $17, the six two-sided stones $22, and $5 extra for a custom design on the back of a one-sided stone. She confirmed which stones are detailed and which are simple. The two-sided stones are shown front and back side by side, at her request. The text about size, paint, care, and shipping (US only) comes from her DETAILS file.
 
