@@ -44,6 +44,7 @@ implying the work is done.
 | --- | --- |
 | `index.html` | The shop — one self-contained file, no build step |
 | `blog.html` | The blog, *Notes between letters*. One page, newest post at the top. Self-contained, modelled on `details.html`, no custom fonts |
+| `art.html` | *Other Art*: a gallery of her non-letter artwork (painted furniture, candlesticks and mills, flowers in wood stain, watercolors, pet portraits, backdrops). Same template as `blog.html`. Images are `images/art-*.jpg`, resized to 1400px and stripped of photo metadata |
 | `images/` | Photographs used by the page |
 | `images/stones/` | **Not on any page yet.** 22 phone screenshots of her painted stones (16 single stones, 4 group shots), saved 9 October 2026 for a planned separate art-and-projects page where she may sell them. The group shots also show "Choose Joy!" and "Yes you can!", which have no single photograph. They are screenshots with her phone's status bar and some unrelated background (floor, feet, a Mickey wallet), so crop before use. Prices she set 10 October 2026: **simple $17, detailed $22**; the sailboat is detailed. **Six stones are double-sided** (her correction, 10 October 2026): `group-4-snail-heart-sun.png` and `group-3-choose-joy-yes-you-can.png` are the fronts and backs of the same six stones, laid out in the same positions. The pairs are snail / Choose Joy!, heart with rainbow rays / Love is Love, small banded egg / its lettered back, purple-and-orange flowers / dotted flowers on black, sun over flowers / Yes you can!, and flower mandala / Be Kind Stay Weird. Count them as six stones, not twelve. **All six two-sided stones are $22** (her decision, 10 October 2026). **A custom design on the back of a one-sided stone is $5 extra** (her decision, 10 October 2026). The stones belong on the *Other Art* page, `art.html`, which so far exists only on the `other-art-page` branch. Her listing text (size, acrylic, UV clear coat, care, US-only shipping) came in her DETAILS file. Which other stones are simple or detailed is not settled |
 | `CNAME` | The custom domain, exactly `ohsusannahstudios.com` |
@@ -316,6 +317,10 @@ untouched afterwards. Duplicating creates a **new product** each time, named
 attempt.
 
 ---
+
+## State of play — 9 October 2026
+
+**New page: `art.html`, *Other Art*,** added from 21 phone photos she sent on 9 October 2026, with captions drafted by Claude for her to edit. It sits in the menu between *The Blog* and *Subscribe* on all four menus (index, details, blog, art), and is in `sitemap.xml`. Near-duplicate shots of the wall shelf and mirror, and the reference photo of the two dogs, were left out. **The flower panels are wood stain only, no paint** (her words: exploring wood stain application), so never call them painted. Her video *When the watercolor has other plans* opens the Watercolors group (`images/art-watercolor-video.mp4`, re-encoded to 720p at about 4 MB with metadata stripped, plus a poster frame). The horse in the backdrop photo and the dogs in the portraits are not named, since nobody has said whose they are. **None of this artwork is the print or the letter,** so nothing on the page may suggest it arrives in the envelope.
 
 ## State of play — 7 October 2026
 
