@@ -290,6 +290,14 @@
     gap:.7rem;margin-top:.4rem;
   }
   .plan .plan-options .btn{margin-top:0;width:100%;text-align:center;}
+  /* Flash sale note on the single letter plan. data-ends hides it once the code
+     expires (end of the day, Eastern time), so the page never shows a dead code. */
+  .plan .flash-sale{
+    border-left:3px solid var(--plum);padding:.5rem 0 .5rem .9rem;
+    color:var(--ink);font-size:1.05rem;line-height:1.5;
+  }
+  .plan .flash-sale strong{color:var(--plum);font-family:var(--humanist);letter-spacing:.06em;text-transform:uppercase;font-size:var(--step--1);display:block;}
+  .plan .flash-sale code{font-family:var(--humanist);font-weight:700;letter-spacing:.08em;color:var(--ink);}
   .plan .plan-note{
     font-family:var(--humanist);font-size:var(--step--1);
     color:var(--ink-faint);letter-spacing:.04em;line-height:1.6;
@@ -671,6 +679,7 @@
         <h3>One at a time</h3>
         <p class="price"><span class="for-us">$18.99 either way</span><span class="for-intl">$19.99 either way</span></p>
         <p>One letter and one original gicl&eacute;e print, in your mailbox each month. Begin properly, or try a single letter first and see how it feels to get one.</p>
+        <p class="flash-sale" data-ends="2026-10-16T00:00:00-04:00"><strong>Flash Sale</strong>10% off a single letter with code <code>ZL10OFF</code> at checkout, through October&nbsp;15.</p>
         <div class="plan-options for-us">
           <a class="btn btn-solid" href="https://buy.stripe.com/dRm28saYPd4J9ZqbiQcEw00">Keep them coming &mdash; $18.99 a month, cancel any time</a>
           <a class="btn btn-ghost" href="https://buy.stripe.com/cNi6oI2sjc0F3B2dqYcEw03">Try a single letter &mdash; $18.99 once</a>
@@ -939,6 +948,9 @@
 </div>
 
 <script>
+  document.querySelectorAll('[data-ends]').forEach(function (el) {
+    if (Date.now() >= Date.parse(el.getAttribute('data-ends'))) el.remove();
+  });
   /* The Within the US / Outside the US switch. Both sets of prices are already in
      the page; this only decides which one is shown, so if the script never runs
      the visitor still sees a working US set of buttons. The choice is remembered
