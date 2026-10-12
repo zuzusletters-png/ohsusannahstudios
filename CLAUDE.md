@@ -256,6 +256,21 @@ build a new payment link on it, and deactivate the old link. The bundles were
 repriced this way on 18 August 2026; the superseded $101.94 and $191.88 links
 are deactivated, not deleted.
 
+### Discount codes
+
+**ZL10OFF** (her name and her decision, 12 October 2026): 10% off the **single
+letter only**, US and international, ending at the close of 15 October 2026
+Eastern. It is a Stripe coupon restricted to the two single letter products,
+with a promotion code that expires on its own. Only the two single letter
+payment links allow promotion codes; every subscription, bundle and stone link
+has them off, because she did not want a code to work on everything. A promotion
+code's end date cannot be edited, so to extend one, deactivate it and create a
+new code with the same name on the same coupon.
+
+The home page shows it as a **Flash Sale** note in the *One at a time* card
+(`.flash-sale`). Its `data-ends` attribute hides it after the code expires; if
+the sale is extended, update that date and the "through" date in the note too.
+
 ### Statement descriptors — the gotcha that bit us
 
 The four **US** links read **`Zuzus Letters`** on card statements. No apostrophe:
