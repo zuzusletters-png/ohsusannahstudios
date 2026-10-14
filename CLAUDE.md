@@ -361,6 +361,10 @@ only; the overseas link carries the same 231 countries as the other overseas lin
 US `https://buy.stripe.com/eVq5kEd6Xc0F3B2cmUcEw0e`, overseas
 `https://buy.stripe.com/28E8wQ9ULfcRgnO4UscEw0f`. **Not yet test-purchased.**
 
+**The letter's length is now on the page.** *In the envelope* → *The letter* ends with her
+sentence *"The letter is at least two pages and often up to six pages long."* (14 October 2026,
+reached over three passes; numbers spelled out to match the list).
+
 **Noticed, not fixed:** the Stripe descriptions on the letter products still carry the retired
 ARCHES paper wording and the old "quote on a card that doubles as a bookmark" line.
 
