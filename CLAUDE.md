@@ -222,6 +222,10 @@ addresses and five for everywhere else:
 | All at once | Three months | 3-Month Bundle | $54.99 ($18.33 a letter) | $57.99 ($19.33 a letter) |
 | All at once | Six months | 6-Month Bundle | $97.99 ($16.33 a letter) | $103.99 ($17.33 a letter) |
 | All at once | Twelve months | 12-Month Bundle | $179.99 ($15.00 a letter) | $191.99 ($16.00 a letter) |
+| A postcard each month | Send me a postcard each month | Monthly Postcard | $4 / month, recurring | $5 / month, recurring |
+
+The postcard row (added 14 October 2026) makes **twelve** live links; the count of
+ten above predates it. It sits in its own wide card under the two letter cards.
 
 The cards split on **whether it renews**, not on who it is for. An earlier
 version split "for yourself" versus "a gift" and that was wrong — any of the
@@ -332,6 +336,33 @@ untouched afterwards. Duplicating creates a **new product** each time, named
 attempt.
 
 ---
+
+## State of play — 14 October 2026
+
+**A monthly postcard plan went live: $4 a month in the US, $5 outside it.** A third, wider
+card (`.plan.plan-postcard`) sits under the two letter cards in `#subscribe`, heading *"A
+postcard each month"*. Because it carries the `plan` class, the Within the US / Outside the US
+switch flips its price and button with no new code. The picture is her two example files,
+`images/postcard-back-example.webp` (the back, with the stamp) under
+`images/postcard-front-example.webp` (the archway with an Alicia Keys quote), captioned *"A
+postcard, front and back."* **She asked for the front tipped down to the right so the stamp on
+the back shows**; keep that if the picture is ever swapped.
+
+**Her decisions:** monthly only, **no free first month** (her free postcard in `#postcard`
+already does that job, and a trial invites sign-up-and-cancel), and **no 3/6/12 bundles** for
+now. A year of postcards as a gift was suggested for later. The note under the button is hers:
+*"Mailed the third week of the month · cancel any time."*
+
+**Stripe:** two new products, *Zuzu's Letters - Monthly Postcard* and *… (International)*,
+built through the API to match the monthly letter link: automatic tax, billing and shipping
+address required, name required, card always collected, statement descriptor `Zuzus Letters`
+on the product (which covers subscriptions), tax code `txcd_99999999`. US link ships to the US
+only; the overseas link carries the same 231 countries as the other overseas links. Links:
+US `https://buy.stripe.com/eVq5kEd6Xc0F3B2cmUcEw0e`, overseas
+`https://buy.stripe.com/28E8wQ9ULfcRgnO4UscEw0f`. **Not yet test-purchased.**
+
+**Noticed, not fixed:** the Stripe descriptions on the letter products still carry the retired
+ARCHES paper wording and the old "quote on a card that doubles as a bookmark" line.
 
 ## State of play — 9 October 2026
 

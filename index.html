@@ -302,6 +302,28 @@
     font-family:var(--humanist);font-size:var(--step--1);
     color:var(--ink-faint);letter-spacing:.04em;line-height:1.6;
   }
+  /* The postcard plan: a third, wider card under the two letter plans, with the
+     front of a postcard laid over its back, the way the snapshots are tilted. */
+  .plan-postcard{
+    max-width:57rem;margin:1.5rem auto 0;
+    display:grid;gap:1.6rem 2.4rem;align-items:center;
+    grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
+  }
+  /* The front tips down to the right and sits low, so the stamp in the top
+     right corner of the back stays in view. */
+  .postcard-pair{margin:0;position:relative;padding:0 0 28% 0;}
+  .postcard-pair img{display:block;height:auto;background:#fff;
+    border:1px solid var(--rule);box-shadow:0 10px 26px -14px var(--shadow-lift);}
+  .postcard-pair .pc-back{width:86%;margin-left:auto;transform:rotate(-2deg);}
+  .postcard-pair .pc-front{position:absolute;width:80%;left:0;top:30%;transform:rotate(5deg);}
+  .postcard-pair figcaption{
+    position:absolute;left:0;right:0;bottom:-1.6rem;text-align:center;
+    font-family:var(--humanist);font-size:var(--step--1);color:var(--ink-faint);letter-spacing:.04em;
+  }
+  @media (max-width:44rem){
+    .plan-postcard{grid-template-columns:1fr;margin-inline:1.5rem;}
+    .postcard-pair{margin-bottom:1.4rem;}
+  }
   .gift-line{
     max-width:38rem;margin:2.5rem auto 0;padding-inline:1.5rem;
     text-align:center;font-style:italic;color:var(--ink-soft);
@@ -705,6 +727,27 @@
           <a class="btn btn-ghost" href="https://buy.stripe.com/aFafZi1offcR0oQfz6cEw09">Twelve months &mdash; $191.99</a>
         </div>
         <p class="plan-note"><span class="for-us">$18.33 a letter for three months &middot; $16.33 for six &middot; $15.00 for twelve.</span><span class="for-intl">$19.33 a letter for three months &middot; $17.33 for six &middot; $16.00 for twelve.</span></p>
+      </div>
+    </div>
+    <div class="plan plan-postcard">
+      <figure class="postcard-pair">
+        <img class="pc-back" src="images/postcard-back-example.webp" width="2000" height="1333" loading="lazy"
+             alt="The back of the postcard: the scalloped Zuzu&rsquo;s Letters stamp in the corner, lines for the address, and room to write.">
+        <img class="pc-front" src="images/postcard-front-example.webp" width="1800" height="1200" loading="lazy"
+             alt="The front of a postcard: a soft, painterly view of a carved archway, with a quote from Alicia Keys in plum script across the sky.">
+        <figcaption>A postcard, front and back.</figcaption>
+      </figure>
+      <div>
+        <h3>A postcard each month</h3>
+        <p class="price"><span class="for-us">$4 a month</span><span class="for-intl">$5 a month</span></p>
+        <p>A smaller hello, for anyone who loves finding something in the mailbox. Each month I will send you a postcard made from one of my photographs, with a quote I have chosen for the month.</p>
+        <div class="plan-options for-us">
+          <a class="btn btn-solid" href="https://buy.stripe.com/eVq5kEd6Xc0F3B2cmUcEw0e">Send me a postcard each month &mdash; $4</a>
+        </div>
+        <div class="plan-options for-intl">
+          <a class="btn btn-solid" href="https://buy.stripe.com/28E8wQ9ULfcRgnO4UscEw0f">Send me a postcard each month &mdash; $5</a>
+        </div>
+        <p class="plan-note">Mailed the third week of the month &middot; cancel any time.</p>
       </div>
     </div>
     <div class="gift">
