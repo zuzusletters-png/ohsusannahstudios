@@ -365,8 +365,19 @@ US `https://buy.stripe.com/eVq5kEd6Xc0F3B2cmUcEw0e`, overseas
 sentence *"The letter is at least two pages and often up to six pages long."* (14 October 2026,
 reached over three passes; numbers spelled out to match the list).
 
-**Noticed, not fixed:** the Stripe descriptions on the letter products still carry the retired
-ARCHES paper wording and the old "quote on a card that doubles as a bookmark" line.
+**The Stripe descriptions on all ten letter products were rewritten the same day, with her
+approval.** They had still carried the retired ARCHES paper wording (the two 3-month products had
+a half-updated "smooth matte, 100% cotton paper") and the old "quote on a card that doubles as a
+bookmark" line. Buyers see these at checkout. Each now lists *a personal letter, an original
+5"x7" print made from one of Zuzu's own photographs, a bookmark lifted from a detail of that same
+photograph, and two postcards carrying the month's quote*, then gives the paper in **its own
+sentence about the print alone**, so the bookmark is never described with the giclée paper:
+*"Each print is a giclée, printed with archival pigment inks on smooth matte paper made from 100%
+cotton hot press paper, acid-free and pH-neutral."* The single letter says "Your" for "Each" and
+"One-time purchase". US products say the second postcard is "pre-stamped to pass on to a friend";
+International ones say "to share with a friend". **The US 3-Month Bundle had the International
+wording** and now has the US wording. Opening sentences
+and everything else on the products are unchanged.
 
 ## State of play — 9 October 2026
 
