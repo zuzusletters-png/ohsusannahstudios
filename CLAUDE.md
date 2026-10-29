@@ -337,6 +337,15 @@ attempt.
 
 ---
 
+## State of play — 29 October 2026
+
+**A quote now sits under the opening letter**, in its own `.bell-quote` section between the
+letter and *Why letters*: *"Every time a bell rings, an angel gets its wings."* with the line
+*Zuzu, in It's a Wonderful Life* beneath it (the character Zuzu says it; she supplied the
+attribution). Her request was the same font and size as *"A moment to slow down and
+reconnect."*, so `.bell-quote p` copies the `.section-head h2` serif, weight, size and line
+height. Keep the two matched.
+
 ## State of play — 14 October 2026
 
 **A monthly postcard plan went live: $4 a month in the US, $5 outside it.** A third, wider
