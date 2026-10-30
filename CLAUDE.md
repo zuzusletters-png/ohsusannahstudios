@@ -217,12 +217,12 @@ addresses and five for everywhere else:
 
 | Card | Button | Product | US price | Outside the US |
 | --- | --- | --- | --- | --- |
-| One at a time | Keep them coming | Month-to-Month | $18.99 / month, recurring | $19.99 / month, recurring |
-| One at a time | Try a single letter | Zuzu's Letter | $18.99 one-time | $19.99 one-time |
-| All at once | Three months | 3-Month Bundle | $54.99 ($18.33 a letter) | $57.99 ($19.33 a letter) |
-| All at once | Six months | 6-Month Bundle | $97.99 ($16.33 a letter) | $103.99 ($17.33 a letter) |
+| One at a time | Keep them coming | Month-to-Month | $16.99 / month, recurring | $17.99 / month, recurring |
+| One at a time | Try a single letter | Zuzu's Letter | $16.99 one-time | $17.99 one-time |
+| All at once | Three months | 3-Month Bundle | $48.99 ($16.33 a letter) | $51.99 ($17.33 a letter) |
+| All at once | Six months | 6-Month Bundle | $95.99 ($16.00 a letter) | $101.99 ($17.00 a letter) |
 | All at once | Twelve months | 12-Month Bundle | $179.99 ($15.00 a letter) | $191.99 ($16.00 a letter) |
-| A postcard each month | Send me a postcard each month | Monthly Postcard | $4 / month, recurring | $5 / month, recurring |
+| A postcard each month | Send me a postcard each month | Monthly Postcard | $3.50 / month, recurring | $4.50 / month, recurring |
 
 The postcard row (added 14 October 2026) makes **twelve** live links; the count of
 ten above predates it. It sits in its own wide card under the two letter cards.
@@ -254,6 +254,8 @@ other **231** countries Stripe offers, with the US deliberately taken out so US
 buyers cannot pay $1 more by accident. Note this means **Puerto Rico, Guam and the
 other US territories are on the overseas links**, since Stripe treats them as
 separate countries — they pay the higher price and cost domestic postage.
+
+**Repriced 30 October 2026** (her decision): letters $16.99 / $17.99 overseas for monthly and single, 3 months $48.99 / $51.99, 6 months $95.99 / $101.99, 12 months unchanged, postcard $3.50 / $4.50. New prices were made the products' defaults, ten new payment links replaced the old ones (old links deactivated with a message pointing to the site), and the two monthly subscribers were moved to $16.99 from their 28 November renewal with no proration. The expired ZL10OFF Flash Sale note was removed from the page (its CSS is kept for a future sale).
 
 **Stripe prices cannot be edited.** To change an amount you create a new price,
 build a new payment link on it, and deactivate the old link. The bundles were
