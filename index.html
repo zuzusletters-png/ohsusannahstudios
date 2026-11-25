@@ -305,6 +305,16 @@
   }
   .plan .flash-sale strong{color:var(--plum);font-family:var(--humanist);letter-spacing:.06em;text-transform:uppercase;font-size:var(--step--1);display:block;}
   .plan .flash-sale code{font-family:var(--humanist);font-weight:700;letter-spacing:.08em;color:var(--ink);}
+  /* Holiday sale: the regular price struck through beside the sale price, and one
+     note above the plans saying when it ends. When the sale is over, delete the
+     <s> prices and the note, and point the buttons back at the regular links. */
+  .plan .price s,.plan .btn s{color:var(--ink-faint);font-size:.85em;margin-right:.3em;text-decoration-thickness:1px;}
+  .holiday-note{
+    max-width:34rem;margin:0 auto 1.6rem;text-align:center;
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    padding:.9rem 1rem;color:var(--ink);font-size:1.05rem;line-height:1.55;
+  }
+  .holiday-note strong{color:var(--plum);font-family:var(--humanist);letter-spacing:.06em;text-transform:uppercase;font-size:var(--step--1);display:block;margin-bottom:.2rem;}
   .plan .plan-note{
     font-family:var(--humanist);font-size:var(--step--1);
     color:var(--ink-faint);letter-spacing:.04em;line-height:1.6;
@@ -708,10 +718,11 @@
       <button type="button" class="region-btn is-on" data-region="us" aria-pressed="true">Within the US</button>
       <button type="button" class="region-btn" data-region="intl" aria-pressed="false">Outside the US</button>
     </div>
+    <p class="holiday-note"><strong>Holiday prices</strong>Through December&nbsp;20, letters and postcards are on sale, no code needed. Start a monthly plan now and you keep the holiday price for as long as you stay.</p>
     <div class="plans">
       <div class="plan">
         <h3>One at a time</h3>
-        <p class="price"><span class="for-us">$16.99 either way</span><span class="for-intl">$17.99 either way</span></p>
+        <p class="price"><span class="for-us"><s>$18.99</s> $16.99 either way</span><span class="for-intl"><s>$19.99</s> $17.99 either way</span></p>
         <p>One letter and one original gicl&eacute;e print, in your mailbox each month. Begin properly, or try a single letter first and see how it feels to get one.</p>
         <div class="plan-options for-us">
           <a class="btn btn-solid" href="https://buy.stripe.com/9B6fZi1of1m1dbC2MkcEw0g">Keep them coming &mdash; $16.99 a month, cancel any time</a>
@@ -725,16 +736,16 @@
       </div>
       <div class="plan">
         <h3>All at once</h3>
-        <p class="price"><span class="for-us">from $48.99</span><span class="for-intl">from $51.99</span></p>
+        <p class="price"><span class="for-us">from <s>$54.99</s> $48.99</span><span class="for-intl">from <s>$57.99</s> $51.99</span></p>
         <p>Three months, six months or a year of letters, paid once and then done. Easier on the wallet than paying month by month.</p>
         <div class="plan-options for-us">
-          <a class="btn btn-ghost" href="https://buy.stripe.com/6oU8wQ1of8Ot1sUbiQcEw0i">Three months &mdash; $48.99</a>
-          <a class="btn btn-ghost" href="https://buy.stripe.com/14AbJ29UL5Ch1sU3QocEw0j">Six months &mdash; $95.99</a>
+          <a class="btn btn-ghost" href="https://buy.stripe.com/6oU8wQ1of8Ot1sUbiQcEw0i">Three months &mdash; <s>$54.99</s> $48.99</a>
+          <a class="btn btn-ghost" href="https://buy.stripe.com/14AbJ29UL5Ch1sU3QocEw0j">Six months &mdash; <s>$97.99</s> $95.99</a>
           <a class="btn btn-ghost" href="https://buy.stripe.com/fZufZi8QH4yd6Ne5YwcEw05">Twelve months &mdash; $179.99</a>
         </div>
         <div class="plan-options for-intl">
-          <a class="btn btn-ghost" href="https://buy.stripe.com/3cIcN6c2T5Ch9Zq1IgcEw0n">Three months &mdash; $51.99</a>
-          <a class="btn btn-ghost" href="https://buy.stripe.com/eVqdRa0kbfcRgnO5YwcEw0o">Six months &mdash; $101.99</a>
+          <a class="btn btn-ghost" href="https://buy.stripe.com/3cIcN6c2T5Ch9Zq1IgcEw0n">Three months &mdash; <s>$57.99</s> $51.99</a>
+          <a class="btn btn-ghost" href="https://buy.stripe.com/eVqdRa0kbfcRgnO5YwcEw0o">Six months &mdash; <s>$103.99</s> $101.99</a>
           <a class="btn btn-ghost" href="https://buy.stripe.com/aFafZi1offcR0oQfz6cEw09">Twelve months &mdash; $191.99</a>
         </div>
         <p class="plan-note"><span class="for-us">$16.33 a letter for three months &middot; $16.00 for six &middot; $15.00 for twelve.</span><span class="for-intl">$17.33 a letter for three months &middot; $17.00 for six &middot; $16.00 for twelve.</span></p>
@@ -750,7 +761,7 @@
       </figure>
       <div>
         <h3>A postcard each month</h3>
-        <p class="price"><span class="for-us">$3.50 a month</span><span class="for-intl">$4.50 a month</span></p>
+        <p class="price"><span class="for-us"><s>$4</s> $3.50 a month</span><span class="for-intl"><s>$5</s> $4.50 a month</span></p>
         <p>A smaller hello, for anyone who loves finding something in the mailbox. Each month I will send you a postcard made from one of my photographs, with a quote I have chosen for the month.</p>
         <div class="plan-options for-us">
           <a class="btn btn-solid" href="https://buy.stripe.com/8x25kEaYP9Sx6Neev2cEw0k">Send me a postcard each month &mdash; $3.50</a>
